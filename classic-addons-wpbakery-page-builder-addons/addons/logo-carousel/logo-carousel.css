@@ -1,0 +1,17 @@
+.caw-logo-carousel-outer-wrapper .slick-slide img {
+    display: inline-block !important ;
+}
+.slick-prev,.slick-next {
+    background: #2dc973 !important;
+    padding: 1px !important;
+}
+.caw-logo-carousel-arrow{
+	text-align: right;
+}
+.caw-logo-carousel-inner-wrapper {
+	text-align: center;
+}
+.caw-logo-carousel-outer-wrapper .slick-slide .caw-logo-carousel-inner-wrapper h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

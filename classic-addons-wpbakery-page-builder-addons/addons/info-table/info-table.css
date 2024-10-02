@@ -1,0 +1,32 @@
+.caw-it-wrapper {
+    min-width: 100%;
+    width: 100%;
+    background: #22dee7;
+    margin-bottom: 35px;
+}
+.caw-it-inner {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+.caw-it-header {
+    padding: 15px 0px
+}
+.caw-it-header > h5{
+    padding-top: 15px;
+    color: #605151;
+}
+.caw-it-header > h3,
+.caw-it-header > h5{    
+    margin-bottom: 0;
+}
+.caw-it-body {
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+}
+.caw-it-footer {
+    padding:15px 0px 15px 0px;
+    color:white;
+    text-align: center;
+}

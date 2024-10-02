@@ -1,0 +1,30 @@
+.caw-countup-inner {
+    text-align: center;
+    position: relative;
+}
+.caw-countup-inner .caw-time-counter {
+    font-size: 70px;
+    display: block;    
+}
+.caw-countup-line{
+    display: block;
+    margin: 10px auto;
+}
+.caw-countup-wrapper .caw-icon-component-style{
+    text-align: center;
+	margin: 10px 0px;
+}
+.caw-countup-style-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.caw-countup-wrapper{
+    margin-bottom: 15px;
+}

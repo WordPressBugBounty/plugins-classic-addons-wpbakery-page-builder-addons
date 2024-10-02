@@ -1,0 +1,21 @@
+<?php
+/**
+ * Testimonial Slider Single Item Template
+*/
+ 
+/*
+**========== Direct access not allowed =========== 
+*/
+if( ! defined('ABSPATH' ) ){ exit; }
+?>
+
+<figure class="st-style12">
+	<?php echo wp_get_attachment_image( $image_id, 'full' ); ?>
+  <figcaption class="st-testimonial-bg">
+    <h3 class="st-testimonial-title"><?php echo esc_attr($title); ?></h3>
+    <h5 class="st-testimonial-company"><?php echo esc_attr($company); ?></h5>
+    <blockquote class="st-testimonial-content">
+      <?php echo wpb_js_remove_wpautop($content); ?>
+    </blockquote>
+  </figcaption><?php echo ($url != '') ? '<a href="'.esc_url($company).'"></a>' : '' ; ?>
+</figure>

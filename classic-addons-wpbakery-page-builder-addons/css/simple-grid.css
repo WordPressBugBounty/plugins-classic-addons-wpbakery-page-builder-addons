@@ -1,0 +1,128 @@
+.caw-filportfolio-content .row {
+  position: relative;
+  width: 100%;
+}
+.caw-filportfolio-content {
+  display: block;
+}
+.caw-filportfolio-content .row [class^="col"] {
+  float: left;
+  margin: 2%;
+  min-height: 0.125rem;
+}
+.caw-filportfolio-content .col-1,
+.caw-filportfolio-content .col-2,
+.caw-filportfolio-content .col-3,
+.caw-filportfolio-content .col-4,
+.caw-filportfolio-content .col-5,
+.caw-filportfolio-content .col-6,
+.caw-filportfolio-content .col-7,
+.caw-filportfolio-content .col-8,
+.caw-filportfolio-content .col-9,
+.caw-filportfolio-content .col-10,
+.caw-filportfolio-content .col-11,
+.caw-filportfolio-content .col-12 {
+  width: 96%;
+}
+.caw-filportfolio-content .col-1-sm {
+  width: 4.33%;
+}
+.caw-filportfolio-content .col-2-sm {
+  width: 12.66%;
+}
+.caw-filportfolio-content .col-3-sm {
+  width: 21%;
+}
+.caw-filportfolio-content .col-4-sm {
+  width: 29.33%;
+}
+.caw-filportfolio-content .col-5-sm {
+  width: 37.66%;
+}
+.caw-filportfolio-content .col-6-sm {
+  width: 46%;
+}
+.caw-filportfolio-content .col-7-sm {
+  width: 54.33%;
+}
+.caw-filportfolio-content .col-8-sm {
+  width: 62.66%;
+}
+.caw-filportfolio-content .col-9-sm {
+  width: 71%;
+}
+.caw-filportfolio-content .col-10-sm {
+  width: 79.33%;
+}
+.caw-filportfolio-content .col-11-sm {
+  width: 87.66%;
+}
+.caw-filportfolio-content .col-12-sm {
+  width: 96%;
+}
+.caw-filportfolio-content .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.caw-filportfolio-content .hidden-sm {
+  display: none;
+}
+@media only screen and (min-width: 33.75em) {
+  .caw-filportfolio-content {
+    /* 540px */
+  }
+  .caw-filportfolio-content .container {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 45em) {
+  .caw-filportfolio-content {
+    /* 720px */
+  }
+  .caw-filportfolio-content .col-1 {
+    width: 4.33%;
+  }
+  .caw-filportfolio-content .col-2 {
+    width: 12.66%;
+  }
+  .caw-filportfolio-content .col-3 {
+    width: 21%;
+  }
+  .caw-filportfolio-content .col-4 {
+    width: 29.33%;
+  }
+  .caw-filportfolio-content .col-5 {
+    width: 37.66%;
+  }
+  .caw-filportfolio-content .col-6 {
+    width: 46%;
+  }
+  .caw-filportfolio-content .col-7 {
+    width: 54.33%;
+  }
+  .caw-filportfolio-content .col-8 {
+    width: 62.66%;
+  }
+  .caw-filportfolio-content .col-9 {
+    width: 71%;
+  }
+  .caw-filportfolio-content .col-10 {
+    width: 79.33%;
+  }
+  .caw-filportfolio-content .col-11 {
+    width: 87.66%;
+  }
+  .caw-filportfolio-content .col-12 {
+    width: 96%;
+  }
+  .caw-filportfolio-content .hidden-sm {
+    display: block;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .caw-filportfolio-content .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}

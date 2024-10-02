@@ -1,0 +1,85 @@
+.caw-switcher-checkbox span {
+    height: 1.6em;
+    left: 0;
+    background: #C0CCDA;
+    -webkit-border-radius: 0.8em;
+    border-radius: 0.8em;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 3em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.caw-switcher-checkbox span:before {
+    display: block;
+    content: '';
+    height: 1.4em;
+    position: absolute;
+    width: 1.4em;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    left: 0.1em;
+    top: 0.1em;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.caw-switcher-checkbox>input[type="checkbox"] {
+    display: none;
+}
+
+.caw-switcher-checkbox>input[type="checkbox"][disabled]+span {
+    cursor: not-allowed;
+    background-color: #D3DCE6;
+}
+
+.caw-switcher-checkbox>input[type="checkbox"]:checked+span {
+    background-color: #6576ff;
+}
+
+.caw-switcher-checkbox>input[type="checkbox"]:checked+span:before {
+    left: 50%;
+}
+
+.caw-settings-wrap {
+    flex-basis: 33.33%;
+}
+.caw-single-setting {
+    padding: 10px;
+}
+.caw-clearboth {
+    clear: both;
+}
+.caw-submit-btn {
+    margin-top: 20px;
+    margin-left: 10px;    
+    display: flex;
+}
+.caw-submit-btn .spinner{
+    float: none !important;
+}
+.caw-submit-btn .spinner-msg{
+    padding: 7px;
+    background: white;
+    border: 1px solid #8080807d;
+    font-size: 13px;
+    display: none;
+    margin-left: 6px;
+}
+.caw-settings-form {
+    background-color: #FFF;
+    width: 100%;
+}
+.caw-settings-wrapper {
+    display: flex;
+    flex-wrap: wrap;    
+}
+.caw-submit-btn {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,95 @@
+.caw-infobanner-wrapper {
+    position: relative;
+}
+.caw-infobanner-wrapper .caw-infobanner-img-section img {
+    display: block;
+    margin: 0 auto;
+}
+.caw-infobanner-content-section{
+    float: left;
+}
+.caw-infobanner-wrapper .caw-infobanner-content-section h2,
+.caw-infobanner-wrapper .caw-infobanner-content-section h1,
+.caw-infobanner-wrapper .caw-infobanner-content-section h3,
+.caw-infobanner-wrapper .caw-infobanner-content-section h4,
+.caw-infobanner-wrapper .caw-infobanner-content-section p,
+.caw-infobanner-wrapper .caw-infobanner-content-section .caw-btn {
+    margin: 5px 10px;
+}
+.caw-infobanner-default-style .caw-infobanner-content-section{
+    width: 100%;
+    text-align: center;
+}
+.clearfix {
+    clear: both;
+}
+
+
+/*caw-infobanner-ribbon*/
+.caw-infobanner-ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.caw-infobanner-ribbon span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+.caw-infobanner-ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79A70A;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+.caw-infobanner-ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #79A70A;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+.caw-single-image{
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+@media only screen and (max-width: 768px) {
+    .caw-infobanner-style-2 .caw-infobanner-img-section img {
+        height: auto !important;
+    }
+    .caw-infobanner-wrapper .caw-infobanner-img-section img {
+        height: auto !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .caw-infobanner-wrapper .caw-infobanner-img-section, .caw-infobanner-wrapper .caw-infobanner-content-section {
+        float: inherit !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .caw-infobanner-wrapper img {
+        margin: 0 auto;
+        display: block;
+    }
+}

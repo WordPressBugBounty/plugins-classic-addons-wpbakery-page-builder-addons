@@ -1,0 +1,60 @@
+/*Effect 1*/
+.caw-imgzoom-effect1 {  
+  overflow: hidden;    
+}
+.caw-imgzoom-effect1 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.caw-imgzoom-effect1:hover img,
+.caw-imgzoom-effect1.hover img {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+/*Effect 2*/
+.caw-imgzoom-effect2 {
+  position: relative;
+  overflow: hidden;  
+  width: 100%;
+}
+.caw-imgzoom-effect2 img {
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.caw-imgzoom-effect2:hover img,
+.caw-imgzoom-effect2.hover img {
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+}
+/*Effect 3*/
+.caw-imgzoom-effect3 {
+  position: relative;
+  overflow: hidden;  
+  width: 100%;
+}
+.caw-imgzoom-effect3 img {
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.caw-imgzoom-effect3:hover img,
+.caw-imgzoom-effect3.hover img {
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+/*Effect 4*/
+.caw-imgzoom-effect4 {
+  position: relative;
+  overflow: hidden;
+}
+.caw-imgzoom-effect4 img {
+  max-width: 100%;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.caw-imgzoom-effect4:hover img,
+.caw-imgzoom-effect4.hover img {
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+}

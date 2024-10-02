@@ -1,0 +1,12 @@
+.caw-section-title {
+	background-color: #F6F6F6;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #0473AA;
+}
+*[class*="mega_main"] #wpbody .vc_edit-form-tab select {
+    height: auto !important;
+}

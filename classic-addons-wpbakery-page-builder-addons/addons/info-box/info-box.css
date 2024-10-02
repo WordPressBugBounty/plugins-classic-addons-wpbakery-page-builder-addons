@@ -1,0 +1,110 @@
+/*
+** ========= General CSS =============
+*/
+.caw-info-box-icon{
+	display: inline-block;
+    font-size: 30px;
+    text-align: center;    
+    box-sizing: content-box !important;
+}
+.caw-info-box-icon i{
+	line-height: inherit;
+}
+.caw_info_box_shadow0 {
+	transition: all .2s cubic-bezier(.02,.54,.58,1);
+	border-radius: 4px 4px 4px 4px;
+	padding: 10px 10px;
+}
+.caw_info_box_shadow1 {
+	box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
+	border-radius: 4px 4px 4px 4px;
+	padding: 15px 15px;	
+	transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+	transition: all .2s cubic-bezier(.02,.54,.58,1);
+}
+.caw_info_box_hvr_shadow:hover {
+	box-shadow: 0 10px 55px 5px rgba(137,173,255,.35) !important;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-transform: translate3d(0,-20px,0);
+    -moz-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+}
+.caw-info-box-icon img{
+	max-width: 55px;
+}
+
+/*
+** ========= Style Icon Top =============
+*/
+.caw_info_box_style_1 .caw-image-icon {
+	display: block;
+	margin: 0 auto;
+}
+.caw_info_box_style_1 i{
+	transition: background .5s ease, color .3s ease;
+}
+.caw_info_box_style_1 {
+	text-align: center;	
+	margin-bottom: 20px;
+}
+.caw_info_box_style_1 .caw-info-box-title{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+	color: #383030;
+}
+.caw_info_box_style_1 .caw-info-box-desc {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.caw_info_box_style_1 .caw-readmore-btn {
+	text-decoration: none;
+	padding: 0;
+    font-size: 15px;	
+	color: #000;
+	border-radius: 4px;
+}
+
+/*
+** ========= Style 2 =============
+*/
+.caw_info_box_style_2 .caw-imgicon-component-style {
+	float: left;
+	margin-right: 15px;
+}
+.caw_info_box_style_2 .clearfix {
+	clear: both;
+}
+.caw_info_box_style_2 .caw-icon-component-style {
+	display: inline-block;
+	margin-right: 15px;
+	float: left;
+}
+.caw_info_box_style_2 i{
+	transition: background .5s ease, color .3s ease;
+}
+.caw_info_box_style_2 .caw-info-box-content {
+	display: table-cell;
+    vertical-align: middle;
+}
+.caw_info_box_style_2 i {
+    text-align: center;
+}
+.caw_info_box_style_2 .caw-info-box-title{
+	margin-bottom: 6px;
+	margin-top: 0px;
+	font-weight: bold;
+	color: #383030;
+}
+.caw_info_box_style_2 .caw-info-box-desc {
+	color: #383030;
+}
+.caw_info_box_style_2 .caw-readmore-btn {
+	text-decoration: none;
+	color: #2484e7;
+	font-size: 15px;
+	margin-top: 12px;
+}
+.caw_info_box_style_2{
+	margin-bottom: 20px;
+}
