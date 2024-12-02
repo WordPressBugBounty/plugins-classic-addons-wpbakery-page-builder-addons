@@ -2,8 +2,8 @@
 Contributors: webcodingplace
 Tags: wpbakery, addon, builder, bakery, elements, extension, visual composer, page builder, addons, elements
 Requires at least: 3.5
-Tested up to: 6.6
-Stable tag: 3.0
+Tested up to: 6.7
+Stable tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ Classic Addons For WPBakery Page Builder ~ The biggest Addon bundle for WPBakery
 [WPBakery Page Builder (formerly Visual Composer)](https://1.envato.market/gbGbzO) plugin must be installed and activated to use this plugin. After you activate the required plugins, the addons should be available for use in WPBakery Page Builder.
  
 == Changelog ==
+
+= 3.1 =
+* Vulnerability Fixed: Detected by Nishiv
 
 = 3.0 =
 * Animated Heading: custom heading tag select option added

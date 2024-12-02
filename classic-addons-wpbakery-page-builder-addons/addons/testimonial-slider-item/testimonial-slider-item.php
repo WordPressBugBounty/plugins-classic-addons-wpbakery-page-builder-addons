@@ -17,7 +17,7 @@ class WPBakeryShortCode_CAW_Testimonial_Slider extends WPBakeryShortCode {
 
 		$column_class = 'masonry-item col-1-'.esc_attr($cols);
 		
-		$theme_path = get_stylesheet_directory().'/caw/testimonials/style'.$style.'.php';
+		$theme_path = get_stylesheet_directory().'/caw/testimonials/style'.sanitize_file_name($style).'.php';
 
 		ob_start(); ?>
 			<div class="<?php echo esc_attr($column_class); ?> <?php echo esc_attr($cssbox); ?>">
@@ -25,7 +25,7 @@ class WPBakeryShortCode_CAW_Testimonial_Slider extends WPBakeryShortCode {
 				<?php if (file_exists($theme_path)) {
 					include $theme_path;
 				} else {
-					include 'templates/style'.$style.'.php';
+					include 'templates/style'.sanitize_file_name($style).'.php';
 				} ?>
 
 			</div>
