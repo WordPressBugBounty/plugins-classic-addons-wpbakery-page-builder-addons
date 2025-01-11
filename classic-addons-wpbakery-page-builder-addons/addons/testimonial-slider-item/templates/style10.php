@@ -12,7 +12,7 @@ if( ! defined('ABSPATH' ) ){ exit; }
 <figure class="style10">
   <figcaption class="st-testimonial-bg">
     <blockquote class="st-testimonial-content">
-      <?php echo wpb_js_remove_wpautop($content); ?>
+      <?php echo wp_kses_post(wpb_js_remove_wpautop($content)); ?>
     </blockquote>
     <div class="arrow"></div>
   </figcaption>

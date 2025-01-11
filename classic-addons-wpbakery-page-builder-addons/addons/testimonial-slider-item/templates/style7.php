@@ -12,7 +12,7 @@ if( ! defined('ABSPATH' ) ){ exit; }
 <figure class="style7 st-testimonial-bg">
   <i class="fa fa-quote-left"></i>
   <blockquote class="st-testimonial-content st-testimonial-bg">
-  	<?php echo wpb_js_remove_wpautop($content); ?>
+  	<?php echo wp_kses_post(wpb_js_remove_wpautop($content)); ?>
   </blockquote>
     <div class="starrating st-rating">
       <?php do_action( 'wcp_testimonial_display_rating', $stars ); ?>

@@ -213,7 +213,7 @@ class CAWPB_Classic_Addons_WPBakery {
     	
     	$response = array();
         
-        if (isset($_REQUEST['caw_settings'])) {
+        if (isset($_REQUEST['caw_settings']) && wp_verify_nonce( $_REQUEST['cawp_admin_settings_nonce'], 'cawp_admin_settings' )) {
         	
         	$settings_meta = array_map( 'sanitize_text_field', $_REQUEST['caw_settings'] );
 

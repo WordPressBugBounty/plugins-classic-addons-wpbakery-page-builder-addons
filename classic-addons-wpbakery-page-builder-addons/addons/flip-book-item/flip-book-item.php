@@ -37,8 +37,8 @@ class WPBakeryShortCode_CAW_Flip_Book extends WPBakeryShortCode {
 
     			<div 
     				class="flipper-page" 
-    				data-styles="<?php echo htmlspecialchars(json_encode($this->single_classes)); ?>"
-    				data-imgurls="<?php echo htmlspecialchars(json_encode($this->content_arr)); ?>"
+    				data-styles="<?php echo wp_kses_post(htmlspecialchars(json_encode($this->single_classes))); ?>"
+    				data-imgurls="<?php echo wp_kses_post(htmlspecialchars(json_encode($this->content_arr))); ?>"
     			>
     			</div>
     		<?php

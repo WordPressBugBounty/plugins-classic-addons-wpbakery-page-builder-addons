@@ -11,7 +11,7 @@ if( ! defined('ABSPATH' ) ){ exit; }
 
 <figure class="style3">
   <blockquote class="st-testimonial-content st-testimonial-bg">
-	<?php echo wpb_js_remove_wpautop($content); ?>
+	<?php echo wp_kses_post(wpb_js_remove_wpautop($content)); ?>
   	<div class="arrow"></div>
   </blockquote>
   <?php echo wp_get_attachment_image($image_id, 'thumbnail' ); ?>

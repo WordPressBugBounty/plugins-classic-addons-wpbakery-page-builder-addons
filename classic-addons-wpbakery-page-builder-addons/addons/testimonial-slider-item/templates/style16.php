@@ -18,7 +18,7 @@ if( ! defined('ABSPATH' ) ){ exit; }
     	<?php do_action( 'wcp_testimonial_display_rating', $stars ); ?>
     </div>    
     <blockquote class="st-testimonial-bg st-testimonial-content">
-    	<?php echo wpb_js_remove_wpautop($content); ?>
+    	<?php echo wp_kses_post(wpb_js_remove_wpautop($content)); ?>
     </blockquote>
   </figcaption>
 </figure>

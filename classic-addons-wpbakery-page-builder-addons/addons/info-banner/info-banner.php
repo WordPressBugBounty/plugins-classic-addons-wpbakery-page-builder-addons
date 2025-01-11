@@ -122,7 +122,7 @@ class WPBakeryShortCode_CAW_Info_Banner extends WPBakeryShortCode {
 				<div class="caw-infobanner-content-section <?php echo esc_attr($content_pd_css); ?>" style="<?php echo esc_attr($content_istyle); ?>">
 					
 					<div class="caw-infobanner-content">						
-						<?php echo wpb_js_remove_wpautop($content, true); ?>
+						<?php echo wp_kses_post(wpb_js_remove_wpautop($content, true)); ?>
 					</div>
 
 					<!-- Button Component -->

@@ -35,7 +35,7 @@ class WPBakeryShortCode_CAW_Testimonial_Slider_C extends WPBakeryShortCodesConta
 		$row_class    = '';
 		$column_class = '';
 		$data_attr    = '';
-		$r_id         = rand();
+		$r_id         = wp_rand();
 
 		switch ($type) {
 			case 'masonry':

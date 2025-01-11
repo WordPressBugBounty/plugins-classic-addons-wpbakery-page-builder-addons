@@ -3,7 +3,7 @@
  * Plugin Name: Classic Addons - WPBakery Page Builder Addons
  * Plugin URI: https://classicaddons.com/
  * Description: A collection of beautiful and elegant UI addons for WPBakery Page Builder
- * Version: 3.1
+ * Version: 3.2
  * Author: Classic Addons
  * Author URI: https://webcodingplace.com/
  * License: GPLv2 or later
@@ -14,7 +14,7 @@
 
 /*
 
-  Copyright (C) 2024  WebCodingPlace  support@webcodingplace.com
+  Copyright (C) 2025  WebCodingPlace  support@webcodingplace.com
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License, version 2, as
@@ -28,7 +28,7 @@
 
 define('CAWPB_PATH', untrailingslashit(plugin_dir_path( __FILE__ )) );
 define('CAWPB_URL', untrailingslashit(plugin_dir_url( __FILE__ )) );
-define('CAWPB_VERSION', '3.1' );
+define('CAWPB_VERSION', '3.2' );
 
 /* ======= Plugin File Includes =========== */
 if( file_exists( CAWPB_PATH.'/inc/helpers.php' )) include_once CAWPB_PATH.'/inc/helpers.php';

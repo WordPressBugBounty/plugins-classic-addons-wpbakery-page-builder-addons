@@ -31,7 +31,7 @@ function cawpb_load_templates( $template_name, $vars = null) {
     if( file_exists( $default_path ) ){
         require ( $default_path );
     } else {
-        die( "Error while loading file {$default_path}" );
+        die( "Error while loading file ".esc_attr($default_path) );
     }
 }
 
@@ -58,7 +58,7 @@ function cawpb_get_random_class($prefix=''){
 	$charactersLength = strlen($characters);
 	$randomString = "{$prefix}-";
 	for ($i = 0; $i < 5; $i++) {
-	    $randomString .= $characters[rand(0, $charactersLength - 1)];
+	    $randomString .= $characters[wp_rand(0, $charactersLength - 1)];
 	}
 	return $randomString;
 }

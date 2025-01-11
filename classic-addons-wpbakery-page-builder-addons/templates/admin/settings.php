@@ -14,11 +14,12 @@ $get_settings  = get_option('caw_settings');
 ?>
 
 <div class="caw-settings-wrapper wrap">  
-    <h1><?php _e( 'Classic Addons Enable/Disable', 'caw' ); ?></h1>    
+    <h1><?php esc_attr_e( 'Classic Addons Enable/Disable', 'caw' ); ?></h1>    
     <form class="caw-settings-form">
         <div class="caw-settings-wrapper">
             <input type="hidden" name="action" value="caw_settings_action">
-            <?php 
+            <?php wp_nonce_field( 'cawp_admin_settings', 'cawp_admin_settings_nonce' ); ?>
+            <?php
             foreach ($addons as $id => $meta) {
                 $name = isset($meta['name']) ? $meta['name'] : '';
                 $checked = isset($get_settings[$id]) ? $get_settings[$id]: '';
@@ -43,9 +44,9 @@ $get_settings  = get_option('caw_settings');
         </div>
         <div class="caw-clearboth"></div>
         <div class="caw-submit-btn">
-            <input type="submit" value="<?php _e( 'Save Changes', 'caw' ); ?>" class="button button-primary">
+            <input type="submit" value="<?php esc_attr_e( 'Save Changes', 'caw' ); ?>" class="button button-primary">
             <span class="spinner" style="display: none;"></span>
-            <span class="spinner-msg"><?php echo _e('Settings Saved!','caw') ?></span>
+            <span class="spinner-msg"><?php echo esc_attr_e('Settings Saved!','caw') ?></span>
         </div>
     </form>
 </div>

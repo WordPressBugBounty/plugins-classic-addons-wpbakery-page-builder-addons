@@ -15,6 +15,6 @@ if( ! defined('ABSPATH' ) ){ exit; }
     <h5 class="st-testimonial-title"><?php echo esc_attr($title); ?></h5><span class="st-testimonial-company"><?php do_action( 'wcp_testimonial_display_company', $company, $url); ?></span>
   </div>
   <blockquote class="st-testimonial-content st-testimonial-bg">
-  	<?php echo wpb_js_remove_wpautop($content); ?>
+  	<?php echo wp_kses_post(wpb_js_remove_wpautop($content)); ?>
   </blockquote>
 </figure>

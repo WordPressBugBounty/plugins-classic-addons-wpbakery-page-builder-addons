@@ -38,7 +38,7 @@ $styles = cawpb_border_style();
 			<label><?php esc_html_e( 'Style', 'landz' ); ?></label>
 			<select class="caw-border-select" name="border_style">
 			<?php foreach ( $styles as $style ) { ?>
-				<option value="<?php echo esc_attr($style); ?>" ><?php echo ucfirst( $style ); ?></option>';
+				<option value="<?php echo esc_attr($style); ?>" ><?php echo esc_attr(ucfirst( $style )); ?></option>';
 			<?php } ?>
 			</select>
 		</div>
