@@ -77,6 +77,7 @@ $params = array(
 		"param_name" 	=> 	"divider_color",
 		"description" 	=> 	__( 'Choose color for divider.', 'classic-addons' ),
 		"group" 		=> 	'Divider line',
+		'default_colorpicker_color' => '#EBEBEB',
 	),
 	array(
 		"type" 			=> 	"textfield",

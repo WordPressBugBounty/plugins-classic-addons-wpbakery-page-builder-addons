@@ -154,13 +154,11 @@ function cawpb_get_typo_styles($key, $attrs, $defaults = array()){
 			$css .= "$style_attribute: $val;";
 		}
 
-		// var_dump($attr_key);
 		if ('font_family' == $attr_key) {
 
 			$fontsData = vc_parse_multi_attribute($val);
 
 			if(isset($fontsData['font_family'])){
-				// var_dump($fontsData['font_family']);
 				$googlefonts_style = cawpb_googlefonts_style( $fontsData );
 				cawpb_enqueue_googlefonts( $fontsData );
 				$css .= $googlefonts_style;
@@ -217,12 +215,20 @@ function cawpb_googlefonts_style( $fontsData ) {
 	$font_style = isset($fontsData['font_style']) ? $fontsData['font_style']: '';
 	$fontFamily = explode( ':', $fontsData['font_family'] );
 	$fontStyles = explode( ':', $font_style );
+
 	$family = isset($fontFamily[0]) ? $fontFamily[0] : '';
 	$weight = isset($fontStyles[1]) ? $fontStyles[1] : '';
 	$style = isset($fontStyles[2]) ? $fontStyles[2] : '';
-	$css .= 'font-family:' .$family.';';
-	$css .= 'font-weight:' .$weight.';';
-	$css .= 'font-style:' .$style.';';
+
+	$css .= 'font-family:' .esc_attr($family).';';
+	
+	if ($weight) {
+		$css .= 'font-weight:' .esc_attr($weight).';';
+	}
+
+	if ($style) {
+		$css .= 'font-style:' .esc_attr($style).';';
+	}
 
 	return $css;
 }
@@ -386,8 +392,23 @@ function cawpb_get_image_by_size( $params = array() ) {
 function cawpb_icon_fonts_enqueue( $type ) {
 	switch ( $type ) {
 		case 'fontawesome':
-			wp_enqueue_style( 'vc_font_awesome_5' );
-			break;	
+			wp_enqueue_style( 'vc_font_awesome_6' );
+			break;
+		case 'openiconic':
+			wp_enqueue_style( 'vc_openiconic' );
+			break;
+		case 'typicons':
+			wp_enqueue_style( 'vc_typicons' );
+			break;
+		case 'entypo':
+			wp_enqueue_style( 'vc_entypo' );
+			break;
+		case 'monosocial':
+			wp_enqueue_style( 'vc_monosocialiconsfont' );
+			break;
+		case 'material':
+			wp_enqueue_style( 'vc_material' );
+			break;
 		case 'linecons':
 			wp_enqueue_style( 'vc_linecons' );
 			break;
@@ -428,8 +449,7 @@ function cawpb_sanitize_html_classes($classes, $sep = " "){
 function cawpb_add_inline_style($css, $addon_id, $attrs, $style_handler = ''){
 
 	$styleClass = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), $addon_id, $attrs );
-
-	if ($style_handler != '') {		
+	if ($style_handler != '') {
 		wp_add_inline_style( $style_handler, $css );
 	}
 

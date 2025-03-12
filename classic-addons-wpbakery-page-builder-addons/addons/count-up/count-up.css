@@ -28,3 +28,6 @@
 .caw-countup-wrapper{
     margin-bottom: 15px;
 }
+.caw-countup-box .caw-time-counter, .caw-countup-box .caw-time-heading {
+    display: inline-block;
+}

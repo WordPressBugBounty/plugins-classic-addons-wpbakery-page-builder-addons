@@ -58,11 +58,7 @@ class CAWPB_Classic_Addons_WPBakery {
 
 	function load_admin_scripts(){
 
-		if ( class_exists('vc_backend_editor') ) {		   
-			if ( vc_backend_editor()->editorEnabled() ) {			
-				wp_enqueue_style( 'classic-addons', CAWPB_URL.'/css/caw-admin.css');
-			}
-		}
+		wp_enqueue_style( 'classic-addons', CAWPB_URL.'/css/caw-admin.css');
 
 		if (isset($_GET['page']) && $_GET['page'] == 'caw-settings') {
 			wp_enqueue_style( 'caw-settings', CAWPB_URL.'/css/settings.css');
@@ -87,11 +83,11 @@ class CAWPB_Classic_Addons_WPBakery {
 
 			$addons_settings  = get_option('caw_settings');
 			if (isset($addons_settings[str_replace("-item", "", $slug)])) {
-				include( CAWPB_PATH.'/addons/'.$slug.'/'.$slug.'.php' );
-				$settings['icon'] = CAWPB_URL.'/addons/'.$slug.'/'.$slug.'.png';
+				include( CAWPB_PATH.'/addons/'.sanitize_file_name($slug).'/'.sanitize_file_name($slug).'.php' );
+				$settings['icon'] = 'caw-icon-'.esc_attr($slug);
 				$settings['category'] = 'Classic Addons';
 				$settings['params'] = $this->get_element_params($slug, $settings);	
-				vc_map($settings);		
+				vc_map($settings);
 			}
 		}
 	}	

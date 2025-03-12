@@ -37,6 +37,7 @@ foreach ($settings as $typoData) {
 					"param_name" 	=> 	$typoData['key']."_color",
 					"description" 	=> 	__( 'Choose heading text color.', 'classic-addons' ),
 					"group"         => $group,
+					'default_colorpicker_color' => '#EBEBEB',
 				);
 	}
 
@@ -66,5 +67,28 @@ foreach ($settings as $typoData) {
 				),
 				"group"   => 	'Typography',
 			);
+	}
+
+	if (in_array("spacing", $support)) {
+		$typo_params[] = array(
+			"type" 			=> "caw_section",
+			"section_title" => $typoData['title'].' '.__( 'Spacing', 'classic-addons' ),
+			"param_name" 	=> $typoData['key']."_spacing_section",
+			"group" 		=> $group,
+		);
+		$typo_params[] = array(
+			"type" 			=> 	"caw_padding_style",
+			"heading" 		=> 	__( 'Padding', 'classic-addons' ),
+			"param_name" 	=> 	$typoData['key']."_padding",
+			"description" 	=> 	__( 'Provide padding along with units. Eg: 5px', 'classic-addons' ),
+			"group" 		=> $group,
+		);
+		$typo_params[] = array(
+			"type" 			=> 	"caw_margin_style",
+			"heading" 		=> 	__( 'Margin', 'classic-addons' ),
+			"param_name" 	=> 	$typoData['key']."_margin",
+			"description" 	=> 	__( 'Provide margin along with units. Eg: 5px', 'classic-addons' ),
+			"group" 		=> $group,
+		);
 	}
 }

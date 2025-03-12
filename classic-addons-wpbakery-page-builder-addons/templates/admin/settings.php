@@ -44,7 +44,7 @@ $get_settings  = get_option('caw_settings');
         </div>
         <div class="caw-clearboth"></div>
         <div class="caw-submit-btn">
-            <input type="submit" value="<?php esc_attr_e( 'Save Changes', 'caw' ); ?>" class="button button-primary">
+            <input type="submit" value="<?php esc_attr_e( 'Save Changes', 'classic-addons' ); ?>" class="button button-primary">
             <span class="spinner" style="display: none;"></span>
             <span class="spinner-msg"><?php echo esc_attr_e('Settings Saved!','caw') ?></span>
         </div>

@@ -19,19 +19,19 @@ $styles = cawpb_border_style();
 <div class="caw-border-style-wrapper">
 	<div class="caw-style-handler" data-border="<?php echo esc_attr($value); ?>">
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Left', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Left', 'classic-addons' ); ?></label>
 			<input type="text" name="margin_left" class="caw-margin-input" data-name="margin-left">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'right', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'right', 'classic-addons' ); ?></label>
 			<input type="text" name="margin_right" class="caw-margin-input" data-name="margin-right">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Top', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Top', 'classic-addons' ); ?></label>
 			<input type="text" name="margin_top" class="caw-margin-input" data-name="margin-top">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Bottom', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Bottom', 'classic-addons' ); ?></label>
 			<input type="text" name="margin_bottom" class="caw-margin-input" data-name="margin-bottom">
 		</div>
 		

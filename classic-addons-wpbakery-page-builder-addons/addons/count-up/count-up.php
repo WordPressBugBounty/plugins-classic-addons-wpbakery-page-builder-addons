@@ -43,6 +43,20 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 		$icon_class = cawpb_get_icon_class('icon', $icon_type, $attrs);
 		$icon_css   = cawpb_icon_styles('icon', $attrs, array('font-size' => '20px'));
 
+		$spacing_classes = array();
+		$spacing_fields = [
+		    'counter' => ['margin', 'padding'],
+		    'heading' => ['margin', 'padding'],
+		];
+
+		foreach ($spacing_fields as $prefix => $properties) {
+		    foreach ($properties as $property) {
+		        $field = "{$prefix}_{$property}";
+		        $spacing_classes[$prefix][] = isset($attrs[$field]) ? cawpb_add_inline_style($attrs[$field], $this->settings['base'], $attrs, $addon_handle): '';
+		    }
+		    $spacing_classes[$prefix] = implode(' ', array_filter($spacing_classes[$prefix])); // Combine margin & padding classes
+		}
+
 		$icon_wrapperclass = 'caw-countup-icon';
 		if ($icon_type == 'imageicon') {
 	        $icon_wrapperclass = 'caw-countup-img';
@@ -110,7 +124,7 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 					<?php } ?>
 					<div class="caw-countup-box">
 						<span
-							class="caw-time-counter"
+							class="caw-time-counter <?php echo esc_attr($spacing_classes['counter']); ?>"
 							data-decimals="<?php echo esc_attr($decimal); ?>"
 							data-speed="<?php echo esc_attr($speed); ?>"
 							data-to="<?php echo esc_attr($value); ?>"
@@ -122,7 +136,7 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 						<?php if(!empty($divider_color)){ ?>
 							<span class="caw-countup-line" style="<?php echo esc_attr($divider_istyle); ?>"></span>
 	                	<?php } ?>
-						<span style="<?php echo esc_attr($h_istyle); ?>">
+						<span style="<?php echo esc_attr($h_istyle); ?>" class="caw-time-heading <?php echo esc_attr($spacing_classes['heading']); ?>">
 							<?php echo esc_attr( $heading ); ?>
 						</span>
 					</div>
@@ -139,7 +153,7 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
 				<div class="caw-countup-inner">
 					<?php if($heading_position == 'top') { ?>
-						<span style="<?php echo esc_attr($h_istyle); ?>">
+						<span style="<?php echo esc_attr($h_istyle); ?>" caw-time-heading <?php echo esc_attr($spacing_classes['heading']); ?>>
 							<?php echo esc_attr( $heading ); ?>
 						</span>
 						<?php if(!empty($divider_color)){ ?>
@@ -151,7 +165,7 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 
 					<div class="caw-countup-box">
 						<span
-							class="caw-time-counter"
+							class="caw-time-counter <?php echo esc_attr($spacing_classes['counter']); ?>"
 							data-decimals="<?php echo esc_attr($decimal); ?>"
 							data-speed="<?php echo esc_attr($speed); ?>"
 							data-to="<?php echo esc_attr($value); ?>"

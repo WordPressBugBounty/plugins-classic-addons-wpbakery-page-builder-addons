@@ -47,6 +47,7 @@ foreach ($settings as $typoData) {
 			"edit_field_class" => "vc_col-xs-6 vc_column",
 			"description" 	=> 	__( 'Choose button text color.', 'classic-addons' ),
 			"group" 		=> $group,
+			'default_colorpicker_color' => '#FFFFFF',
 		);
 		$btn_params[] = array(
 			"type" 			=> 	"colorpicker",
@@ -54,6 +55,7 @@ foreach ($settings as $typoData) {
 			"param_name" 	=> 	$typoData['key']."_background_color",
 			"description" 	=> 	__( 'Choose button background color.', 'classic-addons' ),
 			"edit_field_class" => "vc_col-xs-6 vc_column",
+			'default_colorpicker_color' => '#EBEBEB',
 			"group" 		=> $group,
 		);
 		$btn_params[] = array(
@@ -88,6 +90,7 @@ foreach ($settings as $typoData) {
 			"param_name" 	=> 	$typoData['key']."_hvr_color",
 			"edit_field_class" => "vc_col-xs-6 vc_column",
 			"description" 	=> 	__( 'Choose button text hover color.', 'classic-addons' ),
+			'default_colorpicker_color' => '#EBEBEB',
 			"group" 		=> $group,
 		);		
 		$btn_params[] = array(
@@ -96,6 +99,7 @@ foreach ($settings as $typoData) {
 			"param_name" 	=> 	$typoData['key']."_hvr_background_color",
 			"description" 	=> 	__( 'Choose button background hover color.', 'classic-addons' ),
 			"edit_field_class" => "vc_col-xs-6 vc_column",
+			'default_colorpicker_color' => '#FFFFFF',
 			"group" 		=> $group,
 		);
 	}
@@ -114,8 +118,13 @@ foreach ($settings as $typoData) {
 			"group" 		=> $group,
 			"edit_field_class" => "vc_col-xs-6 vc_column",
 			"value" 		=> array(
-				'Font Awesome'	=> 'fontawesome',
-				'Line Icons'	=> 'linecons',
+				esc_html__( 'Font Awesome 5', 'classic-addons' ) => 'fontawesome',
+				esc_html__( 'Open Iconic', 'classic-addons' ) => 'openiconic',
+				esc_html__( 'Typicons', 'classic-addons' ) => 'typicons',
+				esc_html__( 'Entypo', 'classic-addons' ) => 'entypo',
+				esc_html__( 'Linecons', 'classic-addons' ) => 'linecons',
+				esc_html__( 'Mono Social', 'classic-addons' ) => 'monosocial',
+				esc_html__( 'Material', 'classic-addons' ) => 'material',
 			)
 		);
 		$btn_params[] = array(

@@ -82,3 +82,6 @@
   transition: 0.3s all ease-in-out;
   -webkit-transition: 0.3s all ease-in-out;
 }
+.caw-aheading-wrapper h1 span {
+  display: inline-block;
+}

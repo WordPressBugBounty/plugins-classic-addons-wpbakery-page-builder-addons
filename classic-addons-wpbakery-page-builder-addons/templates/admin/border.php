@@ -19,23 +19,23 @@ $styles = cawpb_border_style();
 <div class="caw-border-style-wrapper">
 	<div class="caw-style-handler" data-border="<?php echo esc_attr($value); ?>">
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Left', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Left', 'classic-addons' ); ?></label>
 			<input type="text" name="border_left_width" class="caw-border-input" data-name="border-width-left">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'right', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'right', 'classic-addons' ); ?></label>
 			<input type="text" name="border_right_width" class="caw-border-input" data-name="border-width-right">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Top', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Top', 'classic-addons' ); ?></label>
 			<input type="text" name="border_top_width" class="caw-border-input" data-name="border-width-top">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Bottom', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Bottom', 'classic-addons' ); ?></label>
 			<input type="text" name="border_bottom_width" class="caw-border-input" data-name="border-width-botton">
 		</div>
 		<div class="vc_col-xs-2 vc_column">
-			<label><?php esc_html_e( 'Style', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Style', 'classic-addons' ); ?></label>
 			<select class="caw-border-select" name="border_style">
 			<?php foreach ( $styles as $style ) { ?>
 				<option value="<?php echo esc_attr($style); ?>" ><?php echo esc_attr(ucfirst( $style )); ?></option>';
@@ -44,7 +44,7 @@ $styles = cawpb_border_style();
 		</div>
 		<div class="vc_col-xs-6 vc_column">
 			<div class="color-group">
-				<label><?php esc_html_e( 'Color', 'landz' ); ?></label>
+				<label><?php esc_html_e( 'Color', 'classic-addons' ); ?></label>
 				<input type="text" data-alpha="true" class="caw-colorpicker" name="border_color">
 				<input type="hidden" name="save_border_color" class="caw-border-color caw-border-input">
 			</div>

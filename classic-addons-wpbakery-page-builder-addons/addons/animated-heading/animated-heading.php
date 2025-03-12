@@ -19,13 +19,28 @@ class WPBakeryShortCode_CAW_Animated_Heading extends WPBakeryShortCode {
 			'spin_timer'     => '3000',
 			'after_heading'  => 'you...',
 			'after_margin'   => '',
-			'cssbox'     => ''
+			'cssbox'     => '',
 		), $attrs ) );
 
 		wp_enqueue_style('caw-aheading', CAWPB_URL.'/addons/animated-heading/animated-heading.css');
 		wp_enqueue_script('caw-aheading', CAWPB_URL.'/addons/animated-heading/animated-heading.js', array('jquery'));
 
 		$cssbox = cawpb_add_inline_style($cssbox, $this->settings['base'], $attrs);
+
+		$spacing_classes = array();
+		$spacing_fields = [
+		    'beforetxt' => ['margin', 'padding'],
+		    'spinner_headings' => ['margin', 'padding'],
+		    'aftertxt' => ['margin', 'padding']
+		];
+
+		foreach ($spacing_fields as $prefix => $properties) {
+		    foreach ($properties as $property) {
+		        $field = "{$prefix}_{$property}";
+		        $spacing_classes[$prefix][] = isset($attrs[$field]) ? cawpb_add_inline_style($attrs[$field], $this->settings['base'], $attrs, 'caw-aheading'): '';
+		    }
+		    $spacing_classes[$prefix] = implode(' ', array_filter($spacing_classes[$prefix])); // Combine margin & padding classes
+		}
 
 		$beforetxt_istyle = cawpb_get_typo_styles('beforetxt', $attrs, array('font-size' => '20px'));
 		$sph_istyle = cawpb_get_typo_styles('spinner_headings', $attrs, array('font-size' => '20px'));
@@ -38,19 +53,19 @@ class WPBakeryShortCode_CAW_Animated_Heading extends WPBakeryShortCode {
 		$wrapper_classes[] = 'caw-textcenter';
 		$wrapper_classes[] = 'wpb_content_element';
 		$wrapper_classes[] = $cssbox;
-		$wrapper_classes[] = $extra_classes;		
+		$wrapper_classes[] = $extra_classes;
 				
 		ob_start(); ?>
 			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>" data-time="<?php echo intval($spin_timer); ?>">
 				<<?php echo esc_attr($heading_tag) ?>>
-				  <span style="<?php echo esc_attr($beforetxt_istyle); ?>"><?php echo esc_attr( $before_heading ); ?></span>
+				  <span class="<?php echo esc_attr($spacing_classes['beforetxt']); ?>" style="<?php echo esc_attr($beforetxt_istyle); ?>"><?php echo esc_attr( $before_heading ); ?></span>
 				  
-				  	<span class="caw-aheading-spin" style="<?php echo esc_attr($sph_istyle); ?>">
+				  	<span class="caw-aheading-spin <?php echo esc_attr($spacing_classes['spinner_headings']); ?> ?>" style="<?php echo esc_attr($sph_istyle); ?>">
 					  	<em class="current"><?php echo esc_attr( $all_headings[0] ); ?></em>
 					  	<span class="next"><span></span></span>
 				  	</span>
 
-				  	<span style="<?php echo esc_attr($aftertxt_istyle); ?>"><?php echo esc_attr( $after_heading ); ?></span>
+				  	<span class="<?php echo esc_attr($spacing_classes['aftertxt']); ?>" style="<?php echo esc_attr($aftertxt_istyle); ?>"><?php echo esc_attr( $after_heading ); ?></span>
 				</<?php echo esc_attr($heading_tag) ?>>
 
 				<ul class="caw-aheadings-list" style="margin-bottom: <?php echo esc_attr($after_margin); ?>;">

@@ -10,3 +10,59 @@
 *[class*="mega_main"] #wpbody .vc_edit-form-tab select {
     height: auto !important;
 }
+
+.caw-icon-animated-heading.vc_element-icon {
+    background-image: url(../images/animated-heading.png);   
+}
+
+.caw-icon-button.vc_element-icon {
+    background-image: url(../images/button.png);   
+}
+
+.caw-icon-count-up.vc_element-icon {
+    background-image: url(../images/count-up.png);   
+}
+
+.caw-icon-filterable-portfolio.vc_element-icon {
+    background-image: url(../images/filterable-portfolio.png) !important;   
+}
+
+.caw-icon-flip-book.vc_element-icon {
+    background-image: url(../images/flip-book.png);   
+}
+
+.caw-icon-flip-book-item.vc_element-icon {
+    background-image: url(../images/flip-book-item.png);   
+}
+
+.caw-icon-flip-box.vc_element-icon {
+    background-image: url(../images/flip-box.png);   
+}
+
+.caw-icon-info-banner.vc_element-icon {
+    background-image: url(../images/info-banner.png);   
+}
+
+.caw-icon-info-box.vc_element-icon {
+    background-image: url(../images/info-box.png);   
+}
+
+.caw-icon-info-table.vc_element-icon {
+    background-image: url(../images/info-table.png);   
+}
+
+.caw-icon-interactive-banner.vc_element-icon {
+    background-image: url(../images/interactive-banner.png);   
+}
+
+.caw-icon-logo-carousel.vc_element-icon {
+    background-image: url(../images/logo-carousel.png);   
+}
+
+.caw-icon-single-image.vc_element-icon {
+    background-image: url(../images/single-image.png);   
+}
+
+.caw-icon-testimonial-slider.vc_element-icon {
+    background-image: url(../images/testimonial-slider.png) !important;
+}

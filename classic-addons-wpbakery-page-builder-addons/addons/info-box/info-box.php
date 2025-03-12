@@ -35,6 +35,20 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 		
 		$attach_link = vc_build_link($attach_link);
 
+		$spacing_classes = array();
+		$spacing_fields = [
+		    'heading' => ['margin', 'padding'],
+		    'subheading' => ['margin', 'padding'],
+		];
+
+		foreach ($spacing_fields as $prefix => $properties) {
+		    foreach ($properties as $property) {
+		        $field = "{$prefix}_{$property}";
+		        $spacing_classes[$prefix][] = isset($attrs[$field]) ? cawpb_add_inline_style($attrs[$field], $this->settings['base'], $attrs, 'caw-info-box'): '';
+		    }
+		    $spacing_classes[$prefix] = implode(' ', array_filter($spacing_classes[$prefix])); // Combine margin & padding classes
+		}
+
 		$rm_istyle = '';
 		if ( $readmore_txtclr ) {
 			$rm_istyle .= 'color:' . esc_attr( $readmore_txtclr ) . ';';
@@ -63,12 +77,12 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 					
 					<div class="caw-info-box-content">
 
-						<h3 class="caw-info-box-title" style="<?php echo esc_attr($heading_istyle); ?>">
+						<h3 class="caw-info-box-title <?php echo esc_attr($spacing_classes['heading']); ?>" style="<?php echo esc_attr($heading_istyle); ?>">
 							<?php echo esc_attr( $heading ); ?>
 						</h3>
-						<span class="caw-info-box-desc" style="<?php echo esc_attr($content_istyle); ?>">
+						<div class="caw-info-box-desc <?php echo esc_attr($spacing_classes['subheading']); ?>" style="<?php echo esc_attr($content_istyle); ?>">
 							<?php echo wp_kses_post($content); ?>
-						</span>
+						</div>
 
 						<?php if ($link == 'readmore_btn') { ?>
 						<a 

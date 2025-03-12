@@ -19,19 +19,19 @@ $styles = cawpb_border_style();
 <div class="caw-border-style-wrapper">
 	<div class="caw-style-handler" data-border="<?php echo esc_attr($value); ?>">
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Left', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Left', 'classic-addons' ); ?></label>
 			<input type="text" name="padding_left" class="caw-padding-input" data-name="padding-left">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'right', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'right', 'classic-addons' ); ?></label>
 			<input type="text" name="padding_right" class="caw-padding-input" data-name="padding-right">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Top', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Top', 'classic-addons' ); ?></label>
 			<input type="text" name="padding_top" class="caw-padding-input" data-name="padding-top">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Bottom', 'landz' ); ?></label>
+			<label><?php esc_html_e( 'Bottom', 'classic-addons' ); ?></label>
 			<input type="text" name="padding_bottom" class="caw-padding-input" data-name="padding-bottom">
 		</div>
 		

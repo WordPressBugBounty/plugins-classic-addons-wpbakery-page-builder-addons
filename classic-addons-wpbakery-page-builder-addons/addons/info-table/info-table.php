@@ -31,22 +31,37 @@ class WPBakeryShortCode_CAW_Info_Table extends WPBakeryShortCode {
 		), $attrs ) );
 
 		$addon_base   = $this->settings['base'];
-		$addon_handle = str_replace("_", "-", $this->settings['base']);
+		$addon_handle = str_replace("_", "-", $addon_base);
 		$addon_id     = cawpb_get_unique_class('caw-info-table');
 
 		$attrs['addon_id'] = $addon_id;
 
-		wp_enqueue_style($addon_base, CAWPB_URL.'/addons/info-table/info-table.css');
+		wp_enqueue_style($addon_handle, CAWPB_URL.'/addons/info-table/info-table.css');
 
-		$cssbox           = cawpb_add_inline_style($cssbox, $addon_base, $attrs);
-		$header_border_css  = cawpb_add_inline_style($header_border, $addon_base, $attrs, $addon_base);
-		$header_padding_css  = cawpb_add_inline_style($header_padding, $addon_base, $attrs, $addon_base);
-		$footer_border_css  = cawpb_add_inline_style($footer_border, $addon_base, $attrs, $addon_base);
-		$footer_padding_css  = cawpb_add_inline_style($footer_padding, $addon_base, $attrs, $addon_base);
-		$btn_border_css  = cawpb_add_inline_style($btn_border, $addon_base, $attrs, $addon_base);
-		$btn_margin_css  = cawpb_add_inline_style($btn_margin, $addon_base, $attrs, $addon_base);
-		$btn_padding_css  = cawpb_add_inline_style($btn_padding, $addon_base, $attrs, $addon_base);
-		
+		$cssbox           = cawpb_add_inline_style($cssbox, $addon_handle, $attrs);
+		$header_border_css  = cawpb_add_inline_style($header_border, $addon_handle, $attrs, $addon_handle);
+		$header_padding_css  = cawpb_add_inline_style($header_padding, $addon_handle, $attrs, $addon_handle);
+		$footer_border_css  = cawpb_add_inline_style($footer_border, $addon_handle, $attrs, $addon_handle);
+		$footer_padding_css  = cawpb_add_inline_style($footer_padding, $addon_handle, $attrs, $addon_handle);
+		$btn_border_css  = cawpb_add_inline_style($btn_border, $addon_handle, $attrs, $addon_handle);
+		$btn_margin_css  = cawpb_add_inline_style($btn_margin, $addon_handle, $attrs, $addon_handle);
+		$btn_padding_css  = cawpb_add_inline_style($btn_padding, $addon_handle, $attrs, $addon_handle);
+
+
+		$spacing_classes = array();
+		$spacing_fields = [
+		    'heading' => ['margin', 'padding'],
+		    'subheading' => ['margin', 'padding'],
+		];
+
+		foreach ($spacing_fields as $prefix => $properties) {
+		    foreach ($properties as $property) {
+		        $field = "{$prefix}_{$property}";
+		        $spacing_classes[$prefix][] = isset($attrs[$field]) ? cawpb_add_inline_style($attrs[$field], $this->settings['base'], $attrs, $addon_handle): '';
+		    }
+		    $spacing_classes[$prefix] = implode(' ', array_filter($spacing_classes[$prefix])); // Combine margin & padding classes
+		}
+
 		$button_link = vc_build_link($btn_link);
 		
 		// Header Inline Style
@@ -88,17 +103,17 @@ class WPBakeryShortCode_CAW_Info_Table extends WPBakeryShortCode {
 					<div class="caw-it-header <?php echo esc_attr($header_border_css); ?> <?php echo esc_attr($header_padding_css); ?>" style="<?php echo esc_attr($header_istyle); ?>">
 
 						<?php if(!empty($heading)){?>
-						<h3 style="<?php echo esc_attr($heading_istyle); ?>">
+						<h3 style="<?php echo esc_attr($heading_istyle); ?>" class="<?php echo esc_attr($spacing_classes['heading']); ?>">
 							<?php echo esc_html($heading); ?>
 						</h3>
 						<?php } ?>
 						<?php if(!empty($subheading)){?>
-						<h5 style="<?php echo esc_attr($subh_istyle); ?>"><?php echo esc_html($subheading); ?></h5>
+						<h5 style="<?php echo esc_attr($subh_istyle); ?>" class="<?php echo esc_attr($spacing_classes['subheading']); ?>"><?php echo esc_html($subheading); ?></h5>
 						<?php } ?>
 					</div>
 
 					<!-- Icon -->
-					<?php do_action( 'caw_render_icon_component', $attrs, $addon_base, true ); ?>
+					<?php do_action( 'caw_render_icon_component', $attrs, $addon_handle, true ); ?>
 
 					<!-- footer -->
 					<?php if (!empty($content) || !empty($btn_text)): ?>
@@ -111,7 +126,7 @@ class WPBakeryShortCode_CAW_Info_Table extends WPBakeryShortCode {
 						<?php endif ?>
 
 						<!-- Button Component -->
-						<?php do_action( 'caw_render_button_component', $attrs, $addon_base, true ); ?>						
+						<?php do_action( 'caw_render_button_component', $attrs, $addon_handle, true ); ?>						
 					</div>
 					<?php endif ?>
 
