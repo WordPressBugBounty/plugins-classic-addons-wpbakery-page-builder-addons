@@ -85,3 +85,6 @@
 .caw-aheading-wrapper h1 span {
   display: inline-block;
 }
+.caw-aheadings-list {
+  display: none;
+}

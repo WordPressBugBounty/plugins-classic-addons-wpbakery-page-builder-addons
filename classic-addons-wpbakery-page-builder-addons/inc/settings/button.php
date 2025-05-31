@@ -118,7 +118,7 @@ foreach ($settings as $typoData) {
 			"group" 		=> $group,
 			"edit_field_class" => "vc_col-xs-6 vc_column",
 			"value" 		=> array(
-				esc_html__( 'Font Awesome 5', 'classic-addons' ) => 'fontawesome',
+				esc_html__( 'Font Awesome 6', 'classic-addons' ) => 'fontawesome',
 				esc_html__( 'Open Iconic', 'classic-addons' ) => 'openiconic',
 				esc_html__( 'Typicons', 'classic-addons' ) => 'typicons',
 				esc_html__( 'Entypo', 'classic-addons' ) => 'entypo',

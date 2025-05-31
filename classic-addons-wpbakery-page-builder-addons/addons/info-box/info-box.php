@@ -69,7 +69,7 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 				target="<?php echo esc_attr($attach_link['target']); ?>" 
 				style="text-decoration: none;color: #000;"
 			>
-			<?php } ?>
+		<?php } ?>
 				<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
 
 					<!-- Icon -->

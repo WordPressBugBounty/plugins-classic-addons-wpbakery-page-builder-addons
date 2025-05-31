@@ -45,6 +45,17 @@ $params = array(
         "description" => __("Provide text to display after animated words", "classic-addons"),
     ),
     array(
+        "type"          => "dropdown",
+        "heading"       => __( 'Animation Style', 'classic-addons' ),
+        "param_name"    => "animation_style",
+        "description"   => __( 'Choose animation style for spinning words', 'classic-addons' ),
+        "value"         => array(
+            __( 'Slide', 'classic-addons' )  =>  'slide',
+            __( 'Type', 'classic-addons' )  =>  'type',
+            __( 'Fade', 'classic-addons' )  =>  'fade',
+        )
+    ),
+    array(
         "type" => "textfield",
         "param_name" => "spin_timer",
         "heading" => __("Spin Timer", "classic-addons"),

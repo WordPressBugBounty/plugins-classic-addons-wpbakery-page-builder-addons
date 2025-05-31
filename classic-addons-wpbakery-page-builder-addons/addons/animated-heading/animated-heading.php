@@ -19,6 +19,7 @@ class WPBakeryShortCode_CAW_Animated_Heading extends WPBakeryShortCode {
 			'spin_timer'     => '3000',
 			'after_heading'  => 'you...',
 			'after_margin'   => '',
+			'animation_style'   => 'slide',
 			'cssbox'     => '',
 		), $attrs ) );
 
@@ -52,15 +53,16 @@ class WPBakeryShortCode_CAW_Animated_Heading extends WPBakeryShortCode {
 		$wrapper_classes[] = 'caw-aheading-wrapper';
 		$wrapper_classes[] = 'caw-textcenter';
 		$wrapper_classes[] = 'wpb_content_element';
+		$wrapper_classes[] = 'animation-'.esc_attr($animation_style);
 		$wrapper_classes[] = $cssbox;
 		$wrapper_classes[] = $extra_classes;
 				
 		ob_start(); ?>
 			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>" data-time="<?php echo intval($spin_timer); ?>">
-				<<?php echo esc_attr($heading_tag) ?>>
+				<<?php echo esc_attr($heading_tag) ?> style="margin-bottom: <?php echo esc_attr($after_margin); ?>;">
 				  <span class="<?php echo esc_attr($spacing_classes['beforetxt']); ?>" style="<?php echo esc_attr($beforetxt_istyle); ?>"><?php echo esc_attr( $before_heading ); ?></span>
 				  
-				  	<span class="caw-aheading-spin <?php echo esc_attr($spacing_classes['spinner_headings']); ?> ?>" style="<?php echo esc_attr($sph_istyle); ?>">
+				  	<span class="caw-aheading-spin <?php echo esc_attr($spacing_classes['spinner_headings']); ?>" style="<?php echo esc_attr($sph_istyle); ?>">
 					  	<em class="current"><?php echo esc_attr( $all_headings[0] ); ?></em>
 					  	<span class="next"><span></span></span>
 				  	</span>
@@ -68,7 +70,7 @@ class WPBakeryShortCode_CAW_Animated_Heading extends WPBakeryShortCode {
 				  	<span class="<?php echo esc_attr($spacing_classes['aftertxt']); ?>" style="<?php echo esc_attr($aftertxt_istyle); ?>"><?php echo esc_attr( $after_heading ); ?></span>
 				</<?php echo esc_attr($heading_tag) ?>>
 
-				<ul class="caw-aheadings-list" style="margin-bottom: <?php echo esc_attr($after_margin); ?>;">
+				<ul class="caw-aheadings-list">
 					<?php
 						foreach ($all_headings as $heading) {?>
 							<li><?php echo esc_attr( $heading ); ?></li>
