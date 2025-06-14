@@ -160,8 +160,9 @@ class CAWPB_Classic_Addons_WPBakery {
 	function get_element_params($slug, $settings){
 
 		$params = array();
-		if (file_exists(CAWPB_PATH.'/addons/'.$slug.'/settings.php')) {
-			include( CAWPB_PATH.'/addons/'.$slug.'/settings.php' );
+		$slug = sanitize_file_name($slug);
+		if (file_exists(CAWPB_PATH . '/addons/' . $slug . '/settings.php')) {
+		    include(CAWPB_PATH . '/addons/' . $slug . '/settings.php');
 		}
 
 		if (isset($settings['support']) && is_array($settings['support'])) {

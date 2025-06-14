@@ -13,7 +13,7 @@ if( ! defined('ABSPATH' ) ){ exit; }
 */
 function cawpb_pa($arr){
 	echo '<pre>';
-	print_r($arr);
+	echo esc_html(print_r($arr, true));
 	echo '</pre>';
 }
 
@@ -31,7 +31,7 @@ function cawpb_load_templates( $template_name, $vars = null) {
     if( file_exists( $default_path ) ){
         require ( $default_path );
     } else {
-        die( "Error while loading file ".esc_attr($default_path) );
+        wp_die( esc_html( "Error while loading file {$default_path}" ) );
     }
 }
 
@@ -92,7 +92,7 @@ function cawpb_get_border_radius_css($key, $attrs, $defaults = array()){
 	$css = '';
 	$def = (isset($defaults['border-radius'])) ? $defaults['border-radius'] : '' ;
 	$attr_key = str_replace("-", "_", 'border-radius');
-	$val = (isset($attrs[$key.'_'.$attr_key])) ? $attrs[$key.'_'.$attr_key] : $def ;	
+	$val = isset($attrs[$key.'_'.$attr_key]) ? wp_strip_all_tags($attrs[$key.'_'.$attr_key]) : $def;	
 
 	if ($val != '') {
 		$css .= "border-radius: $val;";
@@ -119,7 +119,7 @@ function cawpb_get_btn_css($key, $attrs, $defaults = array()){
 
 		$def = (isset($defaults[$style_attribute])) ? $defaults[$style_attribute] : '' ;
 		$attr_key = str_replace("-", "_", $style_attribute);
-		$val = (isset($attrs[$key.'_'.$attr_key])) ? $attrs[$key.'_'.$attr_key] : $def ;
+		$val = isset($attrs[$key.'_'.$attr_key]) ? wp_strip_all_tags($attrs[$key.'_'.$attr_key]) : $def;
 
 		if ($val != '') {
 			$css .= "$style_attribute: $val;";
@@ -148,7 +148,7 @@ function cawpb_get_typo_styles($key, $attrs, $defaults = array()){
 
 		$def = (isset($defaults[$style_attribute])) ? $defaults[$style_attribute] : '' ;
 		$attr_key = str_replace("-", "_", $style_attribute);
-		$val = (isset($attrs[$key.'_'.$attr_key])) ? $attrs[$key.'_'.$attr_key] : $def ;
+		$val = isset($attrs[$key.'_'.$attr_key]) ? wp_strip_all_tags($attrs[$key.'_'.$attr_key]) : $def;
 
 		if ($val != '' && 'font_family' != $attr_key) {
 			$css .= "$style_attribute: $val;";
@@ -187,7 +187,7 @@ function cawpb_icon_styles($key, $attrs, $defaults = array()){
 
 			$def = (isset($defaults[$style_attribute])) ? $defaults[$style_attribute] : '' ;
 			$attr_key = str_replace("-", "_", $style_attribute);
-			$val = (isset($attrs[$key.'_'.$attr_key])) ? $attrs[$key.'_'.$attr_key] : $def ;
+			$val = isset($attrs[$key.'_'.$attr_key]) ? wp_strip_all_tags($attrs[$key.'_'.$attr_key]) : wp_strip_all_tags($def);
 
 			if ($val != '') {
 				$css .= "$style_attribute: $val;";
@@ -195,7 +195,7 @@ function cawpb_icon_styles($key, $attrs, $defaults = array()){
 		}
 	}
 	
-	$iconbox = (isset($attrs[$key.'_boxsize'])) ? $attrs[$key.'_boxsize'] : '' ;
+	$iconbox = (isset($attrs[$key.'_boxsize'])) ? wp_strip_all_tags($attrs[$key.'_boxsize']) : '' ;
 	if ($iconbox) {
 		$css .= 'width: ' . esc_attr( $iconbox ) . ';';
 		$css .= 'height: ' . esc_attr( $iconbox ) . ';';

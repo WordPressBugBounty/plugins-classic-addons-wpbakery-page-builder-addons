@@ -47,7 +47,7 @@ class WPBakeryShortCode_CAW_Animated_Heading extends WPBakeryShortCode {
 		$sph_istyle = cawpb_get_typo_styles('spinner_headings', $attrs, array('font-size' => '20px'));
 		$aftertxt_istyle = cawpb_get_typo_styles('aftertxt', $attrs, array('font-size' => '20px'));
 
-		$all_headings = explode(',', $spin_headings);
+		$all_headings = array_map('sanitize_text_field', explode(',', $spin_headings));
 
 		$wrapper_classes = array();
 		$wrapper_classes[] = 'caw-aheading-wrapper';

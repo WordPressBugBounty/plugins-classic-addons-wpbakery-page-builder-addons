@@ -13,7 +13,6 @@ $param_type = isset( $settings['type'] ) ? $settings['type'] : '';
 $class      = isset( $settings['class'] ) ? ' ' . $settings['class'] : '';
 $heading    = isset( $settings['section_title'] ) ? $settings['section_title'] : '';
 
-$styles = cawpb_border_style();
 ?>
 
 <div class="caw-border-style-wrapper">

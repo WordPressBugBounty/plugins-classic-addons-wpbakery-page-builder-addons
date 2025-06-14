@@ -1,9 +1,9 @@
 === Classic Addons - WPBakery Page Builder ===
 Contributors: webcodingplace
-Tags: wpbakery, addon, builder, bakery, elements, extension, visual composer, page builder, addons, elements
+Tags: wpbakery, addons, elements, blocks, ui
 Requires at least: 3.5
-Tested up to: 6.7
-Stable tag: 3.3
+Tested up to: 6.8
+Stable tag: 3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,13 @@ Classic Addons For WPBakery Page Builder ~ The biggest Addon bundle for WPBakery
 [WPBakery Page Builder (formerly Visual Composer)](https://1.envato.market/gbGbzO) plugin must be installed and activated to use this plugin. After you activate the required plugins, the addons should be available for use in WPBakery Page Builder.
  
 == Changelog ==
+
+= 3.5 =
+* Bug Fixed: Cross Site Scripting (XSS) vulnerability issues fixed
+
+= 3.4 =
+* Feature Added: Animated Heading, 2 new animations added
+* Bug Fixed: Animated Heading, heading bottom margin not applying
 
 = 3.3 =
 * Feature Added: Compatible with WPBakery Page Builder 8.3

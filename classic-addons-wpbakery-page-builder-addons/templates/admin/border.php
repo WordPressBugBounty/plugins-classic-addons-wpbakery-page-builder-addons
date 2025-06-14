@@ -32,7 +32,7 @@ $styles = cawpb_border_style();
 		</div>
 		<div class="vc_col-xs-1 vc_column">
 			<label><?php esc_html_e( 'Bottom', 'classic-addons' ); ?></label>
-			<input type="text" name="border_bottom_width" class="caw-border-input" data-name="border-width-botton">
+			<input type="text" name="border_bottom_width" class="caw-border-input" data-name="border-width-bottom">
 		</div>
 		<div class="vc_col-xs-2 vc_column">
 			<label><?php esc_html_e( 'Style', 'classic-addons' ); ?></label>

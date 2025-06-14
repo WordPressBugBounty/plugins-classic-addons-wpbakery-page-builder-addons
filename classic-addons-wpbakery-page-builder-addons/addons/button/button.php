@@ -114,7 +114,7 @@ class WPBakeryShortCode_CAW_Button extends WPBakeryShortCode {
 			}
 
 			if ($hover_class == 'caw-btn-trans-hover') {
-				$inline_style .= '.caw-'.esc_attr($addon_id). " a.caw-btn-trans-hover:hover{ color:".esc_attr($btn_hvr_color)." !important;background-color:".$btn_hvr_background_color."!important;}";
+				$inline_style .= '.caw-'.esc_attr($addon_id). " a.caw-btn-trans-hover:hover{ color:".esc_attr($btn_hvr_color)." !important;background-color:".esc_attr($btn_hvr_background_color)."!important;}";
 			}
 
 			switch ($style_class) {
@@ -156,11 +156,15 @@ class WPBakeryShortCode_CAW_Button extends WPBakeryShortCode {
 					$inline_style .= '.caw-'.esc_attr($addon_id). " a.hvr-back-pulse:hover{ color:".esc_attr($btn_hvr_color)." !important;}";
 					break;
 			}
+
+			$url    = isset($button_link['url']) ? esc_url($button_link['url']) : '#';
+			$target = isset($button_link['target']) ? esc_attr($button_link['target']) : '_self';
+			$title  = isset($button_link['title']) ? esc_attr($button_link['title']) : '';			
 		?>
 		<a 			
-			href="<?php echo esc_url($button_link['url']); ?>" 
-			target="<?php echo esc_attr( $button_link['target'] ); ?>" 
-			title="<?php echo esc_attr($button_link['title']); ?>" 
+			href="<?php echo esc_url( $url ); ?>" 
+			target="<?php echo esc_attr( $target ); ?>" 
+			title="<?php echo esc_attr( $title ); ?>" 
 			class="caw-btn <?php echo esc_attr($btn_border_css); ?> <?php echo esc_attr($hover_class); ?> <?php echo esc_attr( $style_class ); ?> <?php echo esc_attr($btn_padding_css); ?> <?php echo esc_attr($btn_margin_css); ?>"
 			style="<?php echo esc_attr($btn_istyle); ?>" 
 		>
