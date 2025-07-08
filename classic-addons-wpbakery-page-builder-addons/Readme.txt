@@ -3,7 +3,7 @@ Contributors: webcodingplace
 Tags: wpbakery, addons, elements, blocks, ui
 Requires at least: 3.5
 Tested up to: 6.8
-Stable tag: 3.5
+Stable tag: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,8 +32,15 @@ Classic Addons For WPBakery Page Builder ~ The biggest Addon bundle for WPBakery
 - **[Info Banner](https://classicaddons.com/demos/info-banner/)**. Showcase products/items with custom content.
 
 [WPBakery Page Builder (formerly Visual Composer)](https://1.envato.market/gbGbzO) plugin must be installed and activated to use this plugin. After you activate the required plugins, the addons should be available for use in WPBakery Page Builder.
+
+= How can I report security bugs? =
+
+You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team helps validate, triage and handle any security vulnerabilities. [Report a security vulnerability.]( https://patchstack.com/database/vdp/9e5fbfad-5595-4ef5-8887-79fce243c16a )
  
 == Changelog ==
+
+= 3.6 =
+* Bug Fixed: Cross Site Scripting (XSS) in the "Animated Heading" widget
 
 = 3.5 =
 * Bug Fixed: Cross Site Scripting (XSS) vulnerability issues fixed
