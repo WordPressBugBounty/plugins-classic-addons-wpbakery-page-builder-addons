@@ -187,7 +187,7 @@ foreach ($settings as $typoData) {
 				"group" 		=> 	$group,
 				'dependency' => array(
 					'element' => $typoData['key']."_type",
-					'value' => array( 'fontawesome', 'linecons' )
+					'value' => array( 'fontawesome', 'openiconic', 'typicons', 'entypo', 'linecons', 'monosocial', 'material' )
 				),
 			);
 	}
@@ -203,7 +203,7 @@ foreach ($settings as $typoData) {
 				"group" 		=> 	$group,
 				'dependency' => array(
 					'element' => $typoData['key']."_type",
-					'value' => array( 'fontawesome', 'linecons' )
+					'value' => array( 'fontawesome', 'openiconic', 'typicons', 'entypo', 'linecons', 'monosocial', 'material' )
 				),
 			);
 	}
@@ -219,7 +219,7 @@ foreach ($settings as $typoData) {
 				"group" 		=> 	$group,
 				'dependency' => array(
 					'element' => $typoData['key']."_type",
-					'value' => array( 'fontawesome', 'linecons' )
+					'value' => array( 'fontawesome', 'openiconic', 'typicons', 'entypo', 'linecons', 'monosocial', 'material' )
 				),
 			);
 	}
@@ -235,7 +235,7 @@ foreach ($settings as $typoData) {
 				"group" 		=> 	$group,
 				'dependency' => array(
 					'element' => $typoData['key']."_type",
-					'value' => array( 'fontawesome', 'linecons' )
+					'value' => array( 'fontawesome', 'openiconic', 'typicons', 'entypo', 'linecons', 'monosocial', 'material' )
 				),
 			);
 	}

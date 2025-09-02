@@ -39,6 +39,35 @@ function cawpb_get_addons_meta(){
 				'csseditor' => array()
 			),
 		),
+		'alert-box' => array(
+			'base' => 'caw_alert_box',
+			'name' => __( 'Alert Box', 'classic-addons' ),
+			'description' => __( 'Display notices or warnings in a alert box', 'classic-addons' ),
+			'support' => array(
+				'typo' => array(
+					array(
+						'title' => 'Title',
+						'key' => 'title',
+						'group' => 'Typography',
+						'support' => array('basic', 'fontfamily', 'spacing'),
+					),
+					array(
+						'title' => 'Content',
+						'key' => 'content',
+						'group' => 'Typography',
+						'support' => array('basic', 'fontfamily', 'spacing'),
+					),
+				),
+				'icon' => array(
+					array(
+						'title' => 'Icon',
+						'key' => 'icon',
+						'group' => 'Icon',
+					)
+				),				
+				'csseditor' => array(),
+			),
+		),
 		'button' => array(
 			'base' => 'caw_button',
 			'name' => __( 'Interactive Button', 'classic-addons' ),

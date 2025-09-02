@@ -79,6 +79,7 @@ class CAWPB_Classic_Addons_WPBakery {
 	function addons_init(){
 
 		$addons = cawpb_get_addons_meta();
+		
 		foreach ($addons as $slug => $settings) {
 
 			$addons_settings  = get_option('caw_settings');

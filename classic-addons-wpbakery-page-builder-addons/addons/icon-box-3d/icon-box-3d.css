@@ -1,0 +1,66 @@
+.caw-icon-box-3d-inner {
+  position: relative;
+  place-items: center;
+  perspective: 1000px;
+}
+
+/* Floor / base */
+.caw-outer-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom center;
+  transition: transform 0.75s, box-shadow 0.75s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+/* Reflection */
+.caw-reflection .caw-icon-component-style,
+.caw-reflection .caw-imgicon-component-style {
+  transform: scaleY(-1);
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 0.75s;
+  pointer-events: none;
+}
+
+/* Main Icon */
+.caw-main-icon .caw-icon-component-style,
+.caw-main-icon .caw-imgicon-component-style {
+	position: absolute;
+	bottom: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: transform 0.75s;
+	z-index: 2;
+	backface-visibility: hidden;
+}
+
+/* Hover effects */
+.caw-icon-box-3d-inner:hover .caw-outer-box {
+  transform: translateZ(100px) rotateX(70deg);
+}
+.caw-icon-box-3d-inner:hover .caw-reflection .caw-icon-component-style,
+.caw-icon-box-3d-inner:hover .caw-reflection .caw-imgicon-component-style {
+  opacity: 0.3 !important;
+}
+
+.caw-icon-box-3d-inner:hover .caw-main-icon .caw-icon-component-style,
+.caw-icon-box-3d-inner:hover .caw-main-icon .caw-imgicon-component-style {
+  transform: translateY(-10px) translateX(-50%);
+}
+
+/* Responsive tweaks */
+.caw-icon-box-3d-inner {
+  margin: 0 auto;
+}
+.caw-main-icon i,
+.caw-main-icon img {
+  max-width: 100%;
+  height: auto;
+}

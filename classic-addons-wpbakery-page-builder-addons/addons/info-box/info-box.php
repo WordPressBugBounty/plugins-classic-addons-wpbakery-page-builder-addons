@@ -19,6 +19,9 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 			'link' 				=> 'none',
 			'readmore_txt' 		=> '',
 			'readmore_txtclr' 	=> '',
+			'readmore_bgclr' 	=> '',
+			'readmore_padding' 	=> '',
+			'readmore_class' 	=> '',
 			'heading' 		    => esc_html__('Custom heading', 'classic-addons'),
 			'attach_link' 		=> '',
 			'cssbox' 		 	=> '',
@@ -52,6 +55,8 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 		$rm_istyle = '';
 		if ( $readmore_txtclr ) {
 			$rm_istyle .= 'color:' . esc_attr( $readmore_txtclr ) . ';';
+			$rm_istyle .= 'background-color:' . esc_attr( $readmore_bgclr ) . ';';
+			$rm_istyle .= 'padding:' . esc_attr( $readmore_padding ) . ';';
 		}
 
 		$wrapper_classes = array();
@@ -87,7 +92,7 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 						<?php if ($link == 'readmore_btn') { ?>
 						<a 
 							href="<?php echo esc_url($attach_link['url']); ?>"
-							class="caw-readmore-btn" title="<?php echo esc_attr($attach_link['title']); ?>" 
+							class="caw-readmore-btn <?php echo esc_attr($readmore_class); ?>" title="<?php echo esc_attr($attach_link['title']); ?>" 
 							ref="<?php echo esc_attr($attach_link['rel']); ?>" 
 							target="<?php echo esc_attr($attach_link['target']); ?>" 
 							style="<?php echo esc_attr($rm_istyle); ?>"
