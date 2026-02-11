@@ -2,7 +2,7 @@
 Contributors: webcodingplace
 Tags: WPBakery, wpbakery addons, wpbakery page builder, wpbakery page builder addons, ui addons
 Requires at least: 3.5
-Tested up to: 6.8
+Tested up to: 6.9
 Stable tag: 3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
