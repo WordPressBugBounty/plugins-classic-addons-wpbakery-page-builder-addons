@@ -1,6 +1,9 @@
 .stars-testimonials{
   margin-bottom: 15px;
 }
+.stars-testimonials blockquote::before {
+    display: none !important;
+}
 .stars-testimonials blockquote {
   background: none;  
 }
@@ -1421,3 +1424,37 @@ figure.style16 .profile {
 .st-style17 .profile {max-height: 90px;}
 figure.style16 blockquote:before {top: 14px;}
 figure.style16 .profile { height: 100px;}
+/* Classic Addons 4.0 — Arrow Styles */
+.caw-ts-arrows-circle .slick-prev,
+.caw-ts-arrows-circle .slick-next,
+.caw-ts-arrows-square .slick-prev,
+.caw-ts-arrows-square .slick-next,
+.caw-ts-arrows-rounded .slick-prev,
+.caw-ts-arrows-rounded .slick-next,
+.caw-ts-arrows-minimal .slick-prev,
+.caw-ts-arrows-minimal .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    transition: all .2s ease;
+}
+.caw-ts-arrows-circle .slick-prev,
+.caw-ts-arrows-circle .slick-next { background: rgba(0,0,0,.5); border-radius: 50%; }
+.caw-ts-arrows-square .slick-prev,
+.caw-ts-arrows-square .slick-next { background: rgba(0,0,0,.5); border-radius: 0; }
+.caw-ts-arrows-rounded .slick-prev,
+.caw-ts-arrows-rounded .slick-next { background: rgba(0,0,0,.5); border-radius: 6px; }
+.caw-ts-arrows-minimal .slick-prev,
+.caw-ts-arrows-minimal .slick-next { background: transparent; }
+.caw-ts-arrows-circle .slick-prev:before,
+.caw-ts-arrows-circle .slick-next:before,
+.caw-ts-arrows-square .slick-prev:before,
+.caw-ts-arrows-square .slick-next:before,
+.caw-ts-arrows-rounded .slick-prev:before,
+.caw-ts-arrows-rounded .slick-next:before { color: #fff; opacity: 1; }
+.caw-ts-arrows-circle .slick-prev:hover,
+.caw-ts-arrows-circle .slick-next:hover,
+.caw-ts-arrows-square .slick-prev:hover,
+.caw-ts-arrows-square .slick-next:hover,
+.caw-ts-arrows-rounded .slick-prev:hover,
+.caw-ts-arrows-rounded .slick-next:hover { background: rgba(0,0,0,.8); }

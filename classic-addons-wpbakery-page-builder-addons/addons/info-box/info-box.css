@@ -108,3 +108,28 @@
 .caw_info_box_style_2{
 	margin-bottom: 20px;
 }
+
+/*
+** ========= 4.0: Content Alignment Overrides =============
+*/
+.caw-info-box-align-left,
+.caw-info-box-align-left .caw-info-box-title,
+.caw-info-box-align-left .caw-info-box-desc { text-align: left !important; }
+.caw-info-box-align-center,
+.caw-info-box-align-center .caw-info-box-title,
+.caw-info-box-align-center .caw-info-box-desc { text-align: center !important; }
+.caw-info-box-align-right,
+.caw-info-box-align-right .caw-info-box-title,
+.caw-info-box-align-right .caw-info-box-desc { text-align: right !important; }
+
+/*
+** ========= 4.0: Hover Effects =============
+*/
+.caw-info-box-hover-lift { transition: transform .3s ease, box-shadow .3s ease; }
+.caw-info-box-hover-lift:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,.12); }
+.caw-info-box-hover-zoom { transition: transform .3s ease; }
+.caw-info-box-hover-zoom:hover { transform: scale(1.03); }
+.caw-info-box-hover-border { transition: border-color .3s ease, box-shadow .3s ease; }
+.caw-info-box-hover-border:hover { box-shadow: 0 0 0 2px #2484e7; }
+.caw-info-box-hover-bg { transition: background-color .3s ease, color .3s ease; }
+.caw-info-box-hover-bg:hover { background-color: #f5faff; }

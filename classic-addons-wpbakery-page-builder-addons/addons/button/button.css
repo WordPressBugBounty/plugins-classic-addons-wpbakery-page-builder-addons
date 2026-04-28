@@ -15,6 +15,9 @@
 /****************************************************
  *  Push Button
  *****************************************************/
+.caw-button-wrapper a:hover {
+  text-decoration: none;
+}
 .push_button{
     position:relative;
     color:#FFF;

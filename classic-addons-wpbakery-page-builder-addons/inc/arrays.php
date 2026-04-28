@@ -117,7 +117,6 @@ function cawpb_get_addons_meta(){
 			'name' => __( 'Filterable Portfolio', 'classic-addons' ),
 			'description' => __( 'Sortable Portfolio Items.', 'classic-addons' ),
 			"content_element" => true,
-			"is_container" => true,			
 			"js_view" => 'VcColumnView',
 			"as_parent" => array('only' => 'caw_filterable_portfolio'),
 		),
@@ -200,7 +199,6 @@ function cawpb_get_addons_meta(){
 			'name' => __( 'Testimonial Slider + Grid', 'classic-addons' ),
 			'description' => __( 'Testimonials with stars.', 'classic-addons' ),
 			"content_element" => true,
-			"is_container" => true,			
 			"js_view" => 'VcColumnView',
 			"as_parent" => array('only' => 'caw_testimonial_slider'),
 		),
@@ -347,6 +345,64 @@ function cawpb_get_addons_meta(){
 					)
 				),
 				'csseditor' => array()
+			),
+		),
+		'accordion' => array(
+			'base' => 'caw_accordion_c',
+			'name' => __( 'Accordion / FAQ', 'classic-addons' ),
+			'description' => __( 'Collapsible panels with FAQ support.', 'classic-addons' ),
+			'content_element' => true,
+			'js_view'         => 'VcColumnView',
+			'as_parent'       => array( 'only' => 'caw_accordion' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'accordion-item' => array(
+			'base' => 'caw_accordion',
+			'name' => __( 'Accordion Item', 'classic-addons' ),
+			'description' => __( 'Single accordion panel.', 'classic-addons' ),
+			'content_element' => true,
+			'as_child'        => array( 'only' => 'caw_accordion_c' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'tabs' => array(
+			'base' => 'caw_tabs_c',
+			'name' => __( 'Tabs', 'classic-addons' ),
+			'description' => __( 'Horizontal or vertical tabbed content.', 'classic-addons' ),
+			'content_element' => true,
+			'js_view'         => 'VcColumnView',
+			'as_parent'       => array( 'only' => 'caw_tabs' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'tabs-item' => array(
+			'base' => 'caw_tabs',
+			'name' => __( 'Tab', 'classic-addons' ),
+			'description' => __( 'Single tab panel.', 'classic-addons' ),
+			'content_element' => true,
+			'as_child'        => array( 'only' => 'caw_tabs_c' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'progress-bar' => array(
+			'base' => 'caw_progress_bar',
+			'name' => __( 'Progress Bar', 'classic-addons' ),
+			'description' => __( 'Animated skills or progress bars.', 'classic-addons' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'team-member' => array(
+			'base' => 'caw_team_member',
+			'name' => __( 'Team Member', 'classic-addons' ),
+			'description' => __( 'Team profile card with social icons.', 'classic-addons' ),
+			'support' => array(
+				'csseditor' => array(),
 			),
 		),
 	);

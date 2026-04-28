@@ -1,0 +1,50 @@
+/* Classic Addons - Progress Bar */
+.caw-progress-bar { width: 100%; margin-bottom: 16px; }
+.caw-progress-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.caw-progress-label { font-weight: 600; font-size: 14px; color: #1f2937; }
+.caw-progress-value { font-weight: 600; font-size: 13px; color: #1f2937; }
+.caw-progress-track {
+    position: relative;
+    width: 100%;
+    background: #eef1f5;
+    overflow: visible;
+}
+.caw-progress-fill {
+    position: relative;
+    height: 100%;
+    background: #2484e7;
+    transition: width var(--caw-pb-speed, 1500ms) cubic-bezier(.25,.8,.25,1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 2px;
+}
+.caw-progress-value-inline { padding: 0 8px; font-size: 11px; color: #fff; white-space: nowrap; }
+
+/* Styles */
+.caw-progress-style-thin .caw-progress-track { height: 4px; }
+.caw-progress-style-thick .caw-progress-track { height: 24px; }
+.caw-progress-style-rounded .caw-progress-track,
+.caw-progress-style-rounded .caw-progress-fill { border-radius: 999px; }
+.caw-progress-style-dark .caw-progress-track { background: #1f2937; }
+.caw-progress-style-dark .caw-progress-fill { background: #10b981; }
+
+/* Striped */
+.is-striped .caw-progress-fill {
+    background-image: linear-gradient(
+        45deg,
+        rgba(255,255,255,.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255,255,255,.2) 50%,
+        rgba(255,255,255,.2) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 1rem 1rem;
+}
+.is-animated-stripes .caw-progress-fill { animation: caw-pb-stripes 1s linear infinite; }
+@keyframes caw-pb-stripes {
+    from { background-position: 1rem 0; }
+    to   { background-position: 0 0; }
+}

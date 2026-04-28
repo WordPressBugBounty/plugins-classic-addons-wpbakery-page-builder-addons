@@ -48,11 +48,22 @@ function caw_start_countup(){
     jQuery('.caw-time-counter').each(function(index, el) {
         if (jQuery(el).isOnScreen()) {
             if (jQuery(this).closest('div').data('alreadystarted') != 'yes') {
-                jQuery(this).countTo();
-                jQuery(this).closest('div').data('alreadystarted', 'yes');
+                var $el = jQuery(this);
+                var sep = $el.attr('data-separator');
+                var opts = {};
+                if (sep && sep.length) {
+                    opts.formatter = function (value, options) {
+                        var fixed = Number(value).toFixed(options.decimals);
+                        var parts = fixed.split('.');
+                        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, sep);
+                        return parts.join('.');
+                    };
+                }
+                $el.countTo(opts);
+                $el.closest('div').data('alreadystarted', 'yes');
             };
         };
-    });    
+    });
 }
 
 jQuery(document).ready(caw_start_countup);

@@ -66,3 +66,24 @@
 .caw-icon-testimonial-slider.vc_element-icon {
     background-image: url(../images/testimonial-slider.png) !important;
 }
+.caw-icon-accordion.vc_element-icon {
+    background-image: url(../images/accordion.png) !important;
+}
+.caw-icon-accordion-item.vc_element-icon {
+    background-image: url(../images/accordion-item.png) !important;
+}
+.caw-icon-alert-box.vc_element-icon {
+    background-image: url(../images/alert-box.png) !important;
+}
+.caw-icon-tabs.vc_element-icon {
+    background-image: url(../images/tabs.png) !important;
+}
+.caw-icon-tabs-item.vc_element-icon {
+    background-image: url(../images/tabs-item.png) !important;
+}
+.caw-icon-team-member.vc_element-icon {
+    background-image: url(../images/team-member.png) !important;
+}
+.caw-icon-progress-bar.vc_element-icon {
+    background-image: url(../images/progress-bar.png) !important;
+}

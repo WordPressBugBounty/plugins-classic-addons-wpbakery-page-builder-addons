@@ -12,23 +12,32 @@ class WPBakeryShortCode_CAW_Testimonial_Slider_C extends WPBakeryShortCodesConta
 
 	protected function content( $attrs, $content = null ) {
 		extract( shortcode_atts( array(
-			'type'          => 'slider',
-			'style'         => '1',
-			'stars_color'   => '',
-			'text_color'    => '',
-			'bg_color'      => '',
-			'title_color'   => '',
-			'company_color' => '',
-			'arrows_color'  => '#000',
-			'slidestoshow'  => '',
-			'speed'         => '',
-			'autoplay'      => '',
-			'autoplayspeed' => '',
-			'cssbox'        => '',		
+			'type'           => 'slider',
+			'style'          => '1',
+			'stars_color'    => '',
+			'text_color'     => '',
+			'bg_color'       => '',
+			'title_color'    => '',
+			'company_color'  => '',
+			'arrows_color'   => '#000',
+			'dots_color'     => '',
+			'slidestoshow'   => '',
+			'speed'          => '',
+			'autoplay'       => '',
+			'autoplayspeed'  => '',
+			'pauseonhover'   => '',
+			'fade'           => '',
+			'center_mode'    => '',
+			'rtl'            => '',
+			'arrow_style'    => '',
+			'responsive_lg'  => '',
+			'responsive_md'  => '',
+			'responsive_sm'  => '',
+			'cssbox'         => '',
 		), $attrs ) );
 
 		cawpb_icon_fonts_enqueue('fontawesome');
-		wp_enqueue_style('caw-testimonials-addon', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/css/styles.css' );
+		wp_enqueue_style('caw-testimonials-addon', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/css/styles.css', array(), CAWPB_VERSION );
 
 		$cssbox = cawpb_add_inline_style($cssbox, $this->settings['base'], $attrs, 'caw-info-table');
 		
@@ -39,14 +48,14 @@ class WPBakeryShortCode_CAW_Testimonial_Slider_C extends WPBakeryShortCodesConta
 
 		switch ($type) {
 			case 'masonry':
-				wp_enqueue_style( 'caw-masonry-grid', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/css/simplegrid.css' );
-				wp_enqueue_script( 'caw-masonry-js', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/js/masonry.js', array('jquery', 'jquery-masonry') );
+				wp_enqueue_style( 'caw-masonry-grid', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/css/simplegrid.css', array(), CAWPB_VERSION );
+				wp_enqueue_script( 'caw-masonry-js', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/js/masonry.js', array('jquery', 'jquery-masonry'), CAWPB_VERSION );
 				$row_class = 'grid masonry-wrap';
 				break;
 			case 'slider':
-				wp_enqueue_style( 'caw-slick-lib', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/css/slick.css' );
-				wp_enqueue_script( 'caw-slick-lib', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/js/slick.min.js', array('jquery') );
-				wp_enqueue_script( 'caw-script-js', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/js/script.js', array('jquery') );
+				wp_enqueue_style( 'caw-slick-lib', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/css/slick.css', array(), CAWPB_VERSION );
+				wp_enqueue_script( 'caw-slick-lib', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/js/slick.min.js', array('jquery'), CAWPB_VERSION );
+				wp_enqueue_script( 'caw-script-js', plugin_dir_url( dirname(__FILE__) ).'/testimonial-slider/js/script.js', array('jquery'), CAWPB_VERSION );
 				$row_class = 'caw-slick-trigger';
 				$column_class = '';
 				if (is_array($attrs)) {
@@ -78,8 +87,12 @@ class WPBakeryShortCode_CAW_Testimonial_Slider_C extends WPBakeryShortCodesConta
 		if ($title_color != '') {			
 			$istyle .= "#st-{$r_id} .st-testimonial-title { color: ".esc_attr($title_color)."; }";
 		}
-		if ($arrows_color != '') {			
+		if ($arrows_color != '') {
 			$istyle .= "#st-{$r_id} .slick-prev:before, #st-{$r_id} .slick-next:before { color: ".esc_attr($arrows_color)."; }";
+		}
+		if ($dots_color != '') {
+			$istyle .= "#st-{$r_id} .slick-dots li button:before { color: ".esc_attr($dots_color)."; opacity: .45; }";
+			$istyle .= "#st-{$r_id} .slick-dots li.slick-active button:before { color: ".esc_attr($dots_color)."; opacity: 1; }";
 		}
 		if ($company_color != '') {		
 			$istyle .= "#st-{$r_id} .st-testimonial-company { color: ".esc_attr($company_color)."; }";
@@ -88,10 +101,17 @@ class WPBakeryShortCode_CAW_Testimonial_Slider_C extends WPBakeryShortCodesConta
 
 		wp_add_inline_style( 'caw-testimonials-addon', $istyle );
 
+		$outer_classes   = array();
+		$outer_classes[] = 'stars-testimonials';
+		$outer_classes[] = $cssbox;
+		if ( $arrow_style !== '' ) {
+			$outer_classes[] = 'caw-ts-arrows-' . sanitize_html_class( $arrow_style );
+		}
+
 		ob_start(); ?>
-			<div class="stars-testimonials <?php echo esc_attr($cssbox); ?>" id="st-<?php echo esc_attr($r_id); ?>">
+			<div class="<?php echo cawpb_sanitize_html_classes($outer_classes); ?>" id="st-<?php echo esc_attr($r_id); ?>">
 				<div class="<?php echo esc_attr($row_class); ?>" <?php echo esc_attr($data_attr); ?>>
-					<?php echo wp_kses_post(do_shortcode( $content )); ?>			
+					<?php echo wp_kses_post(do_shortcode( $content )); ?>
 				</div>
 			</div>
 		<?php

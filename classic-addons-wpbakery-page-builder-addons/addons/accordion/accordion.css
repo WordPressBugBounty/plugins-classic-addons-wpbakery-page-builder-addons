@@ -1,0 +1,53 @@
+/* Classic Addons - Accordion */
+.caw-accordion { width: 100%; }
+.caw-accordion-item { border: 1px solid #e5e7eb; background: #fff; margin-bottom: -1px; }
+.caw-accordion-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 18px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: inherit;
+    line-height: 1.4;
+}
+.caw-accordion-icon-left .caw-accordion-title { flex-direction: row-reverse; justify-content: flex-end; }
+.caw-accordion-icon-none .caw-accordion-icon { display: none; }
+.caw-accordion-title-text { flex: 1; }
+.caw-accordion-icon { display: inline-flex; align-items: center; justify-content: center; font-size: 0.9em; transition: transform .25s ease; }
+.caw-accordion-item.is-active .caw-accordion-icon { transform: rotate(0deg); }
+.caw-accordion-content { overflow: hidden; }
+.caw-accordion-content-inner { padding: 14px 18px; border-top: 1px solid #eee; line-height: 1.6; }
+.caw-accordion-title:focus-visible { outline: 2px solid #2484e7; outline-offset: -2px; }
+
+/* Modern */
+.caw-accordion-style-modern .caw-accordion-item { border-radius: 8px; border: 1px solid #e5e7eb; margin-bottom: 10px; box-shadow: 0 1px 2px rgba(0,0,0,.04); overflow: hidden; }
+.caw-accordion-style-modern .caw-accordion-item.is-active { box-shadow: 0 6px 20px rgba(36,132,231,.1); }
+.caw-accordion-style-modern .caw-accordion-item.is-active .caw-accordion-title { background: #f8fafc; }
+
+/* Classic */
+.caw-accordion-style-classic .caw-accordion-item { border-radius: 0; }
+.caw-accordion-style-classic .caw-accordion-title { background: #f7f7f7; }
+.caw-accordion-style-classic .caw-accordion-item.is-active .caw-accordion-title { background: #2484e7; color: #fff; }
+
+/* Bordered */
+.caw-accordion-style-bordered .caw-accordion-item { border: 2px solid #2484e7; margin-bottom: -2px; }
+.caw-accordion-style-bordered .caw-accordion-item.is-active { background: #f5faff; }
+
+/* Boxed */
+.caw-accordion-style-boxed .caw-accordion-item { border: 0; background: #f3f4f6; margin-bottom: 10px; border-radius: 6px; }
+.caw-accordion-style-boxed .caw-accordion-content-inner { border-top: 1px solid rgba(0,0,0,.08); }
+
+/* Minimal */
+.caw-accordion-style-minimal .caw-accordion-item { border: 0; border-bottom: 1px solid #e5e7eb; background: transparent; }
+.caw-accordion-style-minimal .caw-accordion-item:last-child { border-bottom: 1px solid #e5e7eb; }
+.caw-accordion-style-minimal .caw-accordion-content-inner { border-top: 0; padding-top: 0; }
+
+/* Separated */
+.caw-accordion-style-separated .caw-accordion-item { border-radius: 6px; margin-bottom: 12px; border: 1px solid #e5e7eb; }

@@ -27,15 +27,19 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 			'icon_type'           => 'fontawesome',
 			'icon_boxsize'        => '100px',
 			'icon_imgsize'        => '',
+			'prefix'              => '',
+			'suffix'              => '',
+			'separator'           => '',
+			'attach_link'         => '',
 			'cssbox'              => '',
 		), $attrs ) );
 
 		$addon_base = $this->settings['base'];
 		$addon_handle = str_replace("_", "-", $this->settings['base']);
 		
-		wp_enqueue_style($addon_handle, CAWPB_URL.'/addons/count-up/count-up.css');
-		wp_enqueue_script('caw-countup-lib', CAWPB_URL.'/addons/count-up/countTo.min.js', array('jquery'));
-		wp_enqueue_script('caw-countup-trigger', CAWPB_URL.'/addons/count-up/trigger.js', array('jquery'));
+		wp_enqueue_style($addon_handle, CAWPB_URL.'/addons/count-up/count-up.css', array(), CAWPB_VERSION);
+		wp_enqueue_script('caw-countup-lib', CAWPB_URL.'/addons/count-up/countTo.min.js', array('jquery'), CAWPB_VERSION);
+		wp_enqueue_script('caw-countup-trigger', CAWPB_URL.'/addons/count-up/trigger.js', array('jquery'), CAWPB_VERSION);
 		
 		$cssbox          = cawpb_add_inline_style($cssbox, $addon_base, $attrs, $addon_handle);
 		$icon_border_css = cawpb_add_inline_style($icon_border, $addon_base, $attrs, $addon_handle);
@@ -49,12 +53,12 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 		    'heading' => ['margin', 'padding'],
 		];
 
-		foreach ($spacing_fields as $prefix => $properties) {
+		foreach ($spacing_fields as $f_prefix => $properties) {
 		    foreach ($properties as $property) {
-		        $field = "{$prefix}_{$property}";
-		        $spacing_classes[$prefix][] = isset($attrs[$field]) ? cawpb_add_inline_style($attrs[$field], $this->settings['base'], $attrs, $addon_handle): '';
+		        $field = "{$f_prefix}_{$property}";
+		        $spacing_classes[$f_prefix][] = isset($attrs[$field]) ? cawpb_add_inline_style($attrs[$field], $this->settings['base'], $attrs, $addon_handle): '';
 		    }
-		    $spacing_classes[$prefix] = implode(' ', array_filter($spacing_classes[$prefix])); // Combine margin & padding classes
+		    $spacing_classes[$f_prefix] = implode(' ', array_filter($spacing_classes[$f_prefix])); // Combine margin & padding classes
 		}
 
 		$icon_wrapperclass = 'caw-countup-icon';
@@ -101,9 +105,15 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 		$wrapper_classes[] = $cssbox;
 		$wrapper_classes[] = $extra_classes;
 
+		$link_arr = vc_build_link( $attach_link );
+		$has_link = ! empty( $link_arr['url'] );
+
 		?>
 
 		<?php ob_start(); ?>
+		<?php if ( $has_link ) : ?>
+			<a href="<?php echo esc_url( $link_arr['url'] ); ?>" title="<?php echo esc_attr( $link_arr['title'] ); ?>" target="<?php echo esc_attr( $link_arr['target'] ); ?>" rel="<?php echo esc_attr( $link_arr['rel'] ); ?>" class="caw-countup-link" style="text-decoration:none;color:inherit;display:block;">
+		<?php endif; ?>
 		<?php if ($icon_position != 'center'){ ?>
 			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
 				<div class="caw-countup-inner caw-countup-style-1">			
@@ -123,16 +133,23 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 
 					<?php } ?>
 					<div class="caw-countup-box">
+						<?php if ( $prefix !== '' ) : ?>
+							<span class="caw-countup-prefix" style="<?php echo esc_attr($count_istyle); ?>"><?php echo esc_html( $prefix ); ?></span>
+						<?php endif; ?>
 						<span
 							class="caw-time-counter <?php echo esc_attr($spacing_classes['counter']); ?>"
 							data-decimals="<?php echo esc_attr($decimal); ?>"
 							data-speed="<?php echo esc_attr($speed); ?>"
 							data-to="<?php echo esc_attr($value); ?>"
 							data-from="<?php echo esc_attr($start_from); ?>"
-							style="<?php echo esc_attr($count_istyle); ?>" 
+							data-separator="<?php echo esc_attr($separator); ?>"
+							style="<?php echo esc_attr($count_istyle); ?>"
 						>
 							<?php echo esc_attr( $start_from ); ?>
 						</span>
+						<?php if ( $suffix !== '' ) : ?>
+							<span class="caw-countup-suffix" style="<?php echo esc_attr($count_istyle); ?>"><?php echo esc_html( $suffix ); ?></span>
+						<?php endif; ?>
 						<?php if(!empty($divider_color)){ ?>
 							<span class="caw-countup-line" style="<?php echo esc_attr($divider_istyle); ?>"></span>
 	                	<?php } ?>
@@ -164,16 +181,23 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 					<?php do_action( 'caw_render_icon_component', $attrs, $addon_base, false ); ?>
 
 					<div class="caw-countup-box">
+						<?php if ( $prefix !== '' ) : ?>
+							<span class="caw-countup-prefix" style="<?php echo esc_attr($count_istyle); ?>"><?php echo esc_html( $prefix ); ?></span>
+						<?php endif; ?>
 						<span
 							class="caw-time-counter <?php echo esc_attr($spacing_classes['counter']); ?>"
 							data-decimals="<?php echo esc_attr($decimal); ?>"
 							data-speed="<?php echo esc_attr($speed); ?>"
 							data-to="<?php echo esc_attr($value); ?>"
 							data-from="<?php echo esc_attr($start_from); ?>"
-							style="<?php echo esc_attr($count_istyle); ?>" 
+							data-separator="<?php echo esc_attr($separator); ?>"
+							style="<?php echo esc_attr($count_istyle); ?>"
 						>
 							<?php echo esc_attr( $start_from ); ?>
 						</span>
+						<?php if ( $suffix !== '' ) : ?>
+							<span class="caw-countup-suffix" style="<?php echo esc_attr($count_istyle); ?>"><?php echo esc_html( $suffix ); ?></span>
+						<?php endif; ?>
 
 						<?php if($heading_position == 'bottom') {
 		                    if(!empty($divider_color)){ ?>
@@ -186,6 +210,10 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 					</div>
 				</div>
 			</div>
-		<?php } return ob_get_clean();
+		<?php }
+		if ( $has_link ) : ?>
+			</a>
+		<?php endif;
+		return ob_get_clean();
 	}
 }
