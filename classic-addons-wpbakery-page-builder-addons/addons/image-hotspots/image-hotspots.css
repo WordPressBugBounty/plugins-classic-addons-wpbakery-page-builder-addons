@@ -1,0 +1,195 @@
+/* Classic Addons - Image Hotspots */
+.caw-image-hotspots {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.caw-image-hotspots *,
+.caw-image-hotspots *::before,
+.caw-image-hotspots *::after { box-sizing: border-box; }
+
+.caw-image-hotspots-empty {
+	padding: 24px;
+	text-align: center;
+	background: #fafafa;
+	border: 1px dashed #ccc;
+	color: #777;
+}
+
+.caw-hs-frame {
+	position: relative;
+	display: block;
+	width: 100%;
+	line-height: 0;
+}
+.caw-hs-image-wrap img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+.caw-hs-overlay {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+/* Marker */
+.caw-hs-marker {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	line-height: 1;
+}
+.caw-hs-marker-inner {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	background-color: #0073aa;
+	color: #ffffff;
+	border-radius: 50%;
+	text-decoration: none;
+	position: relative;
+	font-size: inherit;
+	font-family: inherit;
+	transition: transform 0.2s ease;
+}
+.caw-hs-marker-inner:hover,
+.caw-hs-marker-inner:focus { outline: none; transform: scale(1.08); }
+.caw-hs-marker-inner:focus-visible { box-shadow: 0 0 0 3px rgba(0,115,170,0.35); }
+
+.caw-hs-marker-text { font-size: 13px; font-weight: 700; }
+.caw-hs-marker-image { width: 100%; height: 100%; border-radius: inherit; object-fit: cover; }
+
+/* Shadows */
+.caw-hs-marker-shadow-light  .caw-hs-marker-inner { box-shadow: 0 2px 6px rgba(0,0,0,0.20); }
+.caw-hs-marker-shadow-medium .caw-hs-marker-inner { box-shadow: 0 4px 12px rgba(0,0,0,0.28); }
+.caw-hs-marker-shadow-heavy  .caw-hs-marker-inner { box-shadow: 0 8px 22px rgba(0,0,0,0.40); }
+
+/* Pulse / radar */
+.caw-hs-marker-pulse {
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	background: inherit;
+	opacity: 0.6;
+	pointer-events: none;
+	z-index: -1;
+}
+.caw-hs-pulse .caw-hs-marker-pulse {
+	animation: cawHsPulse 1.8s ease-out infinite;
+}
+@keyframes cawHsPulse {
+	0%   { transform: scale(1);   opacity: 0.6; }
+	100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* Tooltip */
+.caw-hs-tooltip {
+	position: absolute;
+	z-index: 4;
+	background-color: #222;
+	color: #fff;
+	font-size: 13px;
+	line-height: 1.45;
+	min-width: 160px;
+	max-width: 260px;
+	padding: 10px 14px;
+	border-radius: 6px;
+	text-align: left;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+	white-space: normal;
+}
+.caw-hs-tooltip-heading {
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+.caw-hs-tooltip-desc p:last-child { margin-bottom: 0; }
+.caw-hs-tooltip-desc a { color: inherit; text-decoration: underline; }
+
+.caw-hs-tip-shadow-light  .caw-hs-tooltip { box-shadow: 0 4px 10px rgba(0,0,0,0.18); }
+.caw-hs-tip-shadow-medium .caw-hs-tooltip { box-shadow: 0 8px 22px rgba(0,0,0,0.25); }
+.caw-hs-tip-shadow-heavy  .caw-hs-tooltip { box-shadow: 0 16px 40px rgba(0,0,0,0.35); }
+
+/* Tooltip positioning */
+.caw-hs-tip-pos-top    .caw-hs-tooltip { bottom: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(6px); }
+.caw-hs-tip-pos-bottom .caw-hs-tooltip { top: calc(100% + 14px);    left: 50%; transform: translateX(-50%) translateY(-6px); }
+.caw-hs-tip-pos-left   .caw-hs-tooltip { right: calc(100% + 14px);  top: 50%;  transform: translateY(-50%) translateX(6px); }
+.caw-hs-tip-pos-right  .caw-hs-tooltip { left: calc(100% + 14px);   top: 50%;  transform: translateY(-50%) translateX(-6px); }
+
+/* Arrow */
+.caw-hs-tooltip-arrow {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #222;
+	transform: rotate(45deg);
+}
+.caw-hs-tip-pos-top    .caw-hs-tooltip-arrow { bottom: -5px;  left: 50%; margin-left: -5px; }
+.caw-hs-tip-pos-bottom .caw-hs-tooltip-arrow { top: -5px;     left: 50%; margin-left: -5px; }
+.caw-hs-tip-pos-left   .caw-hs-tooltip-arrow { right: -5px;   top: 50%;  margin-top: -5px; }
+.caw-hs-tip-pos-right  .caw-hs-tooltip-arrow { left: -5px;    top: 50%;  margin-top: -5px; }
+
+/* Visibility — hover trigger */
+.caw-hs-trigger-hover:hover .caw-hs-tooltip,
+.caw-hs-trigger-hover:focus-within .caw-hs-tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+.caw-hs-trigger-hover.caw-hs-tip-pos-top:hover    .caw-hs-tooltip,
+.caw-hs-trigger-hover.caw-hs-tip-pos-top:focus-within .caw-hs-tooltip,
+.caw-hs-trigger-hover.caw-hs-tip-pos-bottom:hover .caw-hs-tooltip,
+.caw-hs-trigger-hover.caw-hs-tip-pos-bottom:focus-within .caw-hs-tooltip {
+	transform: translateX(-50%) translateY(0);
+}
+.caw-hs-trigger-hover.caw-hs-tip-pos-left:hover  .caw-hs-tooltip,
+.caw-hs-trigger-hover.caw-hs-tip-pos-left:focus-within .caw-hs-tooltip,
+.caw-hs-trigger-hover.caw-hs-tip-pos-right:hover .caw-hs-tooltip,
+.caw-hs-trigger-hover.caw-hs-tip-pos-right:focus-within .caw-hs-tooltip {
+	transform: translateY(-50%) translateX(0);
+}
+
+/* Click trigger uses JS-toggled class */
+.caw-hs-marker.caw-hs-active .caw-hs-tooltip,
+.caw-hs-marker.caw-hs-open-default .caw-hs-tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+.caw-hs-marker.caw-hs-active.caw-hs-tip-pos-top    .caw-hs-tooltip,
+.caw-hs-marker.caw-hs-active.caw-hs-tip-pos-bottom .caw-hs-tooltip,
+.caw-hs-marker.caw-hs-open-default.caw-hs-tip-pos-top    .caw-hs-tooltip,
+.caw-hs-marker.caw-hs-open-default.caw-hs-tip-pos-bottom .caw-hs-tooltip {
+	transform: translateX(-50%) translateY(0);
+}
+.caw-hs-marker.caw-hs-active.caw-hs-tip-pos-left  .caw-hs-tooltip,
+.caw-hs-marker.caw-hs-active.caw-hs-tip-pos-right .caw-hs-tooltip,
+.caw-hs-marker.caw-hs-open-default.caw-hs-tip-pos-left  .caw-hs-tooltip,
+.caw-hs-marker.caw-hs-open-default.caw-hs-tip-pos-right .caw-hs-tooltip {
+	transform: translateY(-50%) translateX(0);
+}
+
+/* Animations */
+.caw-hs-anim-slide .caw-hs-tip-pos-top    .caw-hs-tooltip { transform: translateX(-50%) translateY(14px); }
+.caw-hs-anim-slide .caw-hs-tip-pos-bottom .caw-hs-tooltip { transform: translateX(-50%) translateY(-14px); }
+.caw-hs-anim-slide .caw-hs-tip-pos-left   .caw-hs-tooltip { transform: translateY(-50%) translateX(14px); }
+.caw-hs-anim-slide .caw-hs-tip-pos-right  .caw-hs-tooltip { transform: translateY(-50%) translateX(-14px); }
+
+.caw-hs-anim-none .caw-hs-tooltip {
+	transition: none;
+}
+
+@media (max-width: 540px) {
+	.caw-hs-marker-inner { width: 26px !important; height: 26px !important; }
+	.caw-hs-tooltip { min-width: 140px !important; max-width: 200px !important; font-size: 12px !important; padding: 8px 10px !important; }
+}

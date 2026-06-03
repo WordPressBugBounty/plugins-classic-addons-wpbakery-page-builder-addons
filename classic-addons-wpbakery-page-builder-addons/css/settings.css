@@ -1,85 +1,483 @@
-.caw-switcher-checkbox span {
-    height: 1.6em;
-    left: 0;
-    background: #C0CCDA;
-    -webkit-border-radius: 0.8em;
-    border-radius: 0.8em;
-    display: inline-block;
-    position: relative;
-    top: 6px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    width: 3em;
-    cursor: pointer;
-    margin-right: 10px;
-}
+/* Classic Addons - Settings Page UI */
+.caw-settings-page {
+	--caw-accent:        #6366f1;
+	--caw-accent-strong: #4f46e5;
+	--caw-success:       #22c55e;
+	--caw-success-soft:  #ecfdf5;
+	--caw-text:          #0f172a;
+	--caw-text-soft:     #64748b;
+	--caw-border:        #e2e8f0;
+	--caw-border-soft:   #eef2f7;
+	--caw-bg:            #f6f7fb;
+	--caw-card-bg:       #ffffff;
+	--caw-shadow-sm:     0 1px 2px rgba(15,23,42,0.04), 0 1px 3px rgba(15,23,42,0.06);
+	--caw-shadow-md:     0 4px 14px rgba(15,23,42,0.08);
+	--caw-shadow-lg:     0 18px 40px rgba(99,102,241,0.18);
 
-.caw-switcher-checkbox span:before {
-    display: block;
-    content: '';
-    height: 1.4em;
-    position: absolute;
-    width: 1.4em;
-    background-color: #fff;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    left: 0.1em;
-    top: 0.1em;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
+	margin: 16px 20px 80px 0;
+	color: var(--caw-text);
+	font-size: 14px;
+	line-height: 1.5;
 }
+.caw-settings-page *,
+.caw-settings-page *::before,
+.caw-settings-page *::after { box-sizing: border-box; }
 
-.caw-switcher-checkbox>input[type="checkbox"] {
-    display: none;
+/* ============ Hero ============ */
+.caw-settings-hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 24px 28px;
+	border-radius: 16px;
+	background: linear-gradient(135deg, #4338ca 0%, #6366f1 50%, #8b5cf6 100%);
+	color: #fff;
+	box-shadow: var(--caw-shadow-lg);
+	flex-wrap: wrap;
 }
+.caw-hero-left {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+.caw-hero-logo {
+	width: 56px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255,255,255,0.18);
+	border-radius: 14px;
+	color: #fff;
+	flex-shrink: 0;
+}
+.caw-hero-logo svg { width: 32px; height: 32px; }
+.caw-hero-title {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: -0.01em;
+}
+.caw-hero-sub {
+	margin: 4px 0 0;
+	font-size: 13px;
+	color: rgba(255,255,255,0.82);
+}
+.caw-hero-stats {
+	display: flex;
+	gap: 10px;
+}
+.caw-stat {
+	min-width: 96px;
+	padding: 12px 18px;
+	border-radius: 12px;
+	background: rgba(255,255,255,0.16);
+	backdrop-filter: blur(6px);
+	text-align: center;
+}
+.caw-stat-value {
+	display: block;
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1.1;
+}
+.caw-stat-label {
+	display: block;
+	margin-top: 2px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: rgba(255,255,255,0.82);
+}
+.caw-stat-muted { background: rgba(255,255,255,0.10); }
 
-.caw-switcher-checkbox>input[type="checkbox"][disabled]+span {
-    cursor: not-allowed;
-    background-color: #D3DCE6;
-}
-
-.caw-switcher-checkbox>input[type="checkbox"]:checked+span {
-    background-color: #6576ff;
-}
-
-.caw-switcher-checkbox>input[type="checkbox"]:checked+span:before {
-    left: 50%;
-}
-
-.caw-settings-wrap {
-    flex-basis: 33.33%;
-}
-.caw-single-setting {
-    padding: 10px;
-}
-.caw-clearboth {
-    clear: both;
-}
-.caw-submit-btn {
-    margin-top: 20px;
-    margin-left: 10px;    
-    display: flex;
-}
-.caw-submit-btn .spinner{
-    float: none !important;
-}
-.caw-submit-btn .spinner-msg{
-    padding: 7px;
-    background: white;
-    border: 1px solid #8080807d;
-    font-size: 13px;
-    display: none;
-    margin-left: 6px;
-}
+/* ============ Toolbar ============ */
 .caw-settings-form {
-    background-color: #FFF;
-    width: 100%;
+	margin-top: 24px;
 }
-.caw-settings-wrapper {
-    display: flex;
-    flex-wrap: wrap;    
+.caw-settings-toolbar {
+	display: flex;
+	gap: 14px;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 14px 16px;
+	background: var(--caw-card-bg);
+	border: 1px solid var(--caw-border);
+	border-radius: 12px;
+	box-shadow: var(--caw-shadow-sm);
+	margin-bottom: 20px;
 }
-.caw-submit-btn {
-    margin-bottom: 20px;
+.caw-toolbar-search {
+	position: relative;
+	flex: 1 1 280px;
+	max-width: 480px;
+}
+.caw-search-icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 18px;
+	height: 18px;
+	color: var(--caw-text-soft);
+	pointer-events: none;
+}
+.caw-search-input {
+	width: 100%;
+	height: 40px;
+	padding: 0 14px 0 40px !important;
+	border: 1px solid var(--caw-border);
+	border-radius: 8px;
+	background: #fff;
+	color: var(--caw-text);
+	font-size: 14px;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.caw-search-input:focus {
+	outline: none;
+	border-color: var(--caw-accent);
+	box-shadow: 0 0 0 3px rgba(99,102,241,0.18);
+}
+.caw-toolbar-actions {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+/* ============ Buttons ============ */
+.caw-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 0 16px;
+	height: 38px;
+	min-width: auto;
+	border-radius: 8px;
+	border: 1px solid var(--caw-border);
+	background: #fff;
+	color: var(--caw-text);
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease;
+	text-decoration: none;
+}
+.caw-btn:hover { background: #f8fafc; border-color: #cbd5e1; }
+.caw-btn:active { transform: translateY(1px); }
+.caw-btn:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
+	border-color: var(--caw-accent);
+}
+.caw-btn-ghost { background: transparent; }
+.caw-btn-primary {
+	background: linear-gradient(135deg, var(--caw-accent), var(--caw-accent-strong));
+	color: #fff;
+	border-color: transparent;
+	box-shadow: 0 6px 14px rgba(79,70,229,0.30);
+}
+.caw-btn-primary:hover {
+	background: linear-gradient(135deg, var(--caw-accent-strong), #4338ca);
+	color: #fff;
+	border-color: transparent;
+}
+
+/* ============ Card Grid ============ */
+.caw-cards-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 16px;
+}
+.caw-card {
+	display: grid;
+	grid-template-columns: 56px 1fr auto;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"icon body  toggle"
+		"icon body  status";
+	column-gap: 14px;
+	row-gap: 2px;
+	align-items: center;
+	padding: 18px 20px;
+	background: var(--caw-card-bg);
+	border: 1.5px solid var(--caw-border);
+	border-radius: 14px;
+	cursor: pointer;
+	user-select: none;
+	box-shadow: var(--caw-shadow-sm);
+	transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.15s ease, background-color 0.18s ease;
+	position: relative;
+	overflow: hidden;
+}
+.caw-card:hover {
+	border-color: #cbd5e1;
+	box-shadow: var(--caw-shadow-md);
+	transform: translateY(-2px);
+}
+.caw-card:focus-within {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(99,102,241,0.20), var(--caw-shadow-md);
+}
+.caw-card-checkbox {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	width: 0;
+	height: 0;
+}
+
+/* Hide accents by default */
+.caw-card-check {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: var(--caw-success);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transform: scale(0.6);
+	transition: opacity 0.18s ease, transform 0.18s ease;
+	pointer-events: none;
+}
+.caw-card-check svg { width: 14px; height: 14px; }
+
+/* Enabled state */
+.caw-card.is-enabled {
+	border-color: var(--caw-success);
+	background: linear-gradient(180deg, #ffffff 0%, var(--caw-success-soft) 100%);
+}
+.caw-card.is-enabled .caw-card-check { opacity: 1; transform: scale(1); }
+
+/* Icon */
+.caw-card-icon {
+	grid-area: icon;
+	width: 56px;
+	height: 56px;
+	border-radius: 12px;
+	background: var(--caw-bg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	transition: background-color 0.18s ease;
+}
+.caw-card-icon img {
+	max-width: 36px;
+	max-height: 36px;
+	display: block;
+}
+.caw-card-icon-svg {
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--caw-accent);
+}
+.caw-card-icon-svg svg { width: 100%; height: 100%; }
+.caw-card.is-enabled .caw-card-icon {
+	background: #fff;
+	box-shadow: inset 0 0 0 1.5px rgba(34,197,94,0.30);
+}
+.caw-card.is-enabled .caw-card-icon-svg { color: var(--caw-success); }
+
+/* Body */
+.caw-card-body {
+	grid-area: body;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+.caw-card-title {
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--caw-text);
+	letter-spacing: -0.005em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.caw-card-desc {
+	font-size: 12.5px;
+	line-height: 1.45;
+	color: var(--caw-text-soft);
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Toggle */
+.caw-card-toggle {
+	grid-area: toggle;
+	align-self: start;
+	display: inline-flex;
+	flex-shrink: 0;
+	margin-right: 28px; /* room for the check badge */
+}
+.caw-toggle-track {
+	width: 38px;
+	height: 22px;
+	background: #cbd5e1;
+	border-radius: 999px;
+	position: relative;
+	transition: background-color 0.2s ease;
+}
+.caw-toggle-thumb {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+	transition: left 0.2s ease;
+}
+.caw-card.is-enabled .caw-toggle-track { background: var(--caw-success); }
+.caw-card.is-enabled .caw-toggle-thumb { left: 18px; }
+
+/* Status text */
+.caw-card-status {
+	grid-area: status;
+	align-self: end;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--caw-text-soft);
+	margin-right: 28px;
+}
+.caw-card-status .caw-status-on  { display: none; color: var(--caw-success); }
+.caw-card-status .caw-status-off { display: inline; }
+.caw-card.is-enabled .caw-card-status .caw-status-on  { display: inline; }
+.caw-card.is-enabled .caw-card-status .caw-status-off { display: none; }
+
+/* Empty state */
+.caw-no-results {
+	padding: 40px 20px;
+	text-align: center;
+	color: var(--caw-text-soft);
+	background: var(--caw-card-bg);
+	border: 1px dashed var(--caw-border);
+	border-radius: 12px;
+	font-size: 14px;
+}
+
+/* ============ Sticky Save Bar ============ */
+.caw-save-bar {
+	position: fixed;
+	left: 200px;          /* WP admin sidebar width approx */
+	right: 20px;
+	bottom: 20px;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 12px 16px 12px 20px;
+	background: var(--caw-card-bg);
+	border: 1px solid var(--caw-border);
+	border-radius: 14px;
+	box-shadow: 0 20px 50px rgba(15,23,42,0.18);
+	transform: translateY(120%);
+	opacity: 0;
+	transition: transform 0.25s ease, opacity 0.2s ease;
+	z-index: 100;
+	pointer-events: none;
+}
+.caw-save-bar.is-visible {
+	transform: translateY(0);
+	opacity: 1;
+	pointer-events: auto;
+}
+.folded .caw-save-bar { left: 56px; }
+@media (max-width: 960px) { .caw-save-bar { left: 16px; right: 16px; } }
+
+.caw-save-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 600;
+	color: var(--caw-text);
+}
+.caw-save-dot {
+	width: 8px;
+	height: 8px;
+	background: #f59e0b;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px rgba(245,158,11,0.18);
+}
+.caw-save-actions {
+	display: flex;
+	gap: 8px;
+}
+.caw-btn-spinner {
+	display: none;
+	width: 14px;
+	height: 14px;
+	border: 2px solid rgba(255,255,255,0.4);
+	border-top-color: #fff;
+	border-radius: 50%;
+	animation: cawSpin 0.7s linear infinite;
+}
+.caw-btn.is-loading .caw-btn-spinner { display: inline-block; }
+.caw-btn.is-loading .caw-btn-label { opacity: 0.7; }
+@keyframes cawSpin { to { transform: rotate(360deg); } }
+
+/* ============ Toast ============ */
+.caw-toast {
+	position: fixed;
+	left: 50%;
+	bottom: 100px;
+	transform: translateX(-50%) translateY(20px);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 18px;
+	background: #0f172a;
+	color: #fff;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 600;
+	opacity: 0;
+	transition: opacity 0.2s ease, transform 0.25s ease;
+	box-shadow: 0 14px 30px rgba(15,23,42,0.30);
+	z-index: 110;
+}
+.caw-toast[hidden] { display: none; }
+.caw-toast.is-visible {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+}
+.caw-toast svg {
+	width: 16px;
+	height: 16px;
+	color: var(--caw-success);
+}
+
+/* Hide legacy WP h1 margins around heading */
+.caw-settings-page h1 { padding: 0; }
+
+@media (max-width: 600px) {
+	.caw-settings-hero { padding: 18px 18px; }
+	.caw-hero-title { font-size: 20px; }
+	.caw-hero-stats { width: 100%; }
+	.caw-stat { flex: 1; min-width: 0; }
+	.caw-card { padding: 16px; column-gap: 12px; }
+	.caw-card-icon { width: 48px; height: 48px; }
+	.caw-card-title { font-size: 14px; }
 }

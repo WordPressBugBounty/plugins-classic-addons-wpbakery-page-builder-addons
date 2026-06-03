@@ -455,3 +455,23 @@ function cawpb_add_inline_style($css, $addon_id, $attrs, $style_handler = ''){
 
 	return $styleClass;
 }
+
+/**
+ * Return the URL of an addon's PNG icon if it exists in /images, else ''.
+ */
+function cawpb_get_addon_icon_url( $slug ) {
+	$slug = sanitize_file_name( $slug );
+	$path = CAWPB_PATH . '/images/' . $slug . '.png';
+	if ( file_exists( $path ) ) {
+		return CAWPB_URL . '/images/' . $slug . '.png';
+	}
+	return '';
+}
+
+/**
+ * Return an inline SVG fallback icon for addons that don't ship a PNG.
+ * Output is a trusted constant SVG string (no user input).
+ */
+function cawpb_get_addon_fallback_svg( $slug ) {
+	return  '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+}

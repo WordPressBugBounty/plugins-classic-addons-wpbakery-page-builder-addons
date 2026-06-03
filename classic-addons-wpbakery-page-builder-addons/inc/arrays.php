@@ -405,6 +405,46 @@ function cawpb_get_addons_meta(){
 				'csseditor' => array(),
 			),
 		),
+		'countdown-timer' => array(
+			'base' => 'caw_countdown_timer',
+			'name' => __( 'Countdown Timer', 'classic-addons' ),
+			'description' => __( 'Counts down to a target date/time.', 'classic-addons' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'before-after' => array(
+			'base' => 'caw_before_after',
+			'name' => __( 'Before / After Image', 'classic-addons' ),
+			'description' => __( 'Image comparison slider.', 'classic-addons' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'post-grid' => array(
+			'base' => 'caw_post_grid',
+			'name' => __( 'Post Grid', 'classic-addons' ),
+			'description' => __( 'Display posts in grid or masonry layout.', 'classic-addons' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'pricing-table' => array(
+			'base' => 'caw_pricing_table',
+			'name' => __( 'Pricing Table', 'classic-addons' ),
+			'description' => __( 'Plan with price, features and button.', 'classic-addons' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
+		'image-hotspots' => array(
+			'base' => 'caw_image_hotspots',
+			'name' => __( 'Image Hotspots', 'classic-addons' ),
+			'description' => __( 'Interactive markers on an image with tooltips.', 'classic-addons' ),
+			'support' => array(
+				'csseditor' => array(),
+			),
+		),
 	);
 
 	return $addons;

@@ -2,23 +2,23 @@
 Contributors: webcodingplace
 Tags: WPBakery, wpbakery addons, wpbakery page builder, wpbakery page builder addons, ui addons
 Requires at least: 3.5
-Tested up to: 6.9
-Stable tag: 4.0
+Tested up to: 7.0
+Stable tag: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-19+ Beautiful and Powerful Addons for WPBakery Page Builder (Visual Composer)
+24+ Beautiful and Powerful Addons for WPBakery Page Builder (Visual Composer)
 
 == Description ==
 
-**Classic Addons for WPBakery Page Builder** is a feature-rich addon bundle that enhances the functionality of the [WPBakery Page Builder (formerly Visual Composer)](https://1.envato.market/gbGbzO) plugin. This plugin offers over **19+ highly customizable design elements** to help you create professional-looking websites easily — **no coding required**.
+**Classic Addons for WPBakery Page Builder** is a feature-rich addon bundle that enhances the functionality of the [WPBakery Page Builder (formerly Visual Composer)](https://1.envato.market/gbGbzO) plugin. This plugin offers over **24+ highly customizable design elements** to help you create professional-looking websites easily — **no coding required**.
 
 Whether you're building landing pages, portfolios, business sites, or personal blogs, these pre-designed blocks help you create interactive and modern layouts quickly. Each element comes with its own customization options to match your website’s style perfectly.
 
 [More Info / Live Demos](https://classicaddons.com/)
 
 ### ✨ Key Features:
-- Over **19 flexible and modern design elements**
+- Over **24 flexible and modern design elements**
 - Option to enable/disable any specific module
 - 100% responsive and mobile-friendly
 - Easy-to-use interface inside WPBakery Page Builder
@@ -85,6 +85,14 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 Bring your WPBakery layouts to life with eye-catching visuals, interactive UI elements, and smooth animations — all without writing a single line of code. **Download Classic Addons now and start building better websites today!**
  
 == Changelog ==
+
+= 4.1 - 03 June 2026 =
+* Addon Added: Post Grid — query any public post type, taxonomy/term/author filters, grid or masonry layout, separate desktop/tablet/mobile columns, image/title/excerpt/read-more/meta toggles, 3 style presets (Classic, Minimal, Modern), numbered pagination, on-demand asset loading
+* Addon Added: Pricing Table — header (title, subtitle, icon/image), pricing (currency position, original/sale price, period), repeatable features with included/excluded states, footer button + info, optional ribbon (Corner/Flag/Stripe), featured highlight state, 3 style presets, on-demand asset loading
+* Addon Added: Image Hotspots — base image with optional overlay, repeatable markers with percent-based positioning, icon/text/image marker types, hover or click trigger, tooltip with heading + HTML description, global marker and tooltip style controls, pulse animation, touch + keyboard friendly, vanilla-JS front end, on-demand asset loading
+* Addon Added: Countdown Timer — counts down to a target date/time, 3 style presets (Boxed, Circle, Minimal), per-unit show/hide and translatable labels, expiry behavior (show message or hide), optional separator, color/typography/spacing controls, vanilla-JS front end, on-demand asset loading
+* Addon Added: Before / After Image Comparison — horizontal or vertical slider, drag or move-on-hover interaction, configurable start position, optional translatable overlay labels, handle/divider color and size controls, touch and keyboard support, vanilla-JS front end, on-demand asset loading
+* Compatibility: Safe upgrade — newly added addons are auto-enabled without overwriting any existing user preferences
 
 = 4.0 - 28 April 2026 =
 * Addon Added: Accordion / FAQ — 6 styles, icon positions, per-item active state, auto-close, custom colors, typography controls, spacing between items

@@ -61,8 +61,8 @@ class CAWPB_Classic_Addons_WPBakery {
 		wp_enqueue_style( 'classic-addons', CAWPB_URL.'/css/caw-admin.css');
 
 		if (isset($_GET['page']) && $_GET['page'] == 'caw-settings') {
-			wp_enqueue_style( 'caw-settings', CAWPB_URL.'/css/settings.css');
-			wp_enqueue_script( 'caw-settings', CAWPB_URL. '/js/settings.js', array('jquery') );
+			wp_enqueue_style( 'caw-settings', CAWPB_URL.'/css/settings.css', array(), CAWPB_VERSION );
+			wp_enqueue_script( 'caw-settings', CAWPB_URL. '/js/settings.js', array('jquery'), CAWPB_VERSION, true );
 		}
 	}
 
