@@ -137,12 +137,12 @@ class WPBakeryShortCode_CAW_Team_Member extends WPBakeryShortCode {
 		$wrapper_classes[] = $cssbox;
 
 		ob_start(); ?>
-		<div id="<?php echo esc_attr( $uid ); ?>" class="<?php echo cawpb_sanitize_html_classes( $wrapper_classes ); ?>">
+		<div id="<?php echo esc_attr( $uid ); ?>" class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 			<div class="caw-team-image-wrap">
 				<?php if ( ! empty( $link['url'] ) ) : ?>
 					<a href="<?php echo esc_url( $link['url'] ); ?>" target="<?php echo esc_attr( $link['target'] ); ?>" rel="<?php echo esc_attr( $link['rel'] ); ?>">
 				<?php endif; ?>
-					<?php echo $img_markup; ?>
+					<?php echo wp_kses_post( $img_markup ); ?>
 				<?php if ( ! empty( $link['url'] ) ) : ?>
 					</a>
 				<?php endif; ?>

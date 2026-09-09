@@ -1,11 +1,15 @@
 <?php
+/*
+**========== Direct access not allowed =========== 
+*/
+if( ! defined('ABSPATH' ) ){ exit; }
 
-$params = array(
+$cawpb_params = array(
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Select Style', 'classic-addons' ),
+		"heading" 		=> __( 'Select Style', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "style",
-		"description" 	=> __( 'Choose the style here', 'classic-addons' ),
+		"description" 	=> __( 'Choose the style here', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"value" 		=> array(
 			'Style 1' =>	'1',
@@ -18,15 +22,15 @@ $params = array(
 	),		
 	array(
 		"type" 			=> "textfield",
-		"heading" 		=> __( 'Heading', 'classic-addons' ),
+		"heading" 		=> __( 'Heading', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "heading",
-		"description" 	=> __( 'Provide title for the banner.', 'classic-addons' ),
+		"description" 	=> __( 'Provide title for the banner.', 'classic-addons-wpbakery-page-builder' ),
 		"value"			=>	"Custom Heading",
 		"group" 		=> 'General',
 	),
 	array(
 		"type" 			=> 	"textarea_html",
-		"heading" 		=> 	__( 'Content', 'classic-addons' ),
+		"heading" 		=> 	__( 'Content', 'classic-addons-wpbakery-page-builder' ),
 		'holder' 		=> 'div',
 		"param_name" 	=> 	"content",
 		"value"			=>	"<p>Provide some description here.</p>",
@@ -34,29 +38,29 @@ $params = array(
 	),
 	array(
         "type" 			=> 	"vc_link",
-		"heading" 		=> 	__( 'Link URL', 'classic-addons' ),
+		"heading" 		=> 	__( 'Link URL', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"attach_link",
 		"group" 		=> 	'General',
     ),
     array(
         "type" 			=> 	"attach_image",
-		"heading" 		=> 	__( 'Upload Image', 'classic-addons' ),
+		"heading" 		=> 	__( 'Upload Image', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"image_id",
-		"description" 	=> 	__( 'Select image for banner.', 'classic-addons' ),
+		"description" 	=> 	__( 'Select image for banner.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'Image',
     ),
     array(
 		'type' => 'textfield',
-		'heading' => esc_html__( 'Image size', 'classic-addons' ),
+		'heading' => esc_html__( 'Image size', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'img_size',
 		'value' => 'full',
-		'description' => esc_html__( 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height)). default: full', 'classic-addons' ),
+		'description' => esc_html__( 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height)). default: full', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'Image',
 	),
 	array(
 		"type" 			=> 	"caw_padding_style",
-		"heading" 		=> 	__( 'Padding', 'classic-addons' ),
-		"description" 	=> 	__( 'Provide image section inner padding.', 'classic-addons' ),
+		"heading" 		=> 	__( 'Padding', 'classic-addons-wpbakery-page-builder' ),
+		"description" 	=> 	__( 'Provide image section inner padding.', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"img_padding",
 		"group" 		=> 	'Image',
 	),

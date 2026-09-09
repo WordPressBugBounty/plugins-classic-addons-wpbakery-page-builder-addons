@@ -9,16 +9,7 @@
 if( ! defined('ABSPATH' ) ){ exit; }
 
 /*
-**========== Print Array =========== 
-*/
-function cawpb_pa($arr){
-	echo '<pre>';
-	echo esc_html(print_r($arr, true));
-	echo '</pre>';
-}
-
-/*
-**========== Load Templates =========== 
+**========== Load Templates ===========
 */
 function cawpb_load_templates( $template_name, $vars = null) {
 
@@ -40,7 +31,7 @@ function cawpb_load_templates( $template_name, $vars = null) {
 **========== Get Image Sizes =========== 
 */
 function cawpb_get_image_sizes(){
-	$sizes = array(__( 'Default', 'classic-addons' ) => '');
+	$sizes = array(__( 'Default', 'classic-addons-wpbakery-page-builder' ) => '');
     $image_sizes = get_intermediate_image_sizes();
     foreach ($image_sizes as $index => $val) {
       $sizes[$val] = $val;
@@ -257,15 +248,15 @@ function cawpb_enqueue_googlefonts( $fontsData ) {
 function cawpb_border_style(){
 
 	$style = array(
-			esc_html__( 'None', 'classic-addons' )	   => 'none',
-			esc_html__( 'Solid', 'classic-addons' )    => 'solid',
-			esc_html__( 'Dotted', 'classic-addons' )   => 'dotted',
-			esc_html__( 'Dashed', 'classic-addons' )   => 'dashed',
-			esc_html__( 'Double', 'classic-addons' )   => 'double',
-			esc_html__( 'Groove', 'classic-addons' )   => 'groove',
-			esc_html__( 'Ridge', 'classic-addons' )	   => 'rige',
-			esc_html__( 'Inset', 'classic-addons' )	   => 'inset',
-			esc_html__( 'Outset', 'classic-addons' )   => 'outset',
+			esc_html__( 'None', 'classic-addons-wpbakery-page-builder' )	   => 'none',
+			esc_html__( 'Solid', 'classic-addons-wpbakery-page-builder' )    => 'solid',
+			esc_html__( 'Dotted', 'classic-addons-wpbakery-page-builder' )   => 'dotted',
+			esc_html__( 'Dashed', 'classic-addons-wpbakery-page-builder' )   => 'dashed',
+			esc_html__( 'Double', 'classic-addons-wpbakery-page-builder' )   => 'double',
+			esc_html__( 'Groove', 'classic-addons-wpbakery-page-builder' )   => 'groove',
+			esc_html__( 'Ridge', 'classic-addons-wpbakery-page-builder' )	   => 'rige',
+			esc_html__( 'Inset', 'classic-addons-wpbakery-page-builder' )	   => 'inset',
+			esc_html__( 'Outset', 'classic-addons-wpbakery-page-builder' )   => 'outset',
 		);
 
 	return apply_filters( 'cawpb_border_style_options_data', $style);
@@ -382,7 +373,7 @@ function cawpb_get_image_by_size( $params = array() ) {
 	$image_url = wp_get_attachment_image_url( $attach_id, 'full' );
 
 
-	return apply_filters( 'caw_get_image_by_size', array(
+	return apply_filters( 'cawpb_get_image_by_size', array(
 		'thumbnail'   => $thumbnail,
 		'p_img_large' => $p_img_large,
 		'image_url'   => $image_url,
@@ -448,7 +439,9 @@ function cawpb_sanitize_html_classes($classes, $sep = " "){
 
 function cawpb_add_inline_style($css, $addon_id, $attrs, $style_handler = ''){
 
-	$styleClass = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), $addon_id, $attrs );
+	// WPBakery's own Design Options filter — the tag is defined by WPBakery
+	// and must be applied verbatim for custom CSS classes to work.
+	$styleClass = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), $addon_id, $attrs ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
 	if ($style_handler != '') {
 		wp_add_inline_style( $style_handler, $css );
 	}
@@ -474,4 +467,36 @@ function cawpb_get_addon_icon_url( $slug ) {
  */
 function cawpb_get_addon_fallback_svg( $slug ) {
 	return  '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+}
+
+/**
+ * Feature gate: is the Pro companion plugin active and licensed.
+ *
+ * Defaults to false. The Classic Addons Pro plugin filters this to true.
+ *
+ * @since 4.2
+ *
+ * @return bool
+ */
+if ( ! function_exists( 'cawpb_is_pro' ) ) {
+	function cawpb_is_pro() {
+		return (bool) apply_filters( 'cawpb_is_pro', false );
+	}
+}
+
+/**
+ * Feature gate: can the current install render a given Pro feature.
+ *
+ * Defaults to false for every key. Pro answers per feature key, e.g.
+ * 'post_grid_loadmore', 'pricing_toggle', 'row_parallax'.
+ *
+ * @since 4.2
+ *
+ * @param string $feature_key Stable identifier for the Pro feature.
+ * @return bool
+ */
+if ( ! function_exists( 'cawpb_can' ) ) {
+	function cawpb_can( $feature_key ) {
+		return (bool) apply_filters( 'cawpb_can', false, (string) $feature_key );
+	}
 }

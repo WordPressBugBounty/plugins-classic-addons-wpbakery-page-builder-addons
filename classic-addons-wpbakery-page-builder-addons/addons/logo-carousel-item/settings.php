@@ -8,41 +8,41 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$params = array(
+$cawpb_params = array(
 	array(
 		"type" 			=> 	"attach_image",
-		"heading" 		=> 	__( 'Select Image', 'classic-addons' ),
+		"heading" 		=> 	__( 'Select Image', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"image_id",
-		"description" 	=> 	__( 'Upload image to display.', 'classic-addons' ),
+		"description" 	=> 	__( 'Upload image to display.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
 	array(
 		'type' => 'textfield',
-		'heading' => esc_html__( 'Image size', 'classic-addons' ),
+		'heading' => esc_html__( 'Image size', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'img_size',
 		'value' => 'full',
-		'description' => esc_html__( 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height)). default: full', 'classic-addons' ),
+		'description' => esc_html__( 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height)). default: full', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
 	array(
 		"type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Footer Text', 'classic-addons' ),
+		"heading" 		=> 	__( 'Footer Text', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"img_bt_text",
-		"description" 	=> 	__( 'It will display under the image', 'classic-addons' ),
+		"description" 	=> 	__( 'It will display under the image', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
 	array(
 		'type' => 'href',
-		'heading' => esc_html__( 'Image link', 'classic-addons' ),
+		'heading' => esc_html__( 'Image link', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'link',
-		'description' => esc_html__( 'Enter URL if you want this image to have a link (Note: parameters like "mailto:" are also accepted).', 'classic-addons'),
+		'description' => esc_html__( 'Enter URL if you want this image to have a link (Note: parameters like "mailto:" are also accepted).', 'classic-addons-wpbakery-page-builder'),
 		"group" => 	'General',
 	),
 	array(
 		"type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Image Border Radius', 'classic-addons' ),
+		"heading" 		=> 	__( 'Image Border Radius', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"img_border",
-		"description" 	=> 	__( 'Enter image border radius e.g: 50px', 'classic-addons' ),
+		"description" 	=> 	__( 'Enter image border radius e.g: 50px', 'classic-addons-wpbakery-page-builder' ),
 		"group" => 	'General',
 	),
 );

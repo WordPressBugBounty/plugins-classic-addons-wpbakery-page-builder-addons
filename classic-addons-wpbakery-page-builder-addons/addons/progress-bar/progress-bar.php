@@ -95,7 +95,7 @@ class WPBakeryShortCode_CAW_Progress_Bar extends WPBakeryShortCode {
 
 		ob_start(); ?>
 		<div id="<?php echo esc_attr( $uid ); ?>"
-			class="<?php echo cawpb_sanitize_html_classes( $wrapper_classes ); ?>"
+			class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>"
 			data-animate="<?php echo esc_attr( $animation ); ?>"
 			data-speed="<?php echo esc_attr( $animation_duration ); ?>"
 			data-percent="<?php echo esc_attr( $percent ); ?>"

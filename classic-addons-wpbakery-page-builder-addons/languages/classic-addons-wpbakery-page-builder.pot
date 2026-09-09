@@ -1,0 +1,3546 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Classic Addons - WPBakery Page Builder\n"
+"POT-Creation-Date: 2026-06-14 19:12+0500\n"
+"PO-Revision-Date: 2026-06-14 19:12+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: classic-addons-wpbakery-page-builder.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: addons/accordion-item/accordion-item.php:17
+#: addons/accordion-item/settings.php:15 inc/arrays.php:363
+msgid "Accordion Item"
+msgstr ""
+
+#: addons/accordion-item/settings.php:12 addons/alert-box/settings.php:10
+#: addons/post-grid/settings.php:81 addons/tabs-item/settings.php:12
+msgid "Title"
+msgstr ""
+
+#: addons/accordion-item/settings.php:20 addons/alert-box/settings.php:18
+#: addons/flip-box/settings.php:42 addons/flip-box/settings.php:77
+#: addons/info-box/settings.php:27 addons/interactive-banner/settings.php:33
+#: addons/single-image/settings.php:29 addons/tabs-item/settings.php:20
+msgid "Content"
+msgstr ""
+
+#: addons/accordion-item/settings.php:24
+msgid "Item content goes here. You can add any HTML, shortcodes, images, etc."
+msgstr ""
+
+#: addons/accordion-item/settings.php:28 addons/image-hotspots/settings.php:140
+#: addons/tabs-item/settings.php:39
+msgid "Open by Default"
+msgstr ""
+
+#: addons/accordion-item/settings.php:31 addons/accordion/settings.php:64
+#: addons/accordion/settings.php:71 addons/alert-box/settings.php:46
+#: addons/before-after/settings.php:69 addons/countdown-timer/settings.php:61
+#: addons/countdown-timer/settings.php:70
+#: addons/countdown-timer/settings.php:88
+#: addons/countdown-timer/settings.php:106
+#: addons/countdown-timer/settings.php:124
+#: addons/image-hotspots/settings.php:142
+#: addons/image-hotspots/settings.php:232
+#: addons/image-hotspots/settings.php:319 addons/logo-carousel/settings.php:113
+#: addons/logo-carousel/settings.php:119 addons/logo-carousel/settings.php:125
+#: addons/logo-carousel/settings.php:132 addons/logo-carousel/settings.php:138
+#: addons/post-grid/settings.php:107 addons/post-grid/settings.php:115
+#: addons/post-grid/settings.php:191 addons/post-grid/settings.php:207
+#: addons/post-grid/settings.php:237 addons/post-grid/settings.php:262
+#: addons/post-grid/settings.php:292 addons/post-grid/settings.php:310
+#: addons/post-grid/settings.php:318 addons/post-grid/settings.php:328
+#: addons/post-grid/settings.php:338 addons/post-grid/settings.php:347
+#: addons/post-grid/settings.php:358 addons/post-grid/settings.php:367
+#: addons/post-grid/settings.php:376 addons/pricing-table/settings.php:28
+#: addons/pricing-table/settings.php:186 addons/pricing-table/settings.php:257
+#: addons/pricing-table/settings.php:272 addons/pricing-table/settings.php:345
+#: addons/progress-bar/settings.php:61 addons/progress-bar/settings.php:69
+#: addons/progress-bar/settings.php:116 addons/progress-bar/settings.php:169
+#: addons/progress-bar/settings.php:184 addons/progress-bar/settings.php:191
+#: addons/tabs-item/settings.php:42 addons/tabs/settings.php:50
+#: addons/tabs/settings.php:57 addons/testimonial-slider/settings.php:85
+#: addons/testimonial-slider/settings.php:94
+#: addons/testimonial-slider/settings.php:103
+#: addons/testimonial-slider/settings.php:111 inc/settings/typography.php:50
+msgid "Yes"
+msgstr ""
+
+#: addons/accordion-item/settings.php:35 addons/tabs-item/settings.php:54
+msgid "Extra CSS Class"
+msgstr ""
+
+#: addons/accordion-item/settings.php:38
+msgid ""
+"Style this item differently — add a class name and refer to it in custom CSS."
+msgstr ""
+
+#: addons/accordion-item/settings.php:42
+msgid "Override Expand Icon"
+msgstr ""
+
+#: addons/accordion-item/settings.php:49
+msgid "Optional. Overrides the accordion-level expand icon for this item only."
+msgstr ""
+
+#: addons/accordion-item/settings.php:53
+msgid "Override Collapse Icon"
+msgstr ""
+
+#: addons/accordion-item/settings.php:60
+msgid ""
+"Optional. Overrides the accordion-level collapse icon for this item only."
+msgstr ""
+
+#: addons/accordion-item/settings.php:64 addons/accordion/settings.php:77
+#: addons/post-grid/settings.php:462 addons/pricing-table/settings.php:109
+#: addons/testimonial-slider/settings.php:178
+msgid "Title Color"
+msgstr ""
+
+#: addons/accordion-item/settings.php:71 addons/accordion/settings.php:84
+msgid "Title Background"
+msgstr ""
+
+#: addons/accordion-item/settings.php:78 addons/accordion/settings.php:105
+#: addons/single-image/settings.php:149
+msgid "Content Color"
+msgstr ""
+
+#: addons/accordion-item/settings.php:85 addons/accordion/settings.php:112
+msgid "Content Background"
+msgstr ""
+
+#: addons/accordion/accordion.php:110
+msgid "Add accordion items inside this element."
+msgstr ""
+
+#: addons/accordion/settings.php:12 addons/button/settings.php:14
+#: addons/info-banner/settings.php:14 addons/progress-bar/settings.php:45
+#: addons/tabs/settings.php:12 addons/team-member/settings.php:52
+#: templates/admin/border.php:38
+msgid "Style"
+msgstr ""
+
+#: addons/accordion/settings.php:16 addons/post-grid/settings.php:180
+#: addons/pricing-table/settings.php:19
+msgid "Modern"
+msgstr ""
+
+#: addons/accordion/settings.php:17 addons/pricing-table/settings.php:17
+#: addons/team-member/settings.php:56
+msgid "Classic"
+msgstr ""
+
+#: addons/accordion/settings.php:18
+msgid "Bordered"
+msgstr ""
+
+#: addons/accordion/settings.php:19 addons/countdown-timer/settings.php:38
+#: addons/tabs/settings.php:17
+msgid "Boxed"
+msgstr ""
+
+#: addons/accordion/settings.php:20 addons/post-grid/settings.php:179
+#: addons/pricing-table/settings.php:18 addons/tabs/settings.php:20
+#: addons/team-member/settings.php:58
+msgid "Minimal"
+msgstr ""
+
+#: addons/accordion/settings.php:21
+msgid "Separated"
+msgstr ""
+
+#: addons/accordion/settings.php:26 addons/count-up/settings.php:98
+msgid "Icon Position"
+msgstr ""
+
+#: addons/accordion/settings.php:30 addons/count-up/settings.php:104
+#: addons/countdown-timer/settings.php:52
+#: addons/image-hotspots/settings.php:119 addons/tabs/settings.php:41
+#: addons/team-member/settings.php:81
+msgid "Right"
+msgstr ""
+
+#: addons/accordion/settings.php:31 addons/count-up/settings.php:103
+#: addons/countdown-timer/settings.php:51
+#: addons/image-hotspots/settings.php:118 addons/tabs/settings.php:39
+#: addons/team-member/settings.php:80 templates/admin/border.php:22
+#: templates/admin/margin.php:21 templates/admin/padding.php:21
+msgid "Left"
+msgstr ""
+
+#: addons/accordion/settings.php:32 addons/image-hotspots/settings.php:220
+#: addons/image-hotspots/settings.php:307
+#: addons/image-hotspots/settings.php:330 addons/post-grid/settings.php:225
+#: addons/post-grid/settings.php:386 addons/post-grid/settings.php:452
+#: addons/pricing-table/settings.php:61 addons/pricing-table/settings.php:433
+#: addons/team-member/settings.php:90 addons/team-member/settings.php:104
+#: inc/helpers.php:251
+msgid "None"
+msgstr ""
+
+#: addons/accordion/settings.php:37
+msgid "Expand Icon"
+msgstr ""
+
+#: addons/accordion/settings.php:49
+msgid "Collapse Icon"
+msgstr ""
+
+#: addons/accordion/settings.php:61
+msgid "Allow Multiple Open"
+msgstr ""
+
+#: addons/accordion/settings.php:68
+msgid "Close Others On Open"
+msgstr ""
+
+#: addons/accordion/settings.php:91
+msgid "Active Title Color"
+msgstr ""
+
+#: addons/accordion/settings.php:98
+msgid "Active Title Background"
+msgstr ""
+
+#: addons/accordion/settings.php:119 addons/info-box/settings.php:166
+#: addons/team-member/settings.php:118
+msgid "Border Color"
+msgstr ""
+
+#: addons/accordion/settings.php:126 addons/pricing-table/settings.php:78
+#: addons/pricing-table/settings.php:250
+msgid "Icon Color"
+msgstr ""
+
+#: addons/accordion/settings.php:133 addons/post-grid/settings.php:469
+#: addons/pricing-table/settings.php:123
+msgid "Title Font Size"
+msgstr ""
+
+#: addons/accordion/settings.php:136
+msgid "e.g. 16px"
+msgstr ""
+
+#: addons/accordion/settings.php:141 addons/tabs/settings.php:110
+msgid "Content Font Size"
+msgstr ""
+
+#: addons/accordion/settings.php:144
+msgid "e.g. 14px"
+msgstr ""
+
+#: addons/accordion/settings.php:149 addons/countdown-timer/settings.php:248
+#: addons/icon-box-3d/settings.php:18 addons/image-hotspots/settings.php:295
+#: addons/info-box/settings.php:181 addons/progress-bar/settings.php:144
+#: addons/team-member/settings.php:152 inc/settings/button.php:71
+#: inc/settings/icon.php:262
+msgid "Border Radius"
+msgstr ""
+
+#: addons/accordion/settings.php:152 addons/info-box/settings.php:183
+msgid "e.g. 6px"
+msgstr ""
+
+#: addons/accordion/settings.php:157
+msgid "Item Spacing"
+msgstr ""
+
+#: addons/accordion/settings.php:160
+msgid "Gap between items, e.g. 10px"
+msgstr ""
+
+#: addons/alert-box/settings.php:12
+msgid "Add title for alert box"
+msgstr ""
+
+#: addons/alert-box/settings.php:28 addons/info-box/settings.php:8
+#: addons/interactive-banner/settings.php:10
+msgid "Select Style"
+msgstr ""
+
+#: addons/alert-box/settings.php:30
+msgid "Choose a layout style"
+msgstr ""
+
+#: addons/alert-box/settings.php:44
+msgid "Dismissible?"
+msgstr ""
+
+#: addons/alert-box/settings.php:53
+msgid "General"
+msgstr ""
+
+#: addons/animated-heading/settings.php:14 addons/count-up/settings.php:14
+#: addons/info-box/settings.php:19 addons/info-table/settings.php:10
+#: addons/interactive-banner/settings.php:25
+msgid "Heading"
+msgstr ""
+
+#: addons/animated-heading/settings.php:16
+msgid "Choose heading tag"
+msgstr ""
+
+#: addons/animated-heading/settings.php:29
+msgid "Before Text"
+msgstr ""
+
+#: addons/animated-heading/settings.php:31
+msgid "Provide text to display before animated words"
+msgstr ""
+
+#: addons/animated-heading/settings.php:36
+msgid "Animated Headings"
+msgstr ""
+
+#: addons/animated-heading/settings.php:37
+msgid ""
+"Help\n"
+"Assist\n"
+"Guide\n"
+"Take care of"
+msgstr ""
+
+#: addons/animated-heading/settings.php:38
+msgid "Provide headings for spin, each per line"
+msgstr ""
+
+#: addons/animated-heading/settings.php:43
+msgid "After Text"
+msgstr ""
+
+#: addons/animated-heading/settings.php:45
+msgid "Provide text to display after animated words"
+msgstr ""
+
+#: addons/animated-heading/settings.php:49 addons/button/settings.php:24
+msgid "Animation Style"
+msgstr ""
+
+#: addons/animated-heading/settings.php:51
+msgid "Choose animation style for spinning words"
+msgstr ""
+
+#: addons/animated-heading/settings.php:53
+#: addons/image-hotspots/settings.php:329
+msgid "Slide"
+msgstr ""
+
+#: addons/animated-heading/settings.php:54
+msgid "Type"
+msgstr ""
+
+#: addons/animated-heading/settings.php:55
+#: addons/image-hotspots/settings.php:328 addons/post-grid/settings.php:227
+msgid "Fade"
+msgstr ""
+
+#: addons/animated-heading/settings.php:61
+msgid "Spin Timer"
+msgstr ""
+
+#: addons/animated-heading/settings.php:62
+msgid "Set Spin timer in ms eg: 3000"
+msgstr ""
+
+#: addons/animated-heading/settings.php:67
+msgid "Heading Margin Bottom"
+msgstr ""
+
+#: addons/animated-heading/settings.php:68
+msgid "Provide margin bottom after text eg: 10px"
+msgstr ""
+
+#: addons/animated-heading/settings.php:74 addons/info-banner/settings.php:97
+msgid "Description"
+msgstr ""
+
+#: addons/animated-heading/settings.php:75
+msgid "Provide contents to show under heading"
+msgstr ""
+
+#: addons/animated-heading/settings.php:79
+msgid "Extra CSS classes"
+msgstr ""
+
+#: addons/animated-heading/settings.php:81
+msgid "Provide the extra classes for custom style."
+msgstr ""
+
+#: addons/before-after/before-after.php:73
+msgid "Please select both Before and After images."
+msgstr ""
+
+#: addons/before-after/before-after.php:131
+msgid "Drag to compare before and after images"
+msgstr ""
+
+#: addons/before-after/settings.php:12
+msgid "Before Image"
+msgstr ""
+
+#: addons/before-after/settings.php:15
+msgid "Image shown on the original/left/top side."
+msgstr ""
+
+#: addons/before-after/settings.php:19
+msgid "After Image"
+msgstr ""
+
+#: addons/before-after/settings.php:22
+msgid "Image revealed by the slider."
+msgstr ""
+
+#: addons/before-after/settings.php:26 addons/image-hotspots/settings.php:19
+#: addons/post-grid/settings.php:196 addons/team-member/settings.php:18
+#: inc/settings/icon.php:247
+msgid "Image Size"
+msgstr ""
+
+#: addons/before-after/settings.php:30
+msgid ""
+"WordPress image size for both images. Both images should be the same "
+"dimensions."
+msgstr ""
+
+#: addons/before-after/settings.php:34 addons/tabs/settings.php:25
+msgid "Orientation"
+msgstr ""
+
+#: addons/before-after/settings.php:38
+msgid "Horizontal (slider moves left/right)"
+msgstr ""
+
+#: addons/before-after/settings.php:39
+msgid "Vertical (slider moves up/down)"
+msgstr ""
+
+#: addons/before-after/settings.php:45
+msgid "Interaction Mode"
+msgstr ""
+
+#: addons/before-after/settings.php:49
+msgid "Drag handle"
+msgstr ""
+
+#: addons/before-after/settings.php:50
+msgid "Move on hover"
+msgstr ""
+
+#: addons/before-after/settings.php:56
+msgid "Default Handle Position"
+msgstr ""
+
+#: addons/before-after/settings.php:60
+msgid "0 - 100 (percent). Where the divider starts."
+msgstr ""
+
+#: addons/before-after/settings.php:66
+msgid "Show Overlay Labels"
+msgstr ""
+
+#: addons/before-after/settings.php:74
+msgid "Before Label"
+msgstr ""
+
+#: addons/before-after/settings.php:77 addons/pricing-table/settings.php:151
+msgid "Before"
+msgstr ""
+
+#: addons/before-after/settings.php:83
+msgid "After Label"
+msgstr ""
+
+#: addons/before-after/settings.php:86 addons/pricing-table/settings.php:152
+msgid "After"
+msgstr ""
+
+#: addons/before-after/settings.php:92
+msgid "Label Text Color"
+msgstr ""
+
+#: addons/before-after/settings.php:100
+msgid "Label Background"
+msgstr ""
+
+#: addons/before-after/settings.php:110 addons/pricing-table/settings.php:283
+msgid "Divider Color"
+msgstr ""
+
+#: addons/before-after/settings.php:118
+msgid "Divider Width"
+msgstr ""
+
+#: addons/before-after/settings.php:126
+msgid "Handle Background"
+msgstr ""
+
+#: addons/before-after/settings.php:134
+msgid "Handle Arrow Color"
+msgstr ""
+
+#: addons/before-after/settings.php:142
+msgid "Handle Size"
+msgstr ""
+
+#: addons/before-after/settings.php:147
+msgid "Diameter of the circular handle."
+msgstr ""
+
+#: addons/before-after/settings.php:151 addons/image-hotspots/settings.php:42
+#: addons/image-hotspots/settings.php:279
+msgid "Max Width"
+msgstr ""
+
+#: addons/before-after/settings.php:155 addons/image-hotspots/settings.php:45
+msgid "e.g. 800px. Leave empty for full width."
+msgstr ""
+
+#: addons/button/settings.php:16
+msgid "Choose the button style."
+msgstr ""
+
+#: addons/button/settings.php:26
+msgid "Choose animation style on hover"
+msgstr ""
+
+#: addons/button/settings.php:42
+msgid "2D Transition"
+msgstr ""
+
+#: addons/button/settings.php:44
+msgid "Choose 2D Transition style."
+msgstr ""
+
+#: addons/button/settings.php:82
+msgid "Background Transition"
+msgstr ""
+
+#: addons/button/settings.php:84
+msgid "Choose background transition style."
+msgstr ""
+
+#: addons/button/settings.php:109
+msgid "Border Transition"
+msgstr ""
+
+#: addons/button/settings.php:111
+msgid "Choose border transition style."
+msgstr ""
+
+#: addons/button/settings.php:131
+msgid "Border Animation Color"
+msgstr ""
+
+#: addons/button/settings.php:133
+msgid "It will apply on button transitoin."
+msgstr ""
+
+#: addons/button/settings.php:142
+msgid "Speech Bubbles"
+msgstr ""
+
+#: addons/button/settings.php:144
+msgid "Choose speech bubbles style."
+msgstr ""
+
+#: addons/button/settings.php:163
+msgid "Shadow and Glow"
+msgstr ""
+
+#: addons/button/settings.php:165
+msgid "Choose shadow and glow style."
+msgstr ""
+
+#: addons/button/settings.php:183 addons/countdown-timer/settings.php:46
+#: addons/tabs/settings.php:35 addons/team-member/settings.php:75
+msgid "Alignment"
+msgstr ""
+
+#: addons/button/settings.php:185
+msgid "select text align"
+msgstr ""
+
+#: addons/count-up/settings.php:16
+msgid "Provide heading to display under counter."
+msgstr ""
+
+#: addons/count-up/settings.php:17
+msgid "The Title"
+msgstr ""
+
+#: addons/count-up/settings.php:22
+msgid "Counter Value"
+msgstr ""
+
+#: addons/count-up/settings.php:25
+msgid "Provide counter value"
+msgstr ""
+
+#: addons/count-up/settings.php:31
+msgid "Start From"
+msgstr ""
+
+#: addons/count-up/settings.php:34
+msgid "Provide counter start value, default: 0"
+msgstr ""
+
+#: addons/count-up/settings.php:40 addons/logo-carousel/settings.php:93
+msgid "Speed"
+msgstr ""
+
+#: addons/count-up/settings.php:43
+msgid "Provide time to complete counter in ms, default: 2000"
+msgstr ""
+
+#: addons/count-up/settings.php:49
+msgid "Decimal Place"
+msgstr ""
+
+#: addons/count-up/settings.php:52
+msgid "Provide decimal places after digits, default: 0"
+msgstr ""
+
+#: addons/count-up/settings.php:58
+msgid "Heading Position"
+msgstr ""
+
+#: addons/count-up/settings.php:60
+msgid "Select the heading position"
+msgstr ""
+
+#: addons/count-up/settings.php:62 addons/image-hotspots/settings.php:117
+#: templates/admin/border.php:34 templates/admin/margin.php:33
+#: templates/admin/padding.php:33
+msgid "Bottom"
+msgstr ""
+
+#: addons/count-up/settings.php:63 addons/image-hotspots/settings.php:116
+#: templates/admin/border.php:30 templates/admin/margin.php:29
+#: templates/admin/padding.php:29
+msgid "Top"
+msgstr ""
+
+#: addons/count-up/settings.php:69 addons/filterable-portfolio/settings.php:31
+#: addons/info-table/settings.php:33 addons/logo-carousel/settings.php:105
+msgid "Extra class name"
+msgstr ""
+
+#: addons/count-up/settings.php:71
+msgid "Provide extra class to add custom css."
+msgstr ""
+
+#: addons/count-up/settings.php:76 addons/filterable-portfolio/settings.php:37
+#: addons/single-image/settings.php:137 inc/settings/icon.php:215
+#: inc/settings/ribbon.php:34 inc/settings/typography.php:36
+#: templates/admin/border.php:47
+msgid "Color"
+msgstr ""
+
+#: addons/count-up/settings.php:78
+msgid "Choose color for divider."
+msgstr ""
+
+#: addons/count-up/settings.php:84 addons/flip-book/settings.php:37
+#: addons/icon-box-3d/settings.php:32
+msgid "Width"
+msgstr ""
+
+#: addons/count-up/settings.php:86
+msgid "Provide the width of divider with units eg 18px"
+msgstr ""
+
+#: addons/count-up/settings.php:91 addons/icon-box-3d/settings.php:39
+msgid "Height"
+msgstr ""
+
+#: addons/count-up/settings.php:93
+msgid "Provide the height of divider with units eg 2px"
+msgstr ""
+
+#: addons/count-up/settings.php:100
+msgid "Select the icon/image position."
+msgstr ""
+
+#: addons/count-up/settings.php:102 addons/countdown-timer/settings.php:50
+#: addons/tabs/settings.php:40 addons/team-member/settings.php:79
+msgid "Center"
+msgstr ""
+
+#: addons/count-up/settings.php:110
+msgid "Prefix"
+msgstr ""
+
+#: addons/count-up/settings.php:112
+msgid "Text shown before the number, e.g. $ or +."
+msgstr ""
+
+#: addons/count-up/settings.php:118
+msgid "Suffix"
+msgstr ""
+
+#: addons/count-up/settings.php:120
+msgid "Text shown after the number, e.g. + or K."
+msgstr ""
+
+#: addons/count-up/settings.php:126
+msgid "Thousands Separator"
+msgstr ""
+
+#: addons/count-up/settings.php:128
+msgid "Character to group thousands (e.g. , or .). Leave blank for none."
+msgstr ""
+
+#: addons/count-up/settings.php:133
+#: addons/filterable-portfolio-item/settings.php:20
+msgid "Link"
+msgstr ""
+
+#: addons/count-up/settings.php:135
+msgid "Optional — wraps the counter in a link."
+msgstr ""
+
+#: addons/countdown-timer/settings.php:12
+msgid "Target Date & Time"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:17
+msgid "Format: YYYY-MM-DD HH:MM:SS (24-hour). Example: 2026-12-31 23:59:00"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:21
+msgid "Timezone"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:25
+msgid "Site timezone (WordPress setting)"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:26
+msgid "Visitor local timezone"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:27
+msgid "UTC"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:30
+msgid "How the target date is interpreted."
+msgstr ""
+
+#: addons/countdown-timer/settings.php:34 addons/post-grid/settings.php:174
+#: addons/pricing-table/settings.php:13
+msgid "Style Preset"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:39 addons/team-member/settings.php:70
+msgid "Circle"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:40
+msgid "Minimal / Inline"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:58
+msgid "Show Separator Between Units"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:67
+msgid "Show Days"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:76
+msgid "Days Label"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:79
+msgid "Days"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:85
+msgid "Show Hours"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:94
+msgid "Hours Label"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:97
+msgid "Hours"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:103
+msgid "Show Minutes"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:112
+msgid "Minutes Label"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:115
+msgid "Minutes"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:121
+msgid "Show Seconds"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:130
+msgid "Seconds Label"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:133
+msgid "Seconds"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:141
+msgid "On Expiry"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:145
+msgid "Show a message"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:146
+msgid "Hide the timer"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:152
+msgid "Expiry Message"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:155
+msgid "This offer has expired."
+msgstr ""
+
+#: addons/countdown-timer/settings.php:162
+msgid "Number Color"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:169 addons/progress-bar/settings.php:99
+msgid "Label Color"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:176
+#: addons/pricing-table/settings.php:400
+msgid "Box Background"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:180
+msgid "Applies to Boxed / Circle styles."
+msgstr ""
+
+#: addons/countdown-timer/settings.php:184
+#: addons/pricing-table/settings.php:407
+msgid "Box Border Color"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:191
+msgid "Separator Color"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:201
+msgid "Number Font Size"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:205
+msgid "e.g. 48px, 3rem"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:209
+msgid "Number Font Weight"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:213
+msgid "e.g. 400, 600, 700"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:217 addons/progress-bar/settings.php:152
+msgid "Label Font Size"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:224
+msgid "Label Font Weight"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:231 inc/settings/icon.php:199
+msgid "Box Size"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:235
+msgid "Min width/height per unit. e.g. 90px"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:239
+msgid "Unit Gap"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:244
+msgid "Space between units. e.g. 16px"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:252
+msgid "e.g. 8px (Boxed style)"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:256 addons/info-box/settings.php:173
+#: addons/team-member/settings.php:145
+msgid "Border Width"
+msgstr ""
+
+#: addons/countdown-timer/settings.php:260 addons/info-box/settings.php:175
+msgid "e.g. 1px"
+msgstr ""
+
+#: addons/filterable-portfolio-item/settings.php:14
+#: addons/logo-carousel-item/settings.php:14
+#: addons/single-image/settings.php:14
+msgid "Select Image"
+msgstr ""
+
+#: addons/filterable-portfolio-item/settings.php:16
+msgid "Provide the image from gallery."
+msgstr ""
+
+#: addons/filterable-portfolio-item/settings.php:22
+msgid "Provide URL to link"
+msgstr ""
+
+#: addons/filterable-portfolio-item/settings.php:26
+msgid "Category Names"
+msgstr ""
+
+#: addons/filterable-portfolio-item/settings.php:28
+msgid "Provide category name."
+msgstr ""
+
+#: addons/filterable-portfolio/filterable-portfolio.php:59
+msgid "All"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:16
+msgid "Menu Items"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:17
+msgid "Provide names here each per line"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:22
+msgid "All Button"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:23
+msgid "Enable/Disable all filtering button"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:25
+msgid "Enable"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:26
+msgid "Disable"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:33
+#: addons/info-table/settings.php:35 addons/logo-carousel/settings.php:107
+msgid ""
+"Style particular content element differently - add a class name and refer to "
+"it in custom CSS."
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:40 inc/settings/button.php:48
+msgid "Choose button text color."
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:45
+#: addons/icon-box-3d/settings.php:10 addons/info-box/settings.php:159
+#: addons/info-table/settings.php:52 addons/info-table/settings.php:77
+#: addons/info-table/settings.php:102 addons/team-member/settings.php:111
+#: addons/testimonial-slider/settings.php:171 inc/settings/button.php:54
+#: inc/settings/icon.php:231 inc/settings/ribbon.php:42
+msgid "Background Color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:48 inc/settings/button.php:56
+msgid "Choose button background color."
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:53
+#: addons/filterable-portfolio/settings.php:76
+msgid "Hover Color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:56
+msgid "Choose hover button text color."
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:61 inc/settings/button.php:98
+msgid "Hover Background Color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:64
+msgid "Choose hover button background color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:69
+msgid "Active Color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:71
+msgid "Choose button active color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:79
+msgid "Choose hover background image color."
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:84
+msgid "Hover Icons Color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:87
+msgid "Choose hover image icons color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:92
+msgid "Hover Image Button Background Color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:95
+msgid "Choose hover image button background color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:100
+msgid "Hover Image Icons Hover Color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:103
+msgid "Choose hover image icon hover color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:108
+msgid "Hover Image Button Hover BG Color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:111
+msgid "Choose hover background color"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:116
+#: addons/flip-book-item/settings.php:21
+#: addons/testimonial-slider-item/settings.php:111
+#: inc/settings/csseditor.php:10
+msgid "CSS Box"
+msgstr ""
+
+#: addons/filterable-portfolio/settings.php:118
+#: addons/flip-book-item/settings.php:23
+#: addons/testimonial-slider-item/settings.php:113
+#: inc/settings/csseditor.php:12
+msgid "Design Options"
+msgstr ""
+
+#: addons/flip-book-item/settings.php:14
+msgid "Contents"
+msgstr ""
+
+#: addons/flip-book-item/settings.php:17
+msgid "Insert contents for this page"
+msgstr ""
+
+#: addons/flip-book/settings.php:14
+msgid "Book Style"
+msgstr ""
+
+#: addons/flip-book/settings.php:16
+msgid "Choose the particular mode of book"
+msgstr ""
+
+#: addons/flip-book/settings.php:18
+msgid "Dual Pages"
+msgstr ""
+
+#: addons/flip-book/settings.php:19
+msgid "Single Pages"
+msgstr ""
+
+#: addons/flip-book/settings.php:25 addons/logo-carousel/settings.php:64
+#: addons/testimonial-slider/settings.php:57
+msgid "Arrows"
+msgstr ""
+
+#: addons/flip-book/settings.php:27
+msgid "Check to display arrows with book"
+msgstr ""
+
+#: addons/flip-book/settings.php:31 inc/arrays.php:373
+msgid "Tabs"
+msgstr ""
+
+#: addons/flip-book/settings.php:33
+msgid "Check to display navigation tabs under book"
+msgstr ""
+
+#: addons/flip-book/settings.php:39
+msgid "Provide width for book in pixels, eg 700"
+msgstr ""
+
+#: addons/flip-book/settings.php:43
+msgid "Height for Desktop"
+msgstr ""
+
+#: addons/flip-book/settings.php:45
+msgid "Provide height for desktop, eg 350px "
+msgstr ""
+
+#: addons/flip-book/settings.php:49
+msgid "Height for Mobile"
+msgstr ""
+
+#: addons/flip-book/settings.php:51
+msgid "Provide height for mobile devices, eg 250px"
+msgstr ""
+
+#: addons/flip-book/settings.php:55
+msgid "Mobile Screen Size"
+msgstr ""
+
+#: addons/flip-book/settings.php:58
+msgid "Provide width from where mobile size starts"
+msgstr ""
+
+#: addons/flip-book/settings.php:62 addons/flip-box/settings.php:35
+#: addons/info-banner/settings.php:68 addons/single-image/settings.php:118
+msgid "Extra Classes"
+msgstr ""
+
+#: addons/flip-book/settings.php:64 addons/flip-box/settings.php:37
+#: addons/info-banner/settings.php:70 addons/single-image/settings.php:120
+msgid "Provide the extra classes name for custom styling."
+msgstr ""
+
+#: addons/flip-box/settings.php:15
+msgid "Flip Style"
+msgstr ""
+
+#: addons/flip-box/settings.php:17
+msgid "Choose the flip box rotation style."
+msgstr ""
+
+#: addons/flip-box/settings.php:28
+msgid "Flip Box Size"
+msgstr ""
+
+#: addons/flip-box/settings.php:30
+msgid "Provide the flipbox max size. e.g: 300px"
+msgstr ""
+
+#: addons/flip-box/settings.php:44
+msgid "Provide body content with your own design. You can use the HTML Tags."
+msgstr ""
+
+#: addons/flip-box/settings.php:49 addons/info-banner/settings.php:75
+#: addons/interactive-banner/settings.php:47
+msgid "Upload Image"
+msgstr ""
+
+#: addons/flip-box/settings.php:51 addons/info-banner/settings.php:77
+#: addons/interactive-banner/settings.php:49
+msgid "Select image for banner."
+msgstr ""
+
+#: addons/flip-box/settings.php:56 addons/info-banner/settings.php:82
+#: addons/interactive-banner/settings.php:54
+#: addons/logo-carousel-item/settings.php:21
+#: addons/single-image/settings.php:21
+msgid "Image size"
+msgstr ""
+
+#: addons/flip-box/settings.php:59 addons/info-banner/settings.php:85
+#: addons/interactive-banner/settings.php:57
+#: addons/logo-carousel-item/settings.php:24
+#: addons/single-image/settings.php:24
+msgid ""
+"Enter image size (Example: \"thumbnail\", \"medium\", \"large\", \"full\" or "
+"other sizes defined by theme). Alternatively enter size in pixels (Example: "
+"200x100 (Width x Height)). default: full"
+msgstr ""
+
+#: addons/flip-box/settings.php:64 addons/flip-box/settings.php:85
+msgid "Box Color"
+msgstr ""
+
+#: addons/flip-box/settings.php:70 addons/flip-box/settings.php:92
+#: inc/settings/button.php:181
+msgid "Border"
+msgstr ""
+
+#: addons/flip-box/settings.php:71 addons/flip-box/settings.php:93
+msgid "Provide border style."
+msgstr ""
+
+#: addons/flip-box/settings.php:79
+msgid "Provide the content to display on the back area."
+msgstr ""
+
+#: addons/flip-box/settings.php:87
+msgid "Choose the flip back area color."
+msgstr ""
+
+#: addons/icon-box-3d/settings.php:25
+msgid "Shadow"
+msgstr ""
+
+#: addons/image-hotspots/image-hotspots.php:60
+msgid "Please select a base image."
+msgstr ""
+
+#: addons/image-hotspots/image-hotspots.php:76
+msgid "Selected base image is no longer available."
+msgstr ""
+
+#. translators: %d: hotspot number
+#: addons/image-hotspots/image-hotspots.php:208
+#, php-format
+msgid "Hotspot %d"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:13
+msgid "Base Image"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:26
+msgid "Image Overlay Color"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:33
+msgid "Overlay Opacity (0-1)"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:38
+msgid "e.g. 0.3"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:51
+msgid "Markers"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:57
+msgid "Horizontal Position (%)"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:65
+msgid "Vertical Position (%)"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:72
+msgid "Marker Type"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:75 addons/image-hotspots/settings.php:83
+#: addons/pricing-table/settings.php:62 addons/pricing-table/settings.php:69
+#: addons/pricing-table/settings.php:243 addons/team-member/settings.php:188
+#: inc/settings/button.php:110 inc/settings/icon.php:46
+#: inc/settings/icon.php:63 inc/settings/icon.php:80 inc/settings/icon.php:98
+#: inc/settings/icon.php:116 inc/settings/icon.php:133
+#: inc/settings/icon.php:151
+msgid "Icon"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:76 addons/image-hotspots/settings.php:91
+msgid "Text"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:77 addons/image-hotspots/settings.php:97
+#: addons/pricing-table/settings.php:63 addons/pricing-table/settings.php:95
+msgid "Image"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:103
+msgid "Trigger"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:106
+msgid "Hover"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:107
+msgid "Click"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:113
+msgid "Tooltip Position"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:125
+msgid "Tooltip Heading"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:130
+msgid "Tooltip Description"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:135
+msgid "Marker Link (optional)"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:162
+msgid "Marker Size"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:170
+msgid "Marker Icon Size"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:178
+msgid "Marker Color (icon/text)"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:186
+msgid "Marker Background"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:194
+msgid "Marker Border Color"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:201
+msgid "Marker Border Width"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:208
+msgid "Marker Border Radius"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:216
+msgid "Marker Shadow"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:221
+#: addons/image-hotspots/settings.php:308 addons/post-grid/settings.php:453
+#: addons/pricing-table/settings.php:434 addons/team-member/settings.php:103
+msgid "Light"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:222
+#: addons/image-hotspots/settings.php:309 addons/post-grid/settings.php:454
+#: addons/pricing-table/settings.php:435 addons/team-member/settings.php:105
+msgid "Medium"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:223
+#: addons/image-hotspots/settings.php:310 addons/post-grid/settings.php:455
+#: addons/pricing-table/settings.php:436
+msgid "Heavy"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:229
+msgid "Pulse / Radar Animation"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:239
+msgid "Tooltip Background"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:247
+msgid "Tooltip Text Color"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:255
+msgid "Tooltip Font Size"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:263
+msgid "Heading Font Size"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:271
+msgid "Min Width"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:287 addons/info-banner/settings.php:90
+#: addons/info-banner/settings.php:105 addons/info-table/settings.php:65
+#: addons/info-table/settings.php:90 addons/info-table/settings.php:115
+#: addons/interactive-banner/settings.php:62 inc/settings/button.php:197
+#: inc/settings/typography.php:81
+msgid "Padding"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:303
+msgid "Tooltip Shadow"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:316
+msgid "Show Arrow"
+msgstr ""
+
+#: addons/image-hotspots/settings.php:324
+msgid "Open Animation"
+msgstr ""
+
+#: addons/info-banner/settings.php:16
+msgid "Choose styles for info banner"
+msgstr ""
+
+#: addons/info-banner/settings.php:26
+msgid "Zoom Effect"
+msgstr ""
+
+#: addons/info-banner/settings.php:28
+msgid "Choose image zoom effect."
+msgstr ""
+
+#: addons/info-banner/settings.php:40
+msgid "Image Section Width"
+msgstr ""
+
+#: addons/info-banner/settings.php:42 addons/info-banner/settings.php:56
+msgid "Provide the image section width in percentage, e.g: 50"
+msgstr ""
+
+#: addons/info-banner/settings.php:54
+msgid "Content Section width"
+msgstr ""
+
+#: addons/info-banner/settings.php:91 addons/interactive-banner/settings.php:63
+msgid "Provide image section inner padding."
+msgstr ""
+
+#: addons/info-banner/settings.php:99
+msgid "write detail about info banner"
+msgstr ""
+
+#: addons/info-banner/settings.php:106
+msgid "Provide content section inner padding."
+msgstr ""
+
+#: addons/info-banner/settings.php:112 addons/pricing-table/settings.php:349
+#: inc/settings/ribbon.php:20
+msgid "Ribbon Text"
+msgstr ""
+
+#: addons/info-banner/settings.php:114
+msgid "Provide the ribbon text for special offer."
+msgstr ""
+
+#: addons/info-banner/settings.php:119
+#: addons/testimonial-slider/settings.php:164
+msgid "Text Color"
+msgstr ""
+
+#: addons/info-banner/settings.php:122
+msgid "Choose the ribbon text color."
+msgstr ""
+
+#: addons/info-banner/settings.php:127
+msgid "Background color"
+msgstr ""
+
+#: addons/info-banner/settings.php:130
+msgid "Choose the ribbon background color."
+msgstr ""
+
+#: addons/info-box/info-box.php:25
+msgid "Custom heading"
+msgstr ""
+
+#: addons/info-box/settings.php:21
+msgid "Add title for this info box."
+msgstr ""
+
+#: addons/info-box/settings.php:35 addons/pricing-table/settings.php:429
+msgid "Box Shadow"
+msgstr ""
+
+#: addons/info-box/settings.php:45
+msgid "Box Hover Shadow"
+msgstr ""
+
+#: addons/info-box/settings.php:54
+msgid "Link To"
+msgstr ""
+
+#: addons/info-box/settings.php:65
+msgid "Url Link"
+msgstr ""
+
+#: addons/info-box/settings.php:75 addons/post-grid/settings.php:297
+msgid "Read More Text"
+msgstr ""
+
+#: addons/info-box/settings.php:77
+msgid "Provide read more button text."
+msgstr ""
+
+#: addons/info-box/settings.php:83
+msgid "Button text color"
+msgstr ""
+
+#: addons/info-box/settings.php:85
+msgid "Set read more button text color."
+msgstr ""
+
+#: addons/info-box/settings.php:91
+msgid "Button background color"
+msgstr ""
+
+#: addons/info-box/settings.php:93
+msgid "Set read more text background color."
+msgstr ""
+
+#: addons/info-box/settings.php:99
+msgid "Button Padding"
+msgstr ""
+
+#: addons/info-box/settings.php:101
+msgid "Provide padding for the button eg: 10px."
+msgstr ""
+
+#: addons/info-box/settings.php:107
+msgid "CSS Class"
+msgstr ""
+
+#: addons/info-box/settings.php:109
+msgid "Provide css classes to add to the button tag"
+msgstr ""
+
+#: addons/info-box/settings.php:115
+msgid "Heading Tag"
+msgstr ""
+
+#: addons/info-box/settings.php:133
+msgid "Content Alignment"
+msgstr ""
+
+#: addons/info-box/settings.php:136
+msgid ""
+"Overrides the style default. Leave on Default to keep existing behavior."
+msgstr ""
+
+#: addons/info-box/settings.php:146 addons/team-member/settings.php:86
+#: inc/settings/button.php:83
+msgid "Hover Effect"
+msgstr ""
+
+#: addons/info-box/settings.php:189
+msgid "Box Padding"
+msgstr ""
+
+#: addons/info-box/settings.php:191
+msgid "e.g. 20px or 20px 15px"
+msgstr ""
+
+#: addons/info-table/settings.php:12
+msgid "Provide heading for info table"
+msgstr ""
+
+#: addons/info-table/settings.php:18
+msgid "Sub Heading"
+msgstr ""
+
+#: addons/info-table/settings.php:21
+msgid "Provide sub heading for info table"
+msgstr ""
+
+#: addons/info-table/settings.php:26
+msgid "Footer Content"
+msgstr ""
+
+#: addons/info-table/settings.php:28
+msgid "Provide content to show in footer area."
+msgstr ""
+
+#: addons/info-table/settings.php:40 inc/settings/button.php:204
+#: inc/settings/typography.php:88
+msgid "Margin"
+msgstr ""
+
+#: addons/info-table/settings.php:46
+msgid "Header Area"
+msgstr ""
+
+#: addons/info-table/settings.php:54
+msgid "Choose header background color."
+msgstr ""
+
+#: addons/info-table/settings.php:59 addons/info-table/settings.php:84
+#: addons/info-table/settings.php:109 inc/settings/icon.php:274
+msgid "Border Setting"
+msgstr ""
+
+#: addons/info-table/settings.php:71
+msgid "Body Area"
+msgstr ""
+
+#: addons/info-table/settings.php:79
+msgid "Choose body background color."
+msgstr ""
+
+#: addons/info-table/settings.php:96
+msgid "Footer Area"
+msgstr ""
+
+#: addons/info-table/settings.php:104
+msgid "Choose footer area background color."
+msgstr ""
+
+#: addons/interactive-banner/interactive-banner.php:52
+msgid "You must also set an image to use interactive banner addon"
+msgstr ""
+
+#: addons/interactive-banner/settings.php:12
+msgid "Choose the style here"
+msgstr ""
+
+#: addons/interactive-banner/settings.php:27
+msgid "Provide title for the banner."
+msgstr ""
+
+#: addons/interactive-banner/settings.php:41
+msgid "Link URL"
+msgstr ""
+
+#: addons/logo-carousel-item/settings.php:16
+#: addons/single-image/settings.php:16
+msgid "Upload image to display."
+msgstr ""
+
+#: addons/logo-carousel-item/settings.php:29
+#: addons/single-image/settings.php:36
+msgid "Footer Text"
+msgstr ""
+
+#: addons/logo-carousel-item/settings.php:31
+msgid "It will display under the image"
+msgstr ""
+
+#: addons/logo-carousel-item/settings.php:36
+#: addons/single-image/settings.php:85
+msgid "Image link"
+msgstr ""
+
+#: addons/logo-carousel-item/settings.php:38
+#: addons/single-image/settings.php:87
+msgid ""
+"Enter URL if you want this image to have a link (Note: parameters like "
+"\"mailto:\" are also accepted)."
+msgstr ""
+
+#: addons/logo-carousel-item/settings.php:43
+msgid "Image Border Radius"
+msgstr ""
+
+#: addons/logo-carousel-item/settings.php:45
+msgid "Enter image border radius e.g: 50px"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:15
+msgid "Slides To Show"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:16
+msgid "Number of picture show in slider"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:18 addons/logo-carousel/settings.php:38
+msgid "1"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:19 addons/logo-carousel/settings.php:39
+msgid "2"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:20 addons/logo-carousel/settings.php:40
+msgid "3"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:21 addons/logo-carousel/settings.php:41
+msgid "4"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:22 addons/logo-carousel/settings.php:42
+msgid "5"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:23 addons/logo-carousel/settings.php:43
+msgid "6"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:24 addons/logo-carousel/settings.php:44
+msgid "7"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:25 addons/logo-carousel/settings.php:45
+msgid "8"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:26 addons/logo-carousel/settings.php:46
+msgid "9"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:27 addons/logo-carousel/settings.php:47
+msgid "10"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:28 addons/logo-carousel/settings.php:48
+msgid "11"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:29 addons/logo-carousel/settings.php:49
+msgid "12"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:35
+#: addons/testimonial-slider/settings.php:33
+msgid "Slides to Scroll"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:36
+msgid "Select the number of picture to scroll"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:57
+#: addons/testimonial-slider/settings.php:49
+msgid "Bottom Dots"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:58
+msgid "Enable/Disable Bottom Dots feature"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:65
+msgid "Enable/Disable Arrow feature"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:71
+msgid "Arrow position"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:72
+msgid "Select the arrow position"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:74
+msgid "Style 1"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:75
+msgid "Style 2"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:81
+msgid "AutoPlay"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:82
+msgid "Enable/Disable Autoplay feature"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:87
+msgid "AutoPlay Speed"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:89
+msgid "Set auto play speed eg: 500"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:95
+msgid "Set slider move speed e.g: 500."
+msgstr ""
+
+#: addons/logo-carousel/settings.php:99
+msgid "cssEase"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:101
+msgid "Set cssEase name."
+msgstr ""
+
+#: addons/logo-carousel/settings.php:111
+#: addons/testimonial-slider/settings.php:81
+msgid "Pause on Hover"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:117
+msgid "RTL Direction"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:123
+#: addons/testimonial-slider/settings.php:99
+msgid "Center Mode"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:129
+#: addons/testimonial-slider/settings.php:90
+msgid "Fade Transition"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:131
+msgid "Forces 1 slide per view."
+msgstr ""
+
+#: addons/logo-carousel/settings.php:136
+msgid "Grayscale Logos (color on hover)"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:142
+msgid "Slides on Large (≤1200px)"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:144
+msgid "Slides per row on large screens."
+msgstr ""
+
+#: addons/logo-carousel/settings.php:149
+msgid "Slides on Tablet (≤768px)"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:151
+msgid "Slides per row on tablets."
+msgstr ""
+
+#: addons/logo-carousel/settings.php:156
+msgid "Slides on Mobile (≤480px)"
+msgstr ""
+
+#: addons/logo-carousel/settings.php:158
+msgid "Slides per row on phones."
+msgstr ""
+
+#. translators: %d: number of comments
+#: addons/post-grid/post-grid.php:238
+#, php-format
+msgid "%d comment"
+msgid_plural "%d comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/post-grid/post-grid.php:313
+msgid "Posts pagination"
+msgstr ""
+
+#: addons/post-grid/post-grid.php:328
+msgid "Load More requires AJAX (planned for a future release)."
+msgstr ""
+
+#: addons/post-grid/settings.php:13
+msgid "Any"
+msgstr ""
+
+#: addons/post-grid/settings.php:21
+msgid "Post"
+msgstr ""
+
+#: addons/post-grid/settings.php:28
+msgid "Post Type"
+msgstr ""
+
+#: addons/post-grid/settings.php:36
+msgid "Taxonomy"
+msgstr ""
+
+#: addons/post-grid/settings.php:40
+msgid "Taxonomy slug (e.g. category, post_tag, product_cat)."
+msgstr ""
+
+#: addons/post-grid/settings.php:45
+msgid "Term Slugs"
+msgstr ""
+
+#: addons/post-grid/settings.php:48
+msgid "Comma-separated term slugs to filter by. Leave empty to show all."
+msgstr ""
+
+#: addons/post-grid/settings.php:53
+msgid "Author IDs"
+msgstr ""
+
+#: addons/post-grid/settings.php:56
+msgid "Comma-separated author IDs. Leave empty for all."
+msgstr ""
+
+#: addons/post-grid/settings.php:60
+msgid "Posts Per Page"
+msgstr ""
+
+#: addons/post-grid/settings.php:68
+msgid "Offset"
+msgstr ""
+
+#: addons/post-grid/settings.php:76
+msgid "Order By"
+msgstr ""
+
+#: addons/post-grid/settings.php:80 addons/post-grid/settings.php:325
+msgid "Date"
+msgstr ""
+
+#: addons/post-grid/settings.php:82
+msgid "Modified"
+msgstr ""
+
+#: addons/post-grid/settings.php:83
+msgid "Random"
+msgstr ""
+
+#: addons/post-grid/settings.php:84
+msgid "Menu Order"
+msgstr ""
+
+#: addons/post-grid/settings.php:85 addons/post-grid/settings.php:344
+msgid "Comment Count"
+msgstr ""
+
+#: addons/post-grid/settings.php:92
+msgid "Order"
+msgstr ""
+
+#: addons/post-grid/settings.php:96
+msgid "DESC"
+msgstr ""
+
+#: addons/post-grid/settings.php:97
+msgid "ASC"
+msgstr ""
+
+#: addons/post-grid/settings.php:104
+msgid "Exclude Current Post"
+msgstr ""
+
+#: addons/post-grid/settings.php:112
+msgid "Ignore Sticky Posts"
+msgstr ""
+
+#: addons/post-grid/settings.php:123
+msgid "Layout"
+msgstr ""
+
+#: addons/post-grid/settings.php:127
+msgid "Grid"
+msgstr ""
+
+#: addons/post-grid/settings.php:128
+msgid "Masonry"
+msgstr ""
+
+#: addons/post-grid/settings.php:134
+msgid "Columns (Desktop)"
+msgstr ""
+
+#: addons/post-grid/settings.php:142
+msgid "Columns (Tablet)"
+msgstr ""
+
+#: addons/post-grid/settings.php:150
+msgid "Columns (Mobile)"
+msgstr ""
+
+#: addons/post-grid/settings.php:158
+msgid "Column Gap"
+msgstr ""
+
+#: addons/post-grid/settings.php:166
+msgid "Row Gap"
+msgstr ""
+
+#: addons/post-grid/settings.php:178
+msgid "Classic Card"
+msgstr ""
+
+#: addons/post-grid/settings.php:188
+msgid "Show Featured Image"
+msgstr ""
+
+#: addons/post-grid/settings.php:204
+msgid "Crop to Fixed Aspect Ratio"
+msgstr ""
+
+#: addons/post-grid/settings.php:212
+msgid "Aspect Ratio"
+msgstr ""
+
+#: addons/post-grid/settings.php:216
+msgid "CSS aspect-ratio value, e.g. 16/9, 4/3, 1/1."
+msgstr ""
+
+#: addons/post-grid/settings.php:221
+msgid "Image Hover Effect"
+msgstr ""
+
+#: addons/post-grid/settings.php:226
+msgid "Zoom"
+msgstr ""
+
+#: addons/post-grid/settings.php:234
+msgid "Show Title"
+msgstr ""
+
+#: addons/post-grid/settings.php:242 addons/pricing-table/settings.php:43
+msgid "Title Tag"
+msgstr ""
+
+#: addons/post-grid/settings.php:251
+msgid "Title Character Limit"
+msgstr ""
+
+#: addons/post-grid/settings.php:254
+msgid "0 = no limit."
+msgstr ""
+
+#: addons/post-grid/settings.php:259
+msgid "Show Excerpt"
+msgstr ""
+
+#: addons/post-grid/settings.php:267
+msgid "Excerpt Limit Unit"
+msgstr ""
+
+#: addons/post-grid/settings.php:271
+msgid "Words"
+msgstr ""
+
+#: addons/post-grid/settings.php:272
+msgid "Characters"
+msgstr ""
+
+#: addons/post-grid/settings.php:280
+msgid "Excerpt Limit"
+msgstr ""
+
+#: addons/post-grid/settings.php:289
+msgid "Show Read More Button"
+msgstr ""
+
+#: addons/post-grid/settings.php:300
+msgid "Read More"
+msgstr ""
+
+#: addons/post-grid/settings.php:307
+msgid "Show Meta Row"
+msgstr ""
+
+#: addons/post-grid/settings.php:315
+msgid "Author"
+msgstr ""
+
+#: addons/post-grid/settings.php:335
+msgid "Categories"
+msgstr ""
+
+#: addons/post-grid/settings.php:355
+msgid "Make Title Clickable"
+msgstr ""
+
+#: addons/post-grid/settings.php:364
+msgid "Make Image Clickable"
+msgstr ""
+
+#: addons/post-grid/settings.php:373
+msgid "Open in New Tab"
+msgstr ""
+
+#: addons/post-grid/settings.php:382
+msgid "Pagination"
+msgstr ""
+
+#: addons/post-grid/settings.php:387
+msgid "Numbered"
+msgstr ""
+
+#: addons/post-grid/settings.php:388
+msgid "Load More Button"
+msgstr ""
+
+#: addons/post-grid/settings.php:394
+msgid "Load More Button Text"
+msgstr ""
+
+#: addons/post-grid/settings.php:397
+msgid "Load More"
+msgstr ""
+
+#: addons/post-grid/settings.php:404
+msgid "No Posts Message"
+msgstr ""
+
+#: addons/post-grid/settings.php:407
+msgid "No posts found."
+msgstr ""
+
+#: addons/post-grid/settings.php:413
+msgid "Card Background"
+msgstr ""
+
+#: addons/post-grid/settings.php:420
+msgid "Card Padding"
+msgstr ""
+
+#: addons/post-grid/settings.php:427
+msgid "Card Border Color"
+msgstr ""
+
+#: addons/post-grid/settings.php:434
+msgid "Card Border Width"
+msgstr ""
+
+#: addons/post-grid/settings.php:441
+msgid "Card Border Radius"
+msgstr ""
+
+#: addons/post-grid/settings.php:448 addons/team-member/settings.php:99
+msgid "Card Shadow"
+msgstr ""
+
+#: addons/post-grid/settings.php:476
+msgid "Title Font Weight"
+msgstr ""
+
+#: addons/post-grid/settings.php:483
+msgid "Meta Color"
+msgstr ""
+
+#: addons/post-grid/settings.php:490
+msgid "Excerpt Color"
+msgstr ""
+
+#: addons/post-grid/settings.php:497 addons/pricing-table/settings.php:312
+msgid "Button Background"
+msgstr ""
+
+#: addons/post-grid/settings.php:504 addons/pricing-table/settings.php:293
+msgid "Button Text"
+msgstr ""
+
+#: addons/post-grid/settings.php:511 addons/pricing-table/settings.php:326
+msgid "Button Hover Background"
+msgstr ""
+
+#: addons/post-grid/settings.php:518 addons/pricing-table/settings.php:333
+msgid "Button Hover Text"
+msgstr ""
+
+#: addons/pricing-table/settings.php:25
+msgid "Highlight (Featured Table)"
+msgstr ""
+
+#: addons/pricing-table/settings.php:29
+msgid "Adds accent border and a slight scale-up to make this table stand out."
+msgstr ""
+
+#: addons/pricing-table/settings.php:35
+msgid "Plan Title"
+msgstr ""
+
+#: addons/pricing-table/settings.php:38 inc/settings/button.php:24
+msgid "Basic"
+msgstr ""
+
+#: addons/pricing-table/settings.php:51
+msgid "Subtitle / Description"
+msgstr ""
+
+#: addons/pricing-table/settings.php:57
+msgid "Header Media"
+msgstr ""
+
+#: addons/pricing-table/settings.php:86
+msgid "Icon Size"
+msgstr ""
+
+#: addons/pricing-table/settings.php:102
+msgid "Header Background"
+msgstr ""
+
+#: addons/pricing-table/settings.php:116
+msgid "Subtitle Color"
+msgstr ""
+
+#: addons/pricing-table/settings.php:130
+msgid "Subtitle Font Size"
+msgstr ""
+
+#: addons/pricing-table/settings.php:139
+msgid "Currency Symbol"
+msgstr ""
+
+#: addons/pricing-table/settings.php:147
+msgid "Currency Position"
+msgstr ""
+
+#: addons/pricing-table/settings.php:159
+msgid "Price"
+msgstr ""
+
+#: addons/pricing-table/settings.php:167
+msgid "Original / Old Price"
+msgstr ""
+
+#: addons/pricing-table/settings.php:170
+msgid "Shown with strike-through when filled."
+msgstr ""
+
+#: addons/pricing-table/settings.php:175
+msgid "Period Text"
+msgstr ""
+
+#: addons/pricing-table/settings.php:178
+msgid "/mo"
+msgstr ""
+
+#: addons/pricing-table/settings.php:183
+msgid "On Sale"
+msgstr ""
+
+#: addons/pricing-table/settings.php:191
+msgid "Sale Label Text"
+msgstr ""
+
+#: addons/pricing-table/settings.php:194
+msgid "Sale"
+msgstr ""
+
+#: addons/pricing-table/settings.php:200
+msgid "Price Color"
+msgstr ""
+
+#: addons/pricing-table/settings.php:207
+msgid "Currency Color"
+msgstr ""
+
+#: addons/pricing-table/settings.php:214
+msgid "Period Color"
+msgstr ""
+
+#: addons/pricing-table/settings.php:221
+msgid "Price Font Size"
+msgstr ""
+
+#: addons/pricing-table/settings.php:231
+msgid "Features"
+msgstr ""
+
+#: addons/pricing-table/settings.php:237
+msgid "Feature Text"
+msgstr ""
+
+#: addons/pricing-table/settings.php:255
+msgid "Excluded?"
+msgstr ""
+
+#: addons/pricing-table/settings.php:258
+msgid "Renders with a cross icon and strike-through."
+msgstr ""
+
+#: addons/pricing-table/settings.php:269
+msgid "Show Divider Between Features"
+msgstr ""
+
+#: addons/pricing-table/settings.php:276
+msgid "Feature Text Color"
+msgstr ""
+
+#: addons/pricing-table/settings.php:296
+msgid "Choose Plan"
+msgstr ""
+
+#: addons/pricing-table/settings.php:300
+msgid "Button Link"
+msgstr ""
+
+#: addons/pricing-table/settings.php:306
+msgid "Info Text (under button)"
+msgstr ""
+
+#: addons/pricing-table/settings.php:319
+msgid "Button Text Color"
+msgstr ""
+
+#: addons/pricing-table/settings.php:342
+msgid "Enable Ribbon"
+msgstr ""
+
+#: addons/pricing-table/settings.php:352
+msgid "Popular"
+msgstr ""
+
+#: addons/pricing-table/settings.php:357
+msgid "Ribbon Style"
+msgstr ""
+
+#: addons/pricing-table/settings.php:361
+msgid "Corner"
+msgstr ""
+
+#: addons/pricing-table/settings.php:362
+msgid "Flag"
+msgstr ""
+
+#: addons/pricing-table/settings.php:363
+msgid "Stripe"
+msgstr ""
+
+#: addons/pricing-table/settings.php:370
+msgid "Ribbon Position"
+msgstr ""
+
+#: addons/pricing-table/settings.php:374
+msgid "Top Right"
+msgstr ""
+
+#: addons/pricing-table/settings.php:375
+msgid "Top Left"
+msgstr ""
+
+#: addons/pricing-table/settings.php:382
+msgid "Ribbon Background"
+msgstr ""
+
+#: addons/pricing-table/settings.php:390
+msgid "Ribbon Text Color"
+msgstr ""
+
+#: addons/pricing-table/settings.php:414
+msgid "Box Border Width"
+msgstr ""
+
+#: addons/pricing-table/settings.php:421
+msgid "Box Border Radius"
+msgstr ""
+
+#: addons/pricing-table/settings.php:442
+msgid "Featured Accent Color"
+msgstr ""
+
+#: addons/pricing-table/settings.php:446
+msgid "Border + button accent for the highlighted state."
+msgstr ""
+
+#: addons/progress-bar/settings.php:12
+msgid "Label"
+msgstr ""
+
+#: addons/progress-bar/settings.php:15
+msgid "Skill"
+msgstr ""
+
+#: addons/progress-bar/settings.php:20
+msgid "Value"
+msgstr ""
+
+#: addons/progress-bar/settings.php:28
+msgid "Max Value"
+msgstr ""
+
+#: addons/progress-bar/settings.php:36
+msgid "Unit Suffix"
+msgstr ""
+
+#: addons/progress-bar/settings.php:41
+msgid "E.g. %, px, pts (leave empty for none)."
+msgstr ""
+
+#: addons/progress-bar/settings.php:49 inc/helpers.php:34
+msgid "Default"
+msgstr ""
+
+#: addons/progress-bar/settings.php:50 addons/team-member/settings.php:68
+msgid "Rounded"
+msgstr ""
+
+#: addons/progress-bar/settings.php:51
+msgid "Thin"
+msgstr ""
+
+#: addons/progress-bar/settings.php:52
+msgid "Thick"
+msgstr ""
+
+#: addons/progress-bar/settings.php:53
+msgid "Dark"
+msgstr ""
+
+#: addons/progress-bar/settings.php:58
+msgid "Show Label"
+msgstr ""
+
+#: addons/progress-bar/settings.php:66
+msgid "Show Value"
+msgstr ""
+
+#: addons/progress-bar/settings.php:74
+msgid "Value Position"
+msgstr ""
+
+#: addons/progress-bar/settings.php:78
+msgid "Inline (Inside Bar)"
+msgstr ""
+
+#: addons/progress-bar/settings.php:79
+msgid "Top (Next to Label)"
+msgstr ""
+
+#: addons/progress-bar/settings.php:85
+msgid "Bar Color"
+msgstr ""
+
+#: addons/progress-bar/settings.php:92
+msgid "Track Color"
+msgstr ""
+
+#: addons/progress-bar/settings.php:106
+msgid "Value Color"
+msgstr ""
+
+#: addons/progress-bar/settings.php:113
+msgid "Gradient Bar"
+msgstr ""
+
+#: addons/progress-bar/settings.php:120
+msgid "Gradient From"
+msgstr ""
+
+#: addons/progress-bar/settings.php:128
+msgid "Gradient To"
+msgstr ""
+
+#: addons/progress-bar/settings.php:136
+msgid "Bar Height"
+msgstr ""
+
+#: addons/progress-bar/settings.php:159
+msgid "Value Font Size"
+msgstr ""
+
+#: addons/progress-bar/settings.php:166
+msgid "Animate on Scroll"
+msgstr ""
+
+#: addons/progress-bar/settings.php:174
+msgid "Animation Duration (ms)"
+msgstr ""
+
+#: addons/progress-bar/settings.php:181
+msgid "Striped Bar"
+msgstr ""
+
+#: addons/progress-bar/settings.php:188
+msgid "Animated Stripes"
+msgstr ""
+
+#: addons/single-image/settings.php:31
+msgid "Provide content to show on image."
+msgstr ""
+
+#: addons/single-image/settings.php:38
+msgid "Provide text on footer area of the image"
+msgstr ""
+
+#: addons/single-image/settings.php:43
+msgid "Content Position"
+msgstr ""
+
+#: addons/single-image/settings.php:45
+msgid "Select content position over image."
+msgstr ""
+
+#: addons/single-image/settings.php:56
+msgid "Footer Text Position"
+msgstr ""
+
+#: addons/single-image/settings.php:58
+msgid "Select bottom text position over image."
+msgstr ""
+
+#: addons/single-image/settings.php:69
+msgid "Image Style"
+msgstr ""
+
+#: addons/single-image/settings.php:71
+msgid "Select image style."
+msgstr ""
+
+#: addons/single-image/settings.php:96
+msgid "Link Target"
+msgstr ""
+
+#: addons/single-image/settings.php:111
+msgid "Ribbon on Image"
+msgstr ""
+
+#: addons/single-image/settings.php:112
+msgid "Ribbon will appear on the top right corner"
+msgstr ""
+
+#: addons/single-image/settings.php:125
+msgid "Padding In Hover"
+msgstr ""
+
+#: addons/single-image/settings.php:127
+msgid "Provide Padding of image on hover eg:15px"
+msgstr ""
+
+#: addons/single-image/settings.php:140
+msgid "Choose image hover color."
+msgstr ""
+
+#: addons/single-image/settings.php:152
+msgid "Choose color for caption"
+msgstr ""
+
+#: addons/single-image/settings.php:161
+msgid "Footer Text Color"
+msgstr ""
+
+#: addons/single-image/settings.php:164
+msgid "Choose image bottom text hover color."
+msgstr ""
+
+#: addons/tabs-item/settings.php:15 addons/tabs-item/tabs-item.php:18
+#: inc/arrays.php:384
+msgid "Tab"
+msgstr ""
+
+#: addons/tabs-item/settings.php:24
+msgid "Tab content goes here. You can add any HTML, shortcodes, images, etc."
+msgstr ""
+
+#: addons/tabs-item/settings.php:28
+msgid "Tab Icon"
+msgstr ""
+
+#: addons/tabs-item/settings.php:35
+msgid "Shown only when \"Show Icons\" is enabled on the parent Tabs element."
+msgstr ""
+
+#: addons/tabs-item/settings.php:43
+msgid "If multiple tabs have this enabled, the first one wins."
+msgstr ""
+
+#: addons/tabs-item/settings.php:47
+msgid "Tab Anchor ID"
+msgstr ""
+
+#: addons/tabs-item/settings.php:50
+msgid "Optional custom HTML ID so you can deep-link to this tab with #my-id."
+msgstr ""
+
+#: addons/tabs/settings.php:16
+msgid "Underline"
+msgstr ""
+
+#: addons/tabs/settings.php:18
+msgid "Pills"
+msgstr ""
+
+#: addons/tabs/settings.php:19
+msgid "Buttons"
+msgstr ""
+
+#: addons/tabs/settings.php:29
+msgid "Horizontal"
+msgstr ""
+
+#: addons/tabs/settings.php:30
+msgid "Vertical"
+msgstr ""
+
+#: addons/tabs/settings.php:42
+msgid "Justify"
+msgstr ""
+
+#: addons/tabs/settings.php:47
+msgid "Show Icons"
+msgstr ""
+
+#: addons/tabs/settings.php:54
+msgid "Auto Rotate Tabs"
+msgstr ""
+
+#: addons/tabs/settings.php:61
+msgid "Rotate Speed (ms)"
+msgstr ""
+
+#: addons/tabs/settings.php:69
+msgid "Tab Title Color"
+msgstr ""
+
+#: addons/tabs/settings.php:76
+msgid "Active Tab Title Color"
+msgstr ""
+
+#: addons/tabs/settings.php:83
+msgid "Active Tab Background"
+msgstr ""
+
+#: addons/tabs/settings.php:90
+msgid "Active Tab Accent Color"
+msgstr ""
+
+#: addons/tabs/settings.php:97
+msgid "Content Text Color"
+msgstr ""
+
+#: addons/tabs/settings.php:103
+msgid "Tab Title Font Size"
+msgstr ""
+
+#: addons/tabs/settings.php:117
+msgid "Tab Padding"
+msgstr ""
+
+#: addons/tabs/settings.php:120
+msgid "e.g. 12px 20px"
+msgstr ""
+
+#: addons/tabs/settings.php:125
+msgid "Content Padding"
+msgstr ""
+
+#: addons/tabs/settings.php:128 addons/team-member/settings.php:163
+msgid "e.g. 20px"
+msgstr ""
+
+#: addons/tabs/tabs.php:94
+msgid "Tab 1"
+msgstr ""
+
+#: addons/tabs/tabs.php:94
+msgid "Add tab items inside this element."
+msgstr ""
+
+#: addons/team-member/settings.php:12
+msgid "Photo"
+msgstr ""
+
+#: addons/team-member/settings.php:25
+#: addons/testimonial-slider-item/settings.php:21
+msgid "Name"
+msgstr ""
+
+#: addons/team-member/settings.php:28
+msgid "John Doe"
+msgstr ""
+
+#: addons/team-member/settings.php:33
+msgid "Designation"
+msgstr ""
+
+#: addons/team-member/settings.php:36
+msgid "Designer"
+msgstr ""
+
+#: addons/team-member/settings.php:40
+msgid "Bio"
+msgstr ""
+
+#: addons/team-member/settings.php:46
+msgid "Profile Link"
+msgstr ""
+
+#: addons/team-member/settings.php:57
+msgid "Card"
+msgstr ""
+
+#: addons/team-member/settings.php:59
+msgid "Overlay (socials on image)"
+msgstr ""
+
+#: addons/team-member/settings.php:64
+msgid "Image Shape"
+msgstr ""
+
+#: addons/team-member/settings.php:69 addons/team-member/settings.php:217
+msgid "Square"
+msgstr ""
+
+#: addons/team-member/settings.php:91
+msgid "Lift"
+msgstr ""
+
+#: addons/team-member/settings.php:92
+msgid "Zoom Image"
+msgstr ""
+
+#: addons/team-member/settings.php:93
+msgid "Grayscale"
+msgstr ""
+
+#: addons/team-member/settings.php:94
+msgid "Tilt"
+msgstr ""
+
+#: addons/team-member/settings.php:106
+msgid "Strong"
+msgstr ""
+
+#: addons/team-member/settings.php:125
+msgid "Name Color"
+msgstr ""
+
+#: addons/team-member/settings.php:132
+msgid "Designation Color"
+msgstr ""
+
+#: addons/team-member/settings.php:139
+msgid "Bio Color"
+msgstr ""
+
+#: addons/team-member/settings.php:160
+msgid "Body Padding"
+msgstr ""
+
+#: addons/team-member/settings.php:168
+msgid "Name Font Size"
+msgstr ""
+
+#: addons/team-member/settings.php:175
+msgid "Designation Font Size"
+msgstr ""
+
+#: addons/team-member/settings.php:182
+msgid "Social Profiles"
+msgstr ""
+
+#: addons/team-member/settings.php:198
+#: addons/testimonial-slider-item/settings.php:33 inc/settings/button.php:38
+msgid "URL"
+msgstr ""
+
+#: addons/team-member/settings.php:204
+msgid "Accessible Label"
+msgstr ""
+
+#: addons/team-member/settings.php:211
+msgid "Social Icon Style"
+msgstr ""
+
+#: addons/team-member/settings.php:215
+msgid "Filled Circle"
+msgstr ""
+
+#: addons/team-member/settings.php:216
+msgid "Outlined Circle"
+msgstr ""
+
+#: addons/team-member/settings.php:218
+msgid "Flat (no background)"
+msgstr ""
+
+#: addons/team-member/settings.php:223
+msgid "Social Icon Size"
+msgstr ""
+
+#: addons/team-member/settings.php:230
+msgid "Social Icon Color"
+msgstr ""
+
+#: addons/team-member/settings.php:237
+msgid "Social Icon Background"
+msgstr ""
+
+#: addons/team-member/settings.php:244
+msgid "Social Hover Color"
+msgstr ""
+
+#: addons/team-member/settings.php:251
+msgid "Social Hover Background"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:15
+msgid "Picture"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:16
+msgid "Choose picture here"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:22
+msgid "Provide name of client"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:27
+msgid "Rank"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:28
+msgid "Provide rank or Company of client"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:34
+msgid "Link Company name with url, leave blank to disable"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:38
+msgid "Testimonial Style"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:40
+msgid "Choose single testimonial style here"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:64
+msgid "Rating"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:66
+msgid "Choose rating"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:83
+msgid "Column Space"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:85
+msgid ""
+"How many space this testimonial should take in 12 columns Grid. It will work "
+"for Grid only"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:104
+msgid "Content or Feedback"
+msgstr ""
+
+#: addons/testimonial-slider-item/settings.php:106
+msgid "Provide content to show in testimonial"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:14
+msgid "Testimonial Type"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:16
+msgid "Choose how you want to display testimonials"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:25
+msgid "Number of Columns"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:27
+msgid "How many testimonials at a time"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:35
+msgid "How many testimonial scroll at a time"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:41
+msgid "Slider Speed"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:43
+msgid "Provide slide speed in ms"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:51
+msgid "Check to enable dots"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:59
+msgid "Check to enable navigation arrows"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:65
+msgid "Auto Play"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:67
+msgid "Check to enable auto play"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:73
+msgid "Auto Play Speed"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:75
+msgid "Auto Play speed in ms Eg: 3000"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:83
+msgid "Pauses autoplay when the cursor is over the slider."
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:92
+msgid "Use fade instead of slide transition. Forces 1 slide per view."
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:101
+msgid "Highlights the center slide."
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:108
+msgid "RTL / Right-to-Left"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:116
+msgid "Arrow Style"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:130
+msgid "Responsive: Slides on Large (≤1200px)"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:132
+msgid "Number of slides to show on large screens. Default: 2"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:139
+msgid "Responsive: Slides on Tablet (≤768px)"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:141
+#: addons/testimonial-slider/settings.php:150
+msgid "Default: 1"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:148
+msgid "Responsive: Slides on Mobile (≤480px)"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:157
+msgid "Stars Color"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:159
+msgid "Choose Stars rating color here"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:166
+msgid "Choose testimonial text color here"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:173
+msgid "Choose testimonial background color here"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:180
+msgid "Choose testimonial title color here"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:185
+msgid "Company Name Color"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:187
+msgid "Choose testimonial company name color here"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:192
+msgid "Slider Arrows"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:194
+msgid "Choose testimonial slider arrows color here"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:199
+msgid "Dots Color"
+msgstr ""
+
+#: addons/testimonial-slider/settings.php:201
+msgid "Choose navigation dots color"
+msgstr ""
+
+#. Author of the plugin/theme
+#: classes/addons.class.php:56 classes/addons.class.php:57
+#: templates/admin/settings.php:36
+msgid "Classic Addons"
+msgstr ""
+
+#: classes/addons.class.php:350 templates/admin/settings.php:177
+msgid "Settings saved successfully."
+msgstr ""
+
+#: classes/addons.class.php:356
+msgid "Settings saved error."
+msgstr ""
+
+#: inc/arrays.php:16
+msgid "Animated Heading"
+msgstr ""
+
+#: inc/arrays.php:17
+msgid "Spins different words."
+msgstr ""
+
+#: inc/arrays.php:44
+msgid "Alert Box"
+msgstr ""
+
+#: inc/arrays.php:45
+msgid "Display notices or warnings in a alert box"
+msgstr ""
+
+#: inc/arrays.php:73
+msgid "Interactive Button"
+msgstr ""
+
+#: inc/arrays.php:74
+msgid "A bunch of pre made styles"
+msgstr ""
+
+#: inc/arrays.php:88
+msgid "Count Up"
+msgstr ""
+
+#: inc/arrays.php:89
+msgid "Displays number counter."
+msgstr ""
+
+#: inc/arrays.php:117
+msgid "Filterable Portfolio"
+msgstr ""
+
+#: inc/arrays.php:118
+msgid "Sortable Portfolio Items."
+msgstr ""
+
+#: inc/arrays.php:125
+msgid "Filterable Portfolio Item"
+msgstr ""
+
+#: inc/arrays.php:126
+msgid "Displays a single portfolio."
+msgstr ""
+
+#: inc/arrays.php:132
+msgid "Info Table"
+msgstr ""
+
+#: inc/arrays.php:133
+msgid "Title, Image and button"
+msgstr ""
+
+#: inc/arrays.php:168
+msgid "Info Banner"
+msgstr ""
+
+#: inc/arrays.php:169
+msgid "Banner with optional ribbon."
+msgstr ""
+
+#: inc/arrays.php:183
+msgid "Interactive Banner"
+msgstr ""
+
+#: inc/arrays.php:184
+msgid "Image and Caption with hover styles."
+msgstr ""
+
+#: inc/arrays.php:199
+msgid "Testimonial Slider + Grid"
+msgstr ""
+
+#: inc/arrays.php:200
+msgid "Testimonials with stars."
+msgstr ""
+
+#: inc/arrays.php:207
+msgid "Single Testimonial"
+msgstr ""
+
+#: inc/arrays.php:208
+msgid "Displays a single testimonial."
+msgstr ""
+
+#: inc/arrays.php:214
+msgid "Flip Box"
+msgstr ""
+
+#: inc/arrays.php:215
+msgid "Flip back front on hover"
+msgstr ""
+
+#: inc/arrays.php:250
+msgid "3D Flip Book"
+msgstr ""
+
+#: inc/arrays.php:251
+msgid "Displays Flip Book."
+msgstr ""
+
+#: inc/arrays.php:258
+msgid "Book Page"
+msgstr ""
+
+#: inc/arrays.php:259
+msgid "Renders single page for book."
+msgstr ""
+
+#: inc/arrays.php:265
+msgid "Single Image"
+msgstr ""
+
+#: inc/arrays.php:266
+msgid "Info above the image."
+msgstr ""
+
+#: inc/arrays.php:294
+msgid "Logo Carousel"
+msgstr ""
+
+#: inc/arrays.php:295
+msgid "Image Slider."
+msgstr ""
+
+#: inc/arrays.php:305
+msgid "Logo Carousel Item"
+msgstr ""
+
+#: inc/arrays.php:306
+msgid "Displays single carousel item."
+msgstr ""
+
+#: inc/arrays.php:323
+msgid "Info Box"
+msgstr ""
+
+#: inc/arrays.php:324
+msgid "Icon, Title and Content"
+msgstr ""
+
+#: inc/arrays.php:352
+msgid "Accordion / FAQ"
+msgstr ""
+
+#: inc/arrays.php:353
+msgid "Collapsible panels with FAQ support."
+msgstr ""
+
+#: inc/arrays.php:364
+msgid "Single accordion panel."
+msgstr ""
+
+#: inc/arrays.php:374
+msgid "Horizontal or vertical tabbed content."
+msgstr ""
+
+#: inc/arrays.php:385
+msgid "Single tab panel."
+msgstr ""
+
+#: inc/arrays.php:394
+msgid "Progress Bar"
+msgstr ""
+
+#: inc/arrays.php:395
+msgid "Animated skills or progress bars."
+msgstr ""
+
+#: inc/arrays.php:402
+msgid "Team Member"
+msgstr ""
+
+#: inc/arrays.php:403
+msgid "Team profile card with social icons."
+msgstr ""
+
+#: inc/arrays.php:410
+msgid "Countdown Timer"
+msgstr ""
+
+#: inc/arrays.php:411
+msgid "Counts down to a target date/time."
+msgstr ""
+
+#: inc/arrays.php:418
+msgid "Before / After Image"
+msgstr ""
+
+#: inc/arrays.php:419
+msgid "Image comparison slider."
+msgstr ""
+
+#: inc/arrays.php:426
+msgid "Post Grid"
+msgstr ""
+
+#: inc/arrays.php:427
+msgid "Display posts in grid or masonry layout."
+msgstr ""
+
+#: inc/arrays.php:434
+msgid "Pricing Table"
+msgstr ""
+
+#: inc/arrays.php:435
+msgid "Plan with price, features and button."
+msgstr ""
+
+#: inc/arrays.php:442
+msgid "Image Hotspots"
+msgstr ""
+
+#: inc/arrays.php:443
+msgid "Interactive markers on an image with tooltips."
+msgstr ""
+
+#: inc/helpers.php:252
+msgid "Solid"
+msgstr ""
+
+#: inc/helpers.php:253
+msgid "Dotted"
+msgstr ""
+
+#: inc/helpers.php:254
+msgid "Dashed"
+msgstr ""
+
+#: inc/helpers.php:255
+msgid "Double"
+msgstr ""
+
+#: inc/helpers.php:256
+msgid "Groove"
+msgstr ""
+
+#: inc/helpers.php:257
+msgid "Ridge"
+msgstr ""
+
+#: inc/helpers.php:258
+msgid "Inset"
+msgstr ""
+
+#: inc/helpers.php:259
+msgid "Outset"
+msgstr ""
+
+#: inc/settings/button.php:30
+msgid "Button text"
+msgstr ""
+
+#: inc/settings/button.php:32
+msgid "Provide button text."
+msgstr ""
+
+#: inc/settings/button.php:34
+msgid "Click Me!"
+msgstr ""
+
+#: inc/settings/button.php:40
+msgid "Provide link to button."
+msgstr ""
+
+#: inc/settings/button.php:45
+msgid "Font Color"
+msgstr ""
+
+#: inc/settings/button.php:63 inc/settings/icon.php:183
+#: inc/settings/ribbon.php:27 inc/settings/typography.php:28
+msgid "Font Size"
+msgstr ""
+
+#: inc/settings/button.php:65
+msgid "Provide the button font size with units e.g 18px"
+msgstr ""
+
+#: inc/settings/button.php:73
+msgid "Provide button border radius in units e.g 50px."
+msgstr ""
+
+#: inc/settings/button.php:89
+msgid "Hover Font Color"
+msgstr ""
+
+#: inc/settings/button.php:92
+msgid "Choose button text hover color."
+msgstr ""
+
+#: inc/settings/button.php:100
+msgid "Choose button background hover color."
+msgstr ""
+
+#: inc/settings/button.php:116
+msgid "Choose Icon"
+msgstr ""
+
+#: inc/settings/button.php:121 inc/settings/icon.php:31
+msgid "Font Awesome 6"
+msgstr ""
+
+#: inc/settings/button.php:122 inc/settings/icon.php:32
+msgid "Open Iconic"
+msgstr ""
+
+#: inc/settings/button.php:123 inc/settings/icon.php:33
+msgid "Typicons"
+msgstr ""
+
+#: inc/settings/button.php:124 inc/settings/icon.php:34
+msgid "Entypo"
+msgstr ""
+
+#: inc/settings/button.php:125 inc/settings/icon.php:35
+msgid "Linecons"
+msgstr ""
+
+#: inc/settings/button.php:126 inc/settings/icon.php:36
+msgid "Mono Social"
+msgstr ""
+
+#: inc/settings/button.php:127 inc/settings/icon.php:37
+msgid "Material"
+msgstr ""
+
+#: inc/settings/button.php:132
+msgid "Icon Alignment"
+msgstr ""
+
+#: inc/settings/button.php:134
+msgid "Choose icon position."
+msgstr ""
+
+#: inc/settings/button.php:146
+msgid "Font Awesome Icon"
+msgstr ""
+
+#: inc/settings/button.php:148
+msgid "Select the font icon"
+msgstr ""
+
+#: inc/settings/button.php:158
+msgid "Line Icon"
+msgstr ""
+
+#: inc/settings/button.php:175
+msgid "Border Effect"
+msgstr ""
+
+#: inc/settings/button.php:183
+msgid "Provide border width along with units. Eg: 2px"
+msgstr ""
+
+#: inc/settings/button.php:191 inc/settings/typography.php:75
+msgid "Spacing"
+msgstr ""
+
+#: inc/settings/button.php:199 inc/settings/typography.php:83
+msgid "Provide padding along with units. Eg: 5px"
+msgstr ""
+
+#: inc/settings/button.php:206 inc/settings/typography.php:90
+msgid "Provide margin along with units. Eg: 5px"
+msgstr ""
+
+#: inc/settings/icon.php:27
+msgid "Icon library"
+msgstr ""
+
+#: inc/settings/icon.php:38
+msgid "Custom Image"
+msgstr ""
+
+#: inc/settings/icon.php:41
+msgid "Select icon library."
+msgstr ""
+
+#: inc/settings/icon.php:58 inc/settings/icon.php:75 inc/settings/icon.php:93
+#: inc/settings/icon.php:111 inc/settings/icon.php:128
+#: inc/settings/icon.php:146 inc/settings/icon.php:164
+msgid "Select icon from library."
+msgstr ""
+
+#: inc/settings/icon.php:169
+msgid "Upload Image Icon"
+msgstr ""
+
+#: inc/settings/icon.php:185
+msgid "Provide icon font size with unit e.g: 25px"
+msgstr ""
+
+#: inc/settings/icon.php:201
+msgid "Provide icon box size with unit e.g: 25px"
+msgstr ""
+
+#: inc/settings/icon.php:217
+msgid "Choose font icon color."
+msgstr ""
+
+#: inc/settings/icon.php:233
+msgid "Choose icon box background color."
+msgstr ""
+
+#: inc/settings/icon.php:249
+msgid "Provide image size with unit e.g: 150px"
+msgstr ""
+
+#: inc/settings/icon.php:264
+msgid "Choose icon border radius eg: 1px"
+msgstr ""
+
+#: inc/settings/ribbon.php:22
+msgid "Provide ribbon text."
+msgstr ""
+
+#: inc/settings/ribbon.php:29
+msgid "Provide the ribbon font size with units e.g 18px"
+msgstr ""
+
+#: inc/settings/ribbon.php:37
+msgid "Choose ribbon text color."
+msgstr ""
+
+#: inc/settings/ribbon.php:44
+msgid "Choose ribbon background color."
+msgstr ""
+
+#: inc/settings/typography.php:30
+msgid "Provide the heading font size with units e.g 18px"
+msgstr ""
+
+#: inc/settings/typography.php:38
+msgid "Choose heading text color."
+msgstr ""
+
+#: inc/settings/typography.php:48
+msgid "Use custom font family?"
+msgstr ""
+
+#: inc/settings/typography.php:51
+msgid "Do you want to use custom fonts?."
+msgstr ""
+
+#: inc/settings/typography.php:60
+msgid "Select font family."
+msgstr ""
+
+#: inc/settings/typography.php:61
+msgid "Select font styling."
+msgstr ""
+
+#: templates/admin/border.php:26 templates/admin/margin.php:25
+#: templates/admin/padding.php:25
+msgid "right"
+msgstr ""
+
+#. translators: %s: plugin version
+#: templates/admin/settings.php:40
+#, php-format
+msgid "Manage your addons. Version %s"
+msgstr ""
+
+#: templates/admin/settings.php:48 templates/admin/settings.php:149
+msgid "Enabled"
+msgstr ""
+
+#: templates/admin/settings.php:52
+msgid "Total"
+msgstr ""
+
+#: templates/admin/settings.php:64
+msgid "Upgrade to Classic Addons Pro"
+msgstr ""
+
+#: templates/admin/settings.php:67
+msgid "PRO"
+msgstr ""
+
+#: templates/admin/settings.php:68
+msgid "Do more with Classic Addons Pro"
+msgstr ""
+
+#: templates/admin/settings.php:70
+msgid ""
+"Unlock 20+ premium widgets — Modal, Off-Canvas, Charts, Filterable Gallery, "
+"Timeline, Table of Contents and more — plus Tooltip, Display Conditions and "
+"Sticky extensions for every element."
+msgstr ""
+
+#: templates/admin/settings.php:73
+msgid "20+ Pro widgets"
+msgstr ""
+
+#: templates/admin/settings.php:74
+msgid "Global extensions"
+msgstr ""
+
+#: templates/admin/settings.php:75
+msgid "SEO heading &amp; alt controls"
+msgstr ""
+
+#: templates/admin/settings.php:76
+msgid "Lifetime updates"
+msgstr ""
+
+#: templates/admin/settings.php:81
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: templates/admin/settings.php:84
+msgid "See all features →"
+msgstr ""
+
+#: templates/admin/settings.php:97
+msgid "Search addons…"
+msgstr ""
+
+#: templates/admin/settings.php:97
+msgid "Search addons"
+msgstr ""
+
+#: templates/admin/settings.php:100
+msgid "Enable All"
+msgstr ""
+
+#: templates/admin/settings.php:101
+msgid "Disable All"
+msgstr ""
+
+#: templates/admin/settings.php:102
+msgid "Reset"
+msgstr ""
+
+#: templates/admin/settings.php:150
+msgid "Disabled"
+msgstr ""
+
+#: templates/admin/settings.php:157
+msgid "No addons match your search."
+msgstr ""
+
+#: templates/admin/settings.php:163
+msgid "You have unsaved changes."
+msgstr ""
+
+#: templates/admin/settings.php:166
+msgid "Discard"
+msgstr ""
+
+#: templates/admin/settings.php:168
+msgid "Save Changes"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Classic Addons - WPBakery Page Builder"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://classicaddons.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A collection of beautiful and elegant UI addons for WPBakery Page Builder"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://webcodingplace.com/"
+msgstr ""

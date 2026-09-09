@@ -8,41 +8,41 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$params = array(
+$cawpb_params = array(
     array(
 		"type" 			=> 	"attach_image",
-		"heading" 		=> 	__( 'Select Image', 'classic-addons' ),
+		"heading" 		=> 	__( 'Select Image', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"image_id",
-		"description" 	=> 	__( 'Upload image to display.', 'classic-addons' ),
+		"description" 	=> 	__( 'Upload image to display.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
 	array(
 		'type' => 'textfield',
-		'heading' => esc_html__( 'Image size', 'classic-addons' ),
+		'heading' => esc_html__( 'Image size', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'img_size',
 		'value' => 'full',
-		'description' => esc_html__( 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height)). default: full', 'classic-addons' ),
+		'description' => esc_html__( 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height)). default: full', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
 	array(
 		"type" 			=> 	"textarea_html",
-		"heading" 		=> 	__( 'Content', 'classic-addons' ),
+		"heading" 		=> 	__( 'Content', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"content",
-		"description" 	=> 	__( 'Provide content to show on image.', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide content to show on image.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
 	array(
 		"type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Footer Text', 'classic-addons' ),
+		"heading" 		=> 	__( 'Footer Text', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"footer_text",
-		"description" 	=> 	__( 'Provide text on footer area of the image', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide text on footer area of the image', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Content Position', 'classic-addons'),
+		"heading" 		=> __( 'Content Position', 'classic-addons-wpbakery-page-builder'),
 		"param_name" 	=> "content_position",
-		"description" 	=> __( 'Select content position over image.', 'classic-addons' ),
+		"description" 	=> __( 'Select content position over image.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"value" 		=> array(
 			'Top Left'	=>	'caw-single-image-top-left-c',
@@ -53,9 +53,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Footer Text Position', 'classic-addons'),
+		"heading" 		=> __( 'Footer Text Position', 'classic-addons-wpbakery-page-builder'),
 		"param_name" 	=> "footer_txt_position",
-		"description" 	=> __( 'Select bottom text position over image.', 'classic-addons' ),
+		"description" 	=> __( 'Select bottom text position over image.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"value" 		=> array(
 			'Left'	   =>	'caw-textleft',
@@ -66,9 +66,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Image Style', 'classic-addons'),
+		"heading" 		=> __( 'Image Style', 'classic-addons-wpbakery-page-builder'),
 		"param_name" 	=> "image_effects",
-		"description" 	=> __( 'Select image style.', 'classic-addons' ),
+		"description" 	=> __( 'Select image style.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"value" 		=> array(
 			'None'         =>	'none',
@@ -82,9 +82,9 @@ $params = array(
 	),
 	array(
 		'type' => 'href',
-		'heading' => esc_html__( 'Image link', 'classic-addons' ),
+		'heading' => esc_html__( 'Image link', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'link',
-		'description' => esc_html__( 'Enter URL if you want this image to have a link (Note: parameters like "mailto:" are also accepted).', 'classic-addons'),
+		'description' => esc_html__( 'Enter URL if you want this image to have a link (Note: parameters like "mailto:" are also accepted).', 'classic-addons-wpbakery-page-builder'),
 		'dependency' => array(
 			'element' => 'image_effects',
 			'value'   => array('img_custom_link'),
@@ -93,7 +93,7 @@ $params = array(
 	),
 	array(
 		'type' => 'dropdown',
-		'heading' => esc_html__( 'Link Target', 'classic-addons' ),
+		'heading' => esc_html__( 'Link Target', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'img_link_target',
 		'value' 		=> array(
 			'Current Window' =>	'_self',
@@ -108,23 +108,23 @@ $params = array(
     array(
 		'type' 			=> 'checkbox',
 		'param_name' 	=> 'image_ribbon',
-		'heading' 		=> __( 'Ribbon on Image', 'classic-addons' ),
-		"description" 	=> __("Ribbon will appear on the top right corner", "classic-addons"),
+		'heading' 		=> __( 'Ribbon on Image', 'classic-addons-wpbakery-page-builder' ),
+		"description" 	=> __("Ribbon will appear on the top right corner", "classic-addons-wpbakery-page-builder"),
         'default'  		=> '0',	
         "group" 		=> 	'General',
     ),
 	array(
 		"type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Extra Classes', 'classic-addons' ),
+		"heading" 		=> 	__( 'Extra Classes', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"ex_classes",
-		"description" 	=> 	__( 'Provide the extra classes name for custom styling.', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide the extra classes name for custom styling.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
 	array(
 		"type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Padding In Hover', 'classic-addons' ),
+		"heading" 		=> 	__( 'Padding In Hover', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"image_hover_pd",
-		"description" 	=> 	__( 'Provide Padding of image on hover eg:15px', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide Padding of image on hover eg:15px', 'classic-addons-wpbakery-page-builder' ),
 		"edit_field_class" => "vc_col-xs-6 vc_column",
 		"dependency" => array(
 			'element' => "image_effects", 
@@ -134,10 +134,10 @@ $params = array(
 	),
 	array(
 		"type" 			=> 	"colorpicker",
-		"heading" 		=> 	__( 'Color', 'classic-addons' ),
+		"heading" 		=> 	__( 'Color', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"img_hoverclr",
 		"edit_field_class" => "vc_col-xs-6 vc_column",
-		"description" 	=> 	__( 'Choose image hover color.', 'classic-addons' ),
+		"description" 	=> 	__( 'Choose image hover color.', 'classic-addons-wpbakery-page-builder' ),
 		"dependency" => array(
 			'element' => "image_effects", 
 			'value'   => array('image_hover')
@@ -146,10 +146,10 @@ $params = array(
 	),
 	array(
 		"type" 			=> 	"colorpicker",
-		"heading" 		=> 	__( 'Content Color', 'classic-addons' ),
+		"heading" 		=> 	__( 'Content Color', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"caption_hoverclr",
 		"edit_field_class" => "vc_col-xs-6 vc_column",
-		"description" 	=> 	__( 'Choose color for caption', 'classic-addons' ),
+		"description" 	=> 	__( 'Choose color for caption', 'classic-addons-wpbakery-page-builder' ),
 		"dependency" => array(
 			'element' => "image_effects", 
 			'value'   => array('image_hover')
@@ -158,10 +158,10 @@ $params = array(
 	),
 	array(
 		"type" 			=> 	"colorpicker",
-		"heading" 		=> 	__( 'Footer Text Color', 'classic-addons' ),
+		"heading" 		=> 	__( 'Footer Text Color', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"bottom_txthoverclr",
 		"edit_field_class" => "vc_col-xs-6 vc_column",
-		"description" 	=> 	__( 'Choose image bottom text hover color.', 'classic-addons' ),
+		"description" 	=> 	__( 'Choose image bottom text hover color.', 'classic-addons-wpbakery-page-builder' ),
 		"dependency" => array(
 			'element' => "image_effects", 
 			'value' => array('image_hover')

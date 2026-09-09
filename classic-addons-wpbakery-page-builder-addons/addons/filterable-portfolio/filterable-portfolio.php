@@ -49,14 +49,14 @@ class WPBakeryShortCode_CAW_Filterable_Portfolio_C extends WPBakeryShortCodesCon
 		$category_list = explode(",", $menu_items);
 
 		ob_start(); ?>
-		<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
+		<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 			<div class="caw-filportfolio-navbar">
 				<ul class="caw-filportfolio-filter caw-textcenter">
 					<?php  
 					if ($enable_all_btn == 'enable') {
 						?>
 						<li class="filter active" data-filter="all">
-							<?php echo esc_html__( 'All', 'classic-addons' ); ?>
+							<?php echo esc_html__( 'All', 'classic-addons-wpbakery-page-builder' ); ?>
 						</li>
 						<?php
 					}

@@ -84,7 +84,7 @@ class WPBakeryShortCode_CAW_Info_Banner extends WPBakeryShortCode {
 
 		ob_start(); ?>
 		<?php if ($style == 'left' || $style == 'right') { ?>
-			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 				<div class="caw-infobanner-ribbon">
 					<span style="<?php echo esc_attr($ribbon_istyle); ?>">
 						<?php echo esc_attr( $ribbon_text ); ?>
@@ -100,14 +100,14 @@ class WPBakeryShortCode_CAW_Info_Banner extends WPBakeryShortCode {
 					</div>
 
 					<!-- Button Component -->
-					<?php do_action( 'caw_render_button_component', $attrs, $addon_base, true ); ?>
+					<?php do_action( 'cawpb_render_button_component', $attrs, $addon_base, true ); ?>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		<?php } ?>
 
 		<?php if ($style == 'default') { ?>
-			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 				<div class="caw-infobanner-ribbon">
 					<span style="<?php echo esc_attr($ribbon_istyle); ?>">
 						<?php echo esc_attr( $ribbon_text ); ?>
@@ -126,7 +126,7 @@ class WPBakeryShortCode_CAW_Info_Banner extends WPBakeryShortCode {
 					</div>
 
 					<!-- Button Component -->
-					<?php do_action( 'caw_render_button_component', $attrs, $addon_base, true ); ?>				
+					<?php do_action( 'cawpb_render_button_component', $attrs, $addon_base, true ); ?>				
 				</div>
 				<div class="clearfix"></div>
 			</div>

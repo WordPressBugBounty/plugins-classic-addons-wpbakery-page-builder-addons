@@ -179,7 +179,7 @@ class WPBakeryShortCode_CAW_Pricing_Table extends WPBakeryShortCode {
 
 		ob_start(); ?>
 		<div id="<?php echo esc_attr( $uid ); ?>"
-			class="<?php echo cawpb_sanitize_html_classes( $wrapper_classes ); ?>"
+			class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>"
 			style="<?php echo esc_attr( $box_istyle ); ?>">
 
 			<?php if ( $ribbon_enable === 'yes' && $ribbon_text !== '' ) : ?>
@@ -246,7 +246,7 @@ class WPBakeryShortCode_CAW_Pricing_Table extends WPBakeryShortCode {
 						$li_classes   = array( 'caw-pt-feature' );
 						if ( $fexcluded ) { $li_classes[] = 'caw-pt-excluded'; }
 						?>
-						<li class="<?php echo cawpb_sanitize_html_classes( $li_classes ); ?>">
+						<li class="<?php echo esc_attr( cawpb_sanitize_html_classes( $li_classes ) ); ?>">
 							<i class="caw-pt-feature-icon <?php echo esc_attr( $display_icon ); ?>" style="<?php echo esc_attr( $icon_inline ); ?>" aria-hidden="true"></i>
 							<span class="caw-pt-feature-text" style="<?php echo esc_attr( $feature_text_istyle ); ?>"><?php echo wp_kses( $ftext, $feature_html_allow ); ?></span>
 						</li>

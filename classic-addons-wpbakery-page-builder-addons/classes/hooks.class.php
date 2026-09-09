@@ -2,14 +2,16 @@
 /**
 * All custom hooks
 */
+if ( ! defined( 'ABSPATH' ) ) { exit; }
+
 class CAWPB_Hooks_Classic_Addons_WPBakery
 {
 	
 	function __construct(){
-		add_action( 'wcp_testimonial_display_rating', array($this, 'testimonial_display_rating'), 10, 1 );
-		add_action( 'wcp_testimonial_display_company', array($this, 'testimonial_display_company'), 10, 2 );
-		add_action( 'caw_render_icon_component', array($this, 'render_icon'), 10, 3 );
-		add_action( 'caw_render_button_component', array($this, 'render_button'), 10, 3 );
+		add_action( 'cawpb_testimonial_display_rating', array($this, 'testimonial_display_rating'), 10, 1 );
+		add_action( 'cawpb_testimonial_display_company', array($this, 'testimonial_display_company'), 10, 2 );
+		add_action( 'cawpb_render_icon_component', array($this, 'render_icon'), 10, 3 );
+		add_action( 'cawpb_render_button_component', array($this, 'render_button'), 10, 3 );
 	}
 
 	function render_icon($attrs, $base, $has_body){

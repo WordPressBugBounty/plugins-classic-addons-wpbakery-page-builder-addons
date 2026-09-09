@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: Classic Addons - WPBakery Page Builder Addons
+ * Plugin Name: Classic Addons - WPBakery Page Builder
  * Plugin URI: https://classicaddons.com/
  * Description: A collection of beautiful and elegant UI addons for WPBakery Page Builder
- * Version: 4.1
+ * Version: 4.2
  * Author: Classic Addons
  * Author URI: https://webcodingplace.com/
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: classic-addons
+ * Text Domain: classic-addons-wpbakery-page-builder
  * Domain Path: /languages
  */
 
@@ -26,9 +26,11 @@
   GNU General Public License for more details.
 */
 
+if ( ! defined( 'ABSPATH' ) ) { exit; }
+
 define('CAWPB_PATH', untrailingslashit(plugin_dir_path( __FILE__ )) );
 define('CAWPB_URL', untrailingslashit(plugin_dir_url( __FILE__ )) );
-define('CAWPB_VERSION', '4.1' );
+define('CAWPB_VERSION', '4.2' );
 
 /* ======= Plugin File Includes =========== */
 if( file_exists( CAWPB_PATH.'/inc/helpers.php' )) include_once CAWPB_PATH.'/inc/helpers.php';
@@ -37,13 +39,12 @@ if( file_exists( CAWPB_PATH.'/classes/addons.class.php' )) include_once CAWPB_PA
 if( file_exists( CAWPB_PATH.'/classes/hooks.class.php' )) include_once CAWPB_PATH.'/classes/hooks.class.php';
 
 if (class_exists('CAWPB_Classic_Addons_WPBakery')) {
-    $classic_addons = new CAWPB_Classic_Addons_WPBakery;
+    $cawpb_classic_addons = new CAWPB_Classic_Addons_WPBakery;
 }
 
 if (class_exists('CAWPB_Hooks_Classic_Addons_WPBakery')) {
-	$classic_addons_hooks = new CAWPB_Hooks_Classic_Addons_WPBakery;
+	$cawpb_classic_addons_hooks = new CAWPB_Hooks_Classic_Addons_WPBakery;
 }
-
 
 /**
  * Update the options on plugin activation.

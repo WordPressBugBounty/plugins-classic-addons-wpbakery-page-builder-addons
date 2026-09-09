@@ -1,4 +1,9 @@
 <?php
+/*
+**========== Direct access not allowed =========== 
+*/
+if( ! defined('ABSPATH' ) ){ exit; }
+
 class WPBakeryShortCode_CAW_Testimonial_Slider extends WPBakeryShortCode {
 
 	protected function content( $attrs, $content = null ) {

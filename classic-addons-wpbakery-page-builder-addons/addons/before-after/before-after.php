@@ -70,7 +70,7 @@ class WPBakeryShortCode_CAW_Before_After extends WPBakeryShortCode {
 			// Editor placeholder: show a friendly hint instead of broken markup.
 			ob_start(); ?>
 			<div class="caw-before-after caw-before-after-empty">
-				<p><?php echo esc_html__( 'Please select both Before and After images.', 'classic-addons' ); ?></p>
+				<p><?php echo esc_html__( 'Please select both Before and After images.', 'classic-addons-wpbakery-page-builder' ); ?></p>
 			</div>
 			<?php
 			return ob_get_clean();
@@ -104,7 +104,7 @@ class WPBakeryShortCode_CAW_Before_After extends WPBakeryShortCode {
 
 		ob_start(); ?>
 		<div id="<?php echo esc_attr( $uid ); ?>"
-			class="<?php echo cawpb_sanitize_html_classes( $wrapper_classes ); ?>"
+			class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>"
 			style="<?php echo esc_attr( $combined_wrap_style ); ?>"
 			data-orientation="<?php echo esc_attr( $orientation ); ?>"
 			data-interaction="<?php echo esc_attr( $interaction ); ?>"
@@ -128,7 +128,7 @@ class WPBakeryShortCode_CAW_Before_After extends WPBakeryShortCode {
 					<button type="button" class="caw-ba-handle"
 						style="<?php echo esc_attr( $handle_istyle ); ?>"
 						role="slider"
-						aria-label="<?php echo esc_attr__( 'Drag to compare before and after images', 'classic-addons' ); ?>"
+						aria-label="<?php echo esc_attr__( 'Drag to compare before and after images', 'classic-addons-wpbakery-page-builder' ); ?>"
 						aria-valuemin="0"
 						aria-valuemax="100"
 						aria-valuenow="<?php echo esc_attr( (int) $start ); ?>"

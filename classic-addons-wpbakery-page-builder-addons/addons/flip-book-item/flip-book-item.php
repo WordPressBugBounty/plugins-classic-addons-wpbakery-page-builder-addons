@@ -23,11 +23,11 @@ class WPBakeryShortCode_CAW_Flip_Book extends WPBakeryShortCode {
 		$cssbox = cawpb_add_inline_style($cssbox, $this->settings['base'], $attrs, 'caw-flipbook-styles');
 
 		ob_start(); 
-		global $caw_flipbook_style;
+		global $cawpb_flipbook_style;
 		?>
 
 		<?php
-		if ($caw_flipbook_style == 'caw_fb_single_pages') {
+		if ($cawpb_flipbook_style == 'caw_fb_single_pages') {
 
 			$this->content_arr[]    = $content;
 			$this->single_classes[] = $cssbox;

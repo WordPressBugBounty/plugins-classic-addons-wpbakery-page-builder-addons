@@ -97,7 +97,7 @@ class WPBakeryShortCode_CAW_Countdown_Timer extends WPBakeryShortCode {
 
 		ob_start(); ?>
 		<div id="<?php echo esc_attr( $uid ); ?>"
-			class="<?php echo cawpb_sanitize_html_classes( $wrapper_classes ); ?>"
+			class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>"
 			style="<?php echo esc_attr( $wrap_style ); ?>"
 			data-target="<?php echo esc_attr( $target_ts ); ?>"
 			data-expiry-action="<?php echo esc_attr( $expiry_action ); ?>"

@@ -107,7 +107,7 @@ class WPBakeryShortCode_CAW_Accordion_C extends WPBakeryShortCodesContainer {
 
 		// Fallback if the editor has an empty container
 		if ( trim( $inner ) === '' ) {
-			$inner = '<p><em>' . esc_html__( 'Add accordion items inside this element.', 'classic-addons' ) . '</em></p>';
+			$inner = '<p><em>' . esc_html__( 'Add accordion items inside this element.', 'classic-addons-wpbakery-page-builder' ) . '</em></p>';
 		}
 
 		return sprintf(

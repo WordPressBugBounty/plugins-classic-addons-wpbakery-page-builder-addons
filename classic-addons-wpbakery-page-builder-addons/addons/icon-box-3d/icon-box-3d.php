@@ -61,20 +61,20 @@ class WPBakeryShortCode_CAW_Icon_Box_3d extends WPBakeryShortCode {
         }
         
         ob_start(); ?>
-        <div class="<?php echo implode(' ', array_filter($classes)); ?>">
+        <div class="<?php echo esc_attr( implode(' ', array_filter($classes)) ); ?>">
           <div class="caw-icon-box-3d-inner" style="width: <?php echo esc_attr( $box_width ) ?>; height: <?php echo esc_attr( $box_height ) ?>">
             
             <!-- Floor / base -->
-            <div class="caw-outer-box"  <?php if (!empty($inline_styles)) echo 'style="' . implode('; ', $inline_styles) . '"'; ?>>
+            <div class="caw-outer-box"  <?php if (!empty($inline_styles)) echo 'style="' . esc_attr( implode('; ', $inline_styles) ) . '"'; ?>>
               <!-- Reflection -->
               <div class="caw-reflection">
-                <?php do_action( 'caw_render_icon_component', $attrs, $addon_base, false ); ?>
+                <?php do_action( 'cawpb_render_icon_component', $attrs, $addon_base, false ); ?>
               </div>
             </div>
 
             <!-- Main icon -->
             <div class="caw-main-icon">
-              <?php do_action( 'caw_render_icon_component', $attrs, $addon_base, false ); ?>
+              <?php do_action( 'cawpb_render_icon_component', $attrs, $addon_base, false ); ?>
             </div>
           </div>
         </div>

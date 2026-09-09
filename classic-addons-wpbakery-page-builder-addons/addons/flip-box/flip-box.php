@@ -77,9 +77,9 @@ class WPBakeryShortCode_CAW_Flip_Box extends WPBakeryShortCode {
 		$front_rawhtml = rawurldecode( base64_decode( wp_strip_all_tags( $front_content ) ) );
 
 		ob_start(); ?>
-		<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>" style="<?php echo esc_attr($wrapper_istyle); ?>">
+		<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>" style="<?php echo esc_attr($wrapper_istyle); ?>">
 		    <div class="caw-flipbox-inner">
-		        <div class="<?php echo cawpb_sanitize_html_classes($rotate_classes); ?>">
+		        <div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $rotate_classes ) ); ?>">
 		            <div class="caw-flipbox-action easing_easeInOutCirc">
 		                <div class="caw-flipbox-content">
 		                    <div class="caw-flipbox-front <?php echo esc_attr($front_border_css); ?> caw-flipbox-style-1" style="<?php echo esc_attr($front_istyle); ?>">
@@ -91,7 +91,7 @@ class WPBakeryShortCode_CAW_Flip_Box extends WPBakeryShortCode {
 		                        	<?php } ?>
 		                        	
 		                        	<!-- Icon -->
-									<?php do_action( 'caw_render_icon_component', $attrs, $addon_base, false ); ?>
+									<?php do_action( 'cawpb_render_icon_component', $attrs, $addon_base, false ); ?>
 
 								<?php if ($front_rawhtml){ ?>
 		                            <div class="caw-flipbox-front-content caw-textcenter" style="<?php echo esc_attr($fcontent_istyle); ?>">
@@ -109,7 +109,7 @@ class WPBakeryShortCode_CAW_Flip_Box extends WPBakeryShortCode {
 		                    		<?php endif ?>
 
 		                    		<!-- Button Component -->
-									<?php do_action( 'caw_render_button_component', $attrs, $addon_base, true ); ?>	
+									<?php do_action( 'cawpb_render_button_component', $attrs, $addon_base, true ); ?>	
 		                    		
 		                    	</div>                        
 		                    </div>

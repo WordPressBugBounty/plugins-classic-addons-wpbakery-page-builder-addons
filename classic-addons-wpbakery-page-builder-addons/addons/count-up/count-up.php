@@ -115,7 +115,7 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 			<a href="<?php echo esc_url( $link_arr['url'] ); ?>" title="<?php echo esc_attr( $link_arr['title'] ); ?>" target="<?php echo esc_attr( $link_arr['target'] ); ?>" rel="<?php echo esc_attr( $link_arr['rel'] ); ?>" class="caw-countup-link" style="text-decoration:none;color:inherit;display:block;">
 		<?php endif; ?>
 		<?php if ($icon_position != 'center'){ ?>
-			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 				<div class="caw-countup-inner caw-countup-style-1">			
 					<?php if ($icon_position == 'left'){ ?>
 
@@ -159,7 +159,7 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 					</div>
 					<?php if ($icon_position == 'right'){ ?>
 
-						<?php do_action( 'caw_render_icon_component', $attrs, $addon_base, false ); ?>
+						<?php do_action( 'cawpb_render_icon_component', $attrs, $addon_base, false ); ?>
 
 					<?php } ?>
 				</div>
@@ -167,7 +167,7 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 
 			<?php }else{ ?>
 
-			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 				<div class="caw-countup-inner">
 					<?php if($heading_position == 'top') { ?>
 						<span style="<?php echo esc_attr($h_istyle); ?>" caw-time-heading <?php echo esc_attr($spacing_classes['heading']); ?>>
@@ -178,7 +178,7 @@ class WPBakeryShortCode_CAW_Count_Up extends WPBakeryShortCode {
 	                	<?php } ?>
 					<?php } ?>										
 					
-					<?php do_action( 'caw_render_icon_component', $attrs, $addon_base, false ); ?>
+					<?php do_action( 'cawpb_render_icon_component', $attrs, $addon_base, false ); ?>
 
 					<div class="caw-countup-box">
 						<?php if ( $prefix !== '' ) : ?>

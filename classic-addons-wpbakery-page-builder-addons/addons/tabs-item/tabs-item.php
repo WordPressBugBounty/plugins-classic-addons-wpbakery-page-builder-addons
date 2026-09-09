@@ -15,7 +15,7 @@ class WPBakeryShortCode_CAW_Tabs extends WPBakeryShortCode {
 	protected function content( $attrs, $content = null ) {
 
 		$atts = shortcode_atts( array(
-			'title'       => __( 'Tab', 'classic-addons' ),
+			'title'       => __( 'Tab', 'classic-addons-wpbakery-page-builder' ),
 			'icon'        => '',
 			'is_default'  => '',
 			'tab_id'      => '',

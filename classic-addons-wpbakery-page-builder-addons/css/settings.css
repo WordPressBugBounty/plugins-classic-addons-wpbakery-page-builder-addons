@@ -481,3 +481,118 @@
 	.caw-card-icon { width: 48px; height: 48px; }
 	.caw-card-title { font-size: 14px; }
 }
+
+/* ============================================================
+   Upgrade to Pro banner (free plugin)
+   ============================================================ */
+.caw-pro-banner{
+	position:relative;
+	overflow:hidden;
+	margin:24px 0;
+	padding:26px 28px;
+	border-radius:16px;
+	background:linear-gradient(120deg,#1f1147 0%,#3a1d6e 45%,#6c2bd9 100%);
+	color:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	gap:28px;
+	flex-wrap:wrap;
+	box-shadow:0 18px 40px -18px rgba(76,29,149,.65);
+}
+.caw-pro-banner-glow{
+	position:absolute;
+	top:-60%;
+	right:-10%;
+	width:420px;
+	height:420px;
+	background:radial-gradient(circle,rgba(255,110,196,.45),transparent 60%);
+	pointer-events:none;
+}
+.caw-pro-banner-main{position:relative;z-index:1;max-width:640px;}
+.caw-pro-badge{
+	display:inline-block;
+	font-size:11px;
+	font-weight:800;
+	letter-spacing:.14em;
+	padding:4px 10px;
+	border-radius:999px;
+	background:rgba(255,255,255,.16);
+	border:1px solid rgba(255,255,255,.28);
+	margin-bottom:12px;
+}
+.caw-pro-banner-title{
+	margin:0 0 8px;
+	color:#fff;
+	font-size:22px;
+	font-weight:800;
+	line-height:1.2;
+}
+.caw-pro-banner-text{
+	margin:0 0 14px;
+	color:rgba(255,255,255,.85);
+	font-size:14px;
+	line-height:1.6;
+}
+.caw-pro-feats{
+	display:flex;
+	flex-wrap:wrap;
+	gap:8px 18px;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.caw-pro-feats li{
+	position:relative;
+	padding-left:22px;
+	font-size:13px;
+	color:#fff;
+	font-weight:600;
+}
+.caw-pro-feats li::before{
+	content:"";
+	position:absolute;
+	left:0;
+	top:50%;
+	transform:translateY(-50%);
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	background:#3ddc97;
+	box-shadow:0 0 0 3px rgba(61,220,151,.25);
+}
+.caw-pro-banner-cta{
+	position:relative;
+	z-index:1;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	gap:10px;
+	text-align:center;
+}
+.caw-pro-btn{
+	display:inline-block;
+	padding:13px 30px;
+	border-radius:10px;
+	background:#fff;
+	color:#3a1d6e !important;
+	font-weight:800;
+	font-size:15px;
+	text-decoration:none;
+	box-shadow:0 10px 24px -8px rgba(0,0,0,.45);
+	transition:transform .15s ease,box-shadow .15s ease;
+	white-space:nowrap;
+}
+.caw-pro-btn:hover{transform:translateY(-2px);box-shadow:0 16px 30px -10px rgba(0,0,0,.5);}
+.caw-pro-cta-link{
+	color:rgba(255,255,255,.9) !important;
+	font-size:13px;
+	font-weight:600;
+	text-decoration:none;
+}
+.caw-pro-cta-link:hover{color:#fff !important;text-decoration:underline;}
+
+@media (max-width:782px){
+	.caw-pro-banner{flex-direction:column;align-items:flex-start;}
+	.caw-pro-banner-cta{align-items:flex-start;width:100%;}
+}

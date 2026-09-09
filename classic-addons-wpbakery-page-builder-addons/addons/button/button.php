@@ -37,7 +37,7 @@ class WPBakeryShortCode_CAW_Button extends WPBakeryShortCode {
 		$wrapper_classes[] = $cssbox;		
 
 		ob_start(); ?>		
-		<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>" style="<?php echo esc_attr($wrapper_istyle); ?>">
+		<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>" style="<?php echo esc_attr($wrapper_istyle); ?>">
 			<?php $this->display_button($attrs, $addon_id); ?>			
 		</div>
 		<?php

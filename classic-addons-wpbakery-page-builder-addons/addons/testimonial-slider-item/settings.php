@@ -8,36 +8,36 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$params = array(
+$cawpb_params = array(
     array(
         "type" => "attach_image",
         "param_name" => "image_id",
-        "heading" => __("Picture", "classic-addons"),
-        "description" => __("Choose picture here", "classic-addons"),
+        "heading" => __("Picture", "classic-addons-wpbakery-page-builder"),
+        "description" => __("Choose picture here", "classic-addons-wpbakery-page-builder"),
     ),
     array(
         "type" => "textfield",
         "param_name" => "title",
-        "heading" => __("Name", "classic-addons"),
-        "description" => __("Provide name of client", "classic-addons"),
+        "heading" => __("Name", "classic-addons-wpbakery-page-builder"),
+        "description" => __("Provide name of client", "classic-addons-wpbakery-page-builder"),
     ),
     array(
         "type" => "textfield",
         "param_name" => "company",
-        "heading" => __("Rank", "classic-addons"),
-        "description" => __("Provide rank or Company of client", "classic-addons"),
+        "heading" => __("Rank", "classic-addons-wpbakery-page-builder"),
+        "description" => __("Provide rank or Company of client", "classic-addons-wpbakery-page-builder"),
     ),
     array(
         "type" => "textfield",
         "param_name" => "url",
-        "heading" => __("URL", "classic-addons"),
-        "description" => __("Link Company name with url, leave blank to disable", "classic-addons"),
+        "heading" => __("URL", "classic-addons-wpbakery-page-builder"),
+        "description" => __("Link Company name with url, leave blank to disable", "classic-addons-wpbakery-page-builder"),
     ),
 	array(
 		"type" 			=> 	"dropdown",
-		"heading" 		=> 	__( 'Testimonial Style', 'classic-addons' ),
+		"heading" 		=> 	__( 'Testimonial Style', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"style",
-		"description" 	=> 	__( 'Choose single testimonial style here', 'classic-addons' ),
+		"description" 	=> 	__( 'Choose single testimonial style here', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'Display Settings',
 		"value" 		=> array(
 			"Style 1"		=> "1",
@@ -61,9 +61,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> 	"dropdown",
-		"heading" 		=> 	__( 'Rating', 'classic-addons' ),
+		"heading" 		=> 	__( 'Rating', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"stars",
-		"description" 	=> 	__( 'Choose rating', 'classic-addons' ),
+		"description" 	=> 	__( 'Choose rating', 'classic-addons-wpbakery-page-builder' ),
 		// "group" 		=> 	'Display Settings',
 		"value" 		=> array(
 			"5.0"		=> "5.0",
@@ -80,9 +80,9 @@ $params = array(
 	),	    
 	array(
 		"type" 			=> 	"dropdown",
-		"heading" 		=> 	__( 'Column Space', 'classic-addons' ),
+		"heading" 		=> 	__( 'Column Space', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"cols",
-		"description" 	=> 	__( 'How many space this testimonial should take in 12 columns Grid. It will work for Grid only', 'classic-addons' ),
+		"description" 	=> 	__( 'How many space this testimonial should take in 12 columns Grid. It will work for Grid only', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'Display Settings',
 		"value" 		=> array(
 			"1 Column"		=> "1",
@@ -101,15 +101,15 @@ $params = array(
 	),
     array(
         "type"          =>  "textarea_html",
-        "heading"       =>  __( 'Content or Feedback', 'classic-addons' ),
+        "heading"       =>  __( 'Content or Feedback', 'classic-addons-wpbakery-page-builder' ),
         "param_name"    =>  "content",
-        "description"   =>  __( 'Provide content to show in testimonial', 'classic-addons' ),
+        "description"   =>  __( 'Provide content to show in testimonial', 'classic-addons-wpbakery-page-builder' ),
     ),		
 
     array(
 		'type' => 'css_editor',
-		'heading' => __( 'CSS Box', 'classic-addons' ),
+		'heading' => __( 'CSS Box', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'cssbox',
-		'group' => __( 'Design Options', 'classic-addons' ),
+		'group' => __( 'Design Options', 'classic-addons-wpbakery-page-builder' ),
 	),
 );

@@ -41,7 +41,7 @@ class WPBakeryShortCode_CAW_Flip_Book_C extends WPBakeryShortCodesContainer {
 			$wrapper_istyle .= 'max-width: '. $width . ';';
 		}
 
-		$GLOBALS['caw_flipbook_style'] = $style;
+		$GLOBALS['cawpb_flipbook_style'] = $style;
 
 		ob_start(); ?>
 		<style>
@@ -60,7 +60,7 @@ class WPBakeryShortCode_CAW_Flip_Book_C extends WPBakeryShortCodesContainer {
 				}
 			}
 		</style>
-		<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>" style="<?php echo esc_attr($wrapper_istyle); ?>">
+		<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>" style="<?php echo esc_attr($wrapper_istyle); ?>">
 
 			<img class="caw-flipbook-loader" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Loading">
 

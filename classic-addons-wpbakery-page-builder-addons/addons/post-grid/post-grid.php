@@ -102,8 +102,9 @@ class WPBakeryShortCode_CAW_Post_Grid extends WPBakeryShortCode {
 		// Determine current page for numbered pagination.
 		$paged = 1;
 		$page_qkey = 'caw_pg_' . substr( md5( $uid ), 0, 6 );
-		if ( $pagination === 'numbered' && isset( $_GET[ $page_qkey ] ) ) {
-			$paged = max( 1, (int) $_GET[ $page_qkey ] );
+		// Public, read-only pagination param; cast to int sanitises it, no nonce needed.
+		if ( $pagination === 'numbered' && isset( $_GET[ $page_qkey ] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			$paged = max( 1, (int) $_GET[ $page_qkey ] ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		}
 
 		$query_args = $this->build_query_args( $atts, $paged );
@@ -162,7 +163,7 @@ class WPBakeryShortCode_CAW_Post_Grid extends WPBakeryShortCode {
 
 		ob_start(); ?>
 		<div id="<?php echo esc_attr( $uid ); ?>"
-			class="<?php echo cawpb_sanitize_html_classes( $wrapper_classes ); ?>"
+			class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>"
 			style="<?php echo esc_attr( $grid_istyle ); ?>"
 			data-pagination="<?php echo esc_attr( $pagination ); ?>">
 
@@ -233,7 +234,8 @@ class WPBakeryShortCode_CAW_Post_Grid extends WPBakeryShortCode {
 									}
 									if ( $meta_comments === 'yes' ) {
 										$cc = (int) get_comments_number( $pid );
-										$meta_parts[] = '<span class="caw-pg-meta-item caw-pg-meta-comments">' . esc_html( sprintf( _n( '%d comment', '%d comments', $cc, 'classic-addons' ), $cc ) ) . '</span>';
+										/* translators: %d: number of comments */
+										$meta_parts[] = '<span class="caw-pg-meta-item caw-pg-meta-comments">' . esc_html( sprintf( _n( '%d comment', '%d comments', $cc, 'classic-addons-wpbakery-page-builder' ), $cc ) ) . '</span>';
 									}
 
 									if ( ! empty( $meta_parts ) ) :
@@ -308,7 +310,7 @@ class WPBakeryShortCode_CAW_Post_Grid extends WPBakeryShortCode {
 						$page_links[] = '<a class="' . esc_attr( $cls ) . '" href="' . $url . '">' . esc_html( $p ) . '</a>';
 					}
 					?>
-					<nav class="caw-pg-pagination" role="navigation" aria-label="<?php echo esc_attr__( 'Posts pagination', 'classic-addons' ); ?>">
+					<nav class="caw-pg-pagination" role="navigation" aria-label="<?php echo esc_attr__( 'Posts pagination', 'classic-addons-wpbakery-page-builder' ); ?>">
 						<?php echo wp_kses(
 							implode( '', $page_links ),
 							array( 'a' => array( 'href' => true, 'class' => true ) )
@@ -323,7 +325,7 @@ class WPBakeryShortCode_CAW_Post_Grid extends WPBakeryShortCode {
 							data-hover-color="<?php echo esc_attr( $btn_color_hover ); ?>"
 							disabled
 							aria-disabled="true"
-							title="<?php echo esc_attr__( 'Load More requires AJAX (planned for a future release).', 'classic-addons' ); ?>">
+							title="<?php echo esc_attr__( 'Load More requires AJAX (planned for a future release).', 'classic-addons-wpbakery-page-builder' ); ?>">
 							<?php echo esc_html( $loadmore_text ); ?>
 						</button>
 					</div>

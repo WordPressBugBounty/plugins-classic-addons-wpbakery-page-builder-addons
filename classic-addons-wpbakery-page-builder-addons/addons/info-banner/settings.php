@@ -8,12 +8,12 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$params = array(
+$cawpb_params = array(
 	array(
         "type" 			=> 	"dropdown",
-		"heading" 		=> 	__( 'Style', 'classic-addons' ),
+		"heading" 		=> 	__( 'Style', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"style",
-		"description" 	=> 	__( 'Choose styles for info banner', 'classic-addons' ),
+		"description" 	=> 	__( 'Choose styles for info banner', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 		"value" 		=>  array(
 			'Default'     =>  'default',
@@ -23,9 +23,9 @@ $params = array(
     ),
     array(
         "type" 			=> 	"dropdown",
-		"heading" 		=> 	__( 'Zoom Effect', 'classic-addons' ),
+		"heading" 		=> 	__( 'Zoom Effect', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"img_hover_effect",
-		"description" 	=> 	__( 'Choose image zoom effect.', 'classic-addons' ),
+		"description" 	=> 	__( 'Choose image zoom effect.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 		"value" 		=>  array(
 			'None'     =>  '',
@@ -37,9 +37,9 @@ $params = array(
     ),
     array(
         "type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Image Section Width', 'classic-addons' ),
+		"heading" 		=> 	__( 'Image Section Width', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"img_area_w",
-		"description" 	=> 	__( 'Provide the image section width in percentage, e.g: 50', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide the image section width in percentage, e.g: 50', 'classic-addons-wpbakery-page-builder' ),
 		"edit_field_class" => "vc_col-xs-6 vc_column",
 		"dependency" => array(
 						'element' => "style", 
@@ -51,9 +51,9 @@ $params = array(
     ),
     array(
         "type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Content Section width', 'classic-addons' ),
+		"heading" 		=> 	__( 'Content Section width', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"content_width",
-		"description" 	=> 	__( 'Provide the image section width in percentage, e.g: 50', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide the image section width in percentage, e.g: 50', 'classic-addons-wpbakery-page-builder' ),
 		"edit_field_class" => "vc_col-xs-6 vc_column",
 		"dependency" => array(
 							'element' => "style", 
@@ -65,69 +65,69 @@ $params = array(
     ),
     array(
 		"type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Extra Classes', 'classic-addons' ),
+		"heading" 		=> 	__( 'Extra Classes', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"ex_classes",
-		"description" 	=> 	__( 'Provide the extra classes name for custom styling.', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide the extra classes name for custom styling.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 	),
     array(
         "type" 			=> 	"attach_image",
-		"heading" 		=> 	__( 'Upload Image', 'classic-addons' ),
+		"heading" 		=> 	__( 'Upload Image', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"image_id",
-		"description" 	=> 	__( 'Select image for banner.', 'classic-addons' ),
+		"description" 	=> 	__( 'Select image for banner.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'Image',
     ),
     array(
 		'type' => 'textfield',
-		'heading' => esc_html__( 'Image size', 'classic-addons' ),
+		'heading' => esc_html__( 'Image size', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'img_size',
 		'value' => 'full',
-		'description' => esc_html__( 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height)). default: full', 'classic-addons' ),
+		'description' => esc_html__( 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height)). default: full', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'Image',
 	),
 	array(
 		"type" 			=> 	"caw_padding_style",
-		"heading" 		=> 	__( 'Padding', 'classic-addons' ),
-		"description" 	=> 	__( 'Provide image section inner padding.', 'classic-addons' ),
+		"heading" 		=> 	__( 'Padding', 'classic-addons-wpbakery-page-builder' ),
+		"description" 	=> 	__( 'Provide image section inner padding.', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"img_padding",
 		"group" 		=> 	'Image',
 	),
     array(
         "type" 			=> 	"textarea_html",
-		"heading" 		=> 	__( 'Description', 'classic-addons' ),
+		"heading" 		=> 	__( 'Description', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"content",
-		"description" 	=> 	__( 'write detail about info banner', 'classic-addons' ),
+		"description" 	=> 	__( 'write detail about info banner', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'Content',
 		"value"			=> '<h2>Title Goes Here</h2><p>and a little caption...</p>'
     ),
     array(
 		"type" 			=> 	"caw_padding_style",
-		"heading" 		=> 	__( 'Padding', 'classic-addons' ),
-		"description" 	=> 	__( 'Provide content section inner padding.', 'classic-addons' ),
+		"heading" 		=> 	__( 'Padding', 'classic-addons-wpbakery-page-builder' ),
+		"description" 	=> 	__( 'Provide content section inner padding.', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"content_padding",
 		"group" 		=> 	'Content',
 	),
     array(
 		"type" 			=> "textfield",
-		"heading" 		=> __( 'Ribbon Text', 'classic-addons' ),
+		"heading" 		=> __( 'Ribbon Text', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "ribbon_text",
-		"description" 	=> __( 'Provide the ribbon text for special offer.', 'classic-addons' ),
+		"description" 	=> __( 'Provide the ribbon text for special offer.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'Ribbon',
 	),
 	array(
 		"type" 			=> "colorpicker",
-		"heading" 		=> __( 'Text Color', 'classic-addons' ),
+		"heading" 		=> __( 'Text Color', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "ribbon_clr",
 		"edit_field_class" => "vc_col-xs-6 vc_column",
-		"description" 	=> __( 'Choose the ribbon text color.', 'classic-addons' ),
+		"description" 	=> __( 'Choose the ribbon text color.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'Ribbon',
 	),
 	array(
 		"type" 			=> "colorpicker",
-		"heading" 		=> __( 'Background color', 'classic-addons' ),
+		"heading" 		=> __( 'Background color', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "ribbon_bg",
 		"edit_field_class" => "vc_col-xs-6 vc_column",
-		"description" 	=> __( 'Choose the ribbon background color.', 'classic-addons' ),
+		"description" 	=> __( 'Choose the ribbon background color.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'Ribbon',
 	),
 );

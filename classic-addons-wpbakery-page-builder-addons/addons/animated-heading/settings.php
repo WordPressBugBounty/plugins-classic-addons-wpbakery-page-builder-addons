@@ -8,12 +8,12 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$params = array(
+$cawpb_params = array(
     array(
         "type"          => "dropdown",
-        "heading"       => __( 'Heading', 'classic-addons' ),
+        "heading"       => __( 'Heading', 'classic-addons-wpbakery-page-builder' ),
         "param_name"    => "heading_tag",
-        "description"   => __( 'Choose heading tag', 'classic-addons' ),
+        "description"   => __( 'Choose heading tag', 'classic-addons-wpbakery-page-builder' ),
         "value"         => array(
             'Heading 1'     =>  'h1',
             'Heading 2'     =>  'h2',
@@ -26,58 +26,58 @@ $params = array(
     array(
         "type" => "textfield",
         "param_name" => "before_heading",
-        "heading" => __("Before Text", "classic-addons"),
+        "heading" => __("Before Text", "classic-addons-wpbakery-page-builder"),
         "value" => "We are here to",
-        "description" => __("Provide text to display before animated words", "classic-addons"),
+        "description" => __("Provide text to display before animated words", "classic-addons-wpbakery-page-builder"),
     ),
     array(
         "type" => "exploded_textarea",
         "param_name" => "spin_headings",
-        "heading" => __("Animated Headings", "classic-addons"),
-        "value" => __("Help\nAssist\nGuide\nTake care of", "classic-addons"),
-        "description" => __("Provide headings for spin, each per line", "classic-addons"),
+        "heading" => __("Animated Headings", "classic-addons-wpbakery-page-builder"),
+        "value" => __("Help\nAssist\nGuide\nTake care of", "classic-addons-wpbakery-page-builder"),
+        "description" => __("Provide headings for spin, each per line", "classic-addons-wpbakery-page-builder"),
     ),
     array(
         "type" => "textfield",
         "param_name" => "after_heading",
-        "heading" => __("After Text", "classic-addons"),
+        "heading" => __("After Text", "classic-addons-wpbakery-page-builder"),
         "value" => "you...",
-        "description" => __("Provide text to display after animated words", "classic-addons"),
+        "description" => __("Provide text to display after animated words", "classic-addons-wpbakery-page-builder"),
     ),
     array(
         "type"          => "dropdown",
-        "heading"       => __( 'Animation Style', 'classic-addons' ),
+        "heading"       => __( 'Animation Style', 'classic-addons-wpbakery-page-builder' ),
         "param_name"    => "animation_style",
-        "description"   => __( 'Choose animation style for spinning words', 'classic-addons' ),
+        "description"   => __( 'Choose animation style for spinning words', 'classic-addons-wpbakery-page-builder' ),
         "value"         => array(
-            __( 'Slide', 'classic-addons' )  =>  'slide',
-            __( 'Type', 'classic-addons' )  =>  'type',
-            __( 'Fade', 'classic-addons' )  =>  'fade',
+            __( 'Slide', 'classic-addons-wpbakery-page-builder' )  =>  'slide',
+            __( 'Type', 'classic-addons-wpbakery-page-builder' )  =>  'type',
+            __( 'Fade', 'classic-addons-wpbakery-page-builder' )  =>  'fade',
         )
     ),
     array(
         "type" => "textfield",
         "param_name" => "spin_timer",
-        "heading" => __("Spin Timer", "classic-addons"),
-        "description" => __("Set Spin timer in ms eg: 3000", "classic-addons"),
+        "heading" => __("Spin Timer", "classic-addons-wpbakery-page-builder"),
+        "description" => __("Set Spin timer in ms eg: 3000", "classic-addons-wpbakery-page-builder"),
     ),
      array(
         "type" => "textfield",
         "param_name" => "after_margin",
-        "heading" => __("Heading Margin Bottom", "classic-addons"),
-        "description" => __("Provide margin bottom after text eg: 10px", "classic-addons"),
+        "heading" => __("Heading Margin Bottom", "classic-addons-wpbakery-page-builder"),
+        "description" => __("Provide margin bottom after text eg: 10px", "classic-addons-wpbakery-page-builder"),
     ),
     array(
         "type" => "textarea_html",
         "param_name" => "content",
         "value" => "An optional subheading goes here",
-        "heading" => __("Description", "classic-addons"),
-        "description" => __("Provide contents to show under heading", "classic-addons"),
+        "heading" => __("Description", "classic-addons-wpbakery-page-builder"),
+        "description" => __("Provide contents to show under heading", "classic-addons-wpbakery-page-builder"),
     ),
     array(
 		"type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Extra CSS classes', 'classic-addons' ),
+		"heading" 		=> 	__( 'Extra CSS classes', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"extra_classes",
-		"description" 	=> 	__( 'Provide the extra classes for custom style.', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide the extra classes for custom style.', 'classic-addons-wpbakery-page-builder' ),
 	),
 );

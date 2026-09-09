@@ -14,7 +14,7 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 
 		extract( shortcode_atts( array(
 			'style' 			=> 'caw_info_box_style_1',
-			'shadow'			=> 'caw_info_box_shadow0',
+			'shadow'			=> 'caw_info_box_shadow1',
 			'hovershadow'		=> '',
 			'link' 				=> 'none',
 			'readmore_txt' 		=> '',
@@ -22,7 +22,7 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 			'readmore_bgclr' 	=> '',
 			'readmore_padding' 	=> '',
 			'readmore_class' 	=> '',
-			'heading' 		    => esc_html__('Custom heading', 'classic-addons'),
+			'heading' 		    => esc_html__('Custom heading', 'classic-addons-wpbakery-page-builder'),
 			'heading_tag' 		=> 'h3',
 			'attach_link' 		=> '',
 			'hover_effect' 		=> '',
@@ -108,10 +108,10 @@ class WPBakeryShortCode_CAW_Info_Box extends WPBakeryShortCode {
 				style="text-decoration: none;color: #000;"
 			>
 		<?php } ?>
-				<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>" style="<?php echo esc_attr($box_istyle); ?>">
+				<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>" style="<?php echo esc_attr($box_istyle); ?>">
 
 					<!-- Icon -->
-					<?php do_action( 'caw_render_icon_component', $attrs, $addon_base, false ); ?>
+					<?php do_action( 'cawpb_render_icon_component', $attrs, $addon_base, false ); ?>
 
 					<div class="caw-info-box-content">
 

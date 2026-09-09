@@ -88,13 +88,13 @@ class WPBakeryShortCode_CAW_Alert_Box extends WPBakeryShortCode {
         ob_start(); ?>
         
         <div id="<?php echo esc_attr($uid); ?>" 
-             class="<?php echo implode(' ', array_filter($classes)); ?>">
+             class="<?php echo esc_attr( implode(' ', array_filter($classes)) ); ?>">
             
             <?php if ($dismissible === 'yes') : ?>
                 <button type="button" class="caw-alert-close" data-dismiss-target="#<?php echo esc_attr($uid); ?>">&times;</button>
             <?php endif; ?>
             
-            <?php do_action( 'caw_render_icon_component', $attrs, $addon_base, false ); ?>
+            <?php do_action( 'cawpb_render_icon_component', $attrs, $addon_base, false ); ?>
             
             <div class="caw-alert-content">
                 <?php if ($title) : ?>
@@ -102,7 +102,7 @@ class WPBakeryShortCode_CAW_Alert_Box extends WPBakeryShortCode {
                 <?php endif; ?>
                 
                 <?php if ($content) : ?>
-                    <div class="caw-alert-text <?php echo esc_attr($spacing_classes['content']); ?>" style="<?php echo esc_attr($content_typo); ?>"><?php echo $content; ?></div>
+                    <div class="caw-alert-text <?php echo esc_attr($spacing_classes['content']); ?>" style="<?php echo esc_attr($content_typo); ?>"><?php echo wp_kses_post( $content ); ?></div>
                 <?php endif; ?>
             </div>
         </div>

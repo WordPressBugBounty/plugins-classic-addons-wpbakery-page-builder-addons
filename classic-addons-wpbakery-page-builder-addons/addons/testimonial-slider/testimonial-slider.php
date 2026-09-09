@@ -109,7 +109,7 @@ class WPBakeryShortCode_CAW_Testimonial_Slider_C extends WPBakeryShortCodesConta
 		}
 
 		ob_start(); ?>
-			<div class="<?php echo cawpb_sanitize_html_classes($outer_classes); ?>" id="st-<?php echo esc_attr($r_id); ?>">
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $outer_classes ) ); ?>" id="st-<?php echo esc_attr($r_id); ?>">
 				<div class="<?php echo esc_attr($row_class); ?>" <?php echo esc_attr($data_attr); ?>>
 					<?php echo wp_kses_post(do_shortcode( $content )); ?>
 				</div>

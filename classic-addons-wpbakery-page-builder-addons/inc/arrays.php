@@ -13,8 +13,8 @@ function cawpb_get_addons_meta(){
 	$addons = array(
 		'animated-heading' => array(
 			'base' => 'caw_animated_heading',
-			'name' => __( 'Animated Heading', 'classic-addons' ),
-			'description' => __( 'Spins different words.', 'classic-addons' ),
+			'name' => __( 'Animated Heading', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Spins different words.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'typo' => array(
 					array(
@@ -41,8 +41,8 @@ function cawpb_get_addons_meta(){
 		),
 		'alert-box' => array(
 			'base' => 'caw_alert_box',
-			'name' => __( 'Alert Box', 'classic-addons' ),
-			'description' => __( 'Display notices or warnings in a alert box', 'classic-addons' ),
+			'name' => __( 'Alert Box', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Display notices or warnings in a alert box', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'typo' => array(
 					array(
@@ -70,8 +70,8 @@ function cawpb_get_addons_meta(){
 		),
 		'button' => array(
 			'base' => 'caw_button',
-			'name' => __( 'Interactive Button', 'classic-addons' ),
-			'description' => __( 'A bunch of pre made styles', 'classic-addons' ),
+			'name' => __( 'Interactive Button', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'A bunch of pre made styles', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'button' => array(
 					array(
@@ -85,8 +85,8 @@ function cawpb_get_addons_meta(){
 		),
 		'count-up' => array(
 			'base' => 'caw_count_up',
-			'name' => __( 'Count Up', 'classic-addons' ),
-			'description' => __( 'Displays number counter.', 'classic-addons' ),
+			'name' => __( 'Count Up', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Displays number counter.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'icon' => array(
 					array(
@@ -114,23 +114,23 @@ function cawpb_get_addons_meta(){
 		),
 		'filterable-portfolio' => array(
 			'base' => 'caw_filterable_portfolio_c',
-			'name' => __( 'Filterable Portfolio', 'classic-addons' ),
-			'description' => __( 'Sortable Portfolio Items.', 'classic-addons' ),
+			'name' => __( 'Filterable Portfolio', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Sortable Portfolio Items.', 'classic-addons-wpbakery-page-builder' ),
 			"content_element" => true,
 			"js_view" => 'VcColumnView',
 			"as_parent" => array('only' => 'caw_filterable_portfolio'),
 		),
 		'filterable-portfolio-item' => array(
 			'base' => 'caw_filterable_portfolio',
-			'name' => __( 'Filterable Portfolio Item', 'classic-addons' ),
-			'description' => __( 'Displays a single portfolio.', 'classic-addons' ),
+			'name' => __( 'Filterable Portfolio Item', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Displays a single portfolio.', 'classic-addons-wpbakery-page-builder' ),
 			"as_child" => array('only' => 'caw_filterable_portfolio_c'),
 			"content_element" => true,
 		),
 		'info-table' => array(
 			'base' => 'caw_info_table',
-			'name' => __( 'Info Table', 'classic-addons' ),
-			'description' => __( 'Title, Image and button', 'classic-addons' ),
+			'name' => __( 'Info Table', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Title, Image and button', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'typo' => array(
 					array(
@@ -165,8 +165,8 @@ function cawpb_get_addons_meta(){
 		),
 		'info-banner' => array(
 			'base' => 'caw_info_banner',
-			'name' => __( 'Info Banner', 'classic-addons' ),
-			'description' => __( 'Banner with optional ribbon.', 'classic-addons' ),
+			'name' => __( 'Info Banner', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Banner with optional ribbon.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'button' => array(
 					array(
@@ -180,8 +180,8 @@ function cawpb_get_addons_meta(){
 		),
 		'interactive-banner' => array(
 			'base' => 'caw_interacive_banner',
-			'name' => __( 'Interactive Banner', 'classic-addons' ),
-			'description' => __( 'Image and Caption with hover styles.', 'classic-addons' ),
+			'name' => __( 'Interactive Banner', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Image and Caption with hover styles.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'typo' => array(
 					array(
@@ -196,23 +196,23 @@ function cawpb_get_addons_meta(){
 		),
 		'testimonial-slider' => array(
 			'base' => 'caw_testimonial_slider_c',
-			'name' => __( 'Testimonial Slider + Grid', 'classic-addons' ),
-			'description' => __( 'Testimonials with stars.', 'classic-addons' ),
+			'name' => __( 'Testimonial Slider + Grid', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Testimonials with stars.', 'classic-addons-wpbakery-page-builder' ),
 			"content_element" => true,
 			"js_view" => 'VcColumnView',
 			"as_parent" => array('only' => 'caw_testimonial_slider'),
 		),
 		'testimonial-slider-item' => array(
 			'base' => 'caw_testimonial_slider',
-			'name' => __( 'Single Testimonial', 'classic-addons' ),
-			'description' => __( 'Displays a single testimonial.', 'classic-addons' ),
+			'name' => __( 'Single Testimonial', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Displays a single testimonial.', 'classic-addons-wpbakery-page-builder' ),
 			"as_child" => array('only' => 'caw_testimonial_slider_c'),
 			"content_element" => true,
 		),
 		'flip-box' => array(
 			'base' => 'caw_flip_box',
-			'name' => __( 'Flip Box', 'classic-addons' ),
-			'description' => __( 'Flip back front on hover', 'classic-addons' ),
+			'name' => __( 'Flip Box', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Flip back front on hover', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'button' => array(
 					array(
@@ -247,23 +247,23 @@ function cawpb_get_addons_meta(){
 		),
 		'flip-book' => array(
 			'base' => 'caw_flip_book_c',
-			'name' => __( '3D Flip Book', 'classic-addons' ),
-			'description' => __( 'Displays Flip Book.', 'classic-addons' ),
+			'name' => __( '3D Flip Book', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Displays Flip Book.', 'classic-addons-wpbakery-page-builder' ),
 			"as_parent" => array('only' => 'caw_flip_book'),
 			"js_view" => 'VcColumnView',
 			"content_element" => true,
 		),
 		'flip-book-item' => array(
 			'base' => 'caw_flip_book',
-			'name' => __( 'Book Page', 'classic-addons' ),
-			'description' => __( 'Renders single page for book.', 'classic-addons' ),
+			'name' => __( 'Book Page', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Renders single page for book.', 'classic-addons-wpbakery-page-builder' ),
 			"content_element" => true,
 			"as_child" => array('only' => 'caw_flip_book_c'),
 		),
 		'single-image' => array(
 			'base' => 'caw_single_image',
-			'name' => __( 'Single Image', 'classic-addons' ),
-			'description' => __( 'Info above the image.', 'classic-addons' ),
+			'name' => __( 'Single Image', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Info above the image.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'ribbon' => array(
 					array(
@@ -291,8 +291,8 @@ function cawpb_get_addons_meta(){
 		),
 		'logo-carousel' => array(
 			'base' => 'caw_logo_carousel_c',
-			'name' => __( 'Logo Carousel', 'classic-addons' ),
-			'description' => __( 'Image Slider.', 'classic-addons' ),
+			'name' => __( 'Logo Carousel', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Image Slider.', 'classic-addons-wpbakery-page-builder' ),
 			"as_parent" => array('only' => 'caw_logo_carousel'),
 			"js_view" => 'VcColumnView',
 			"content_element" => true,
@@ -302,8 +302,8 @@ function cawpb_get_addons_meta(){
 		),
 		'logo-carousel-item' => array(
 			'base' => 'caw_logo_carousel',
-			'name' => __( 'Logo Carousel Item', 'classic-addons' ),
-			'description' => __( 'Displays single carousel item.', 'classic-addons' ),
+			'name' => __( 'Logo Carousel Item', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Displays single carousel item.', 'classic-addons-wpbakery-page-builder' ),
 			"content_element" => true,
 			"as_child" => array('only' => 'caw_logo_carousel_c'),
 			'support' => array(
@@ -320,8 +320,8 @@ function cawpb_get_addons_meta(){
 		),
 		'info-box' => array(
 			'base' => 'caw_info_box',
-			'name' => __( 'Info Box', 'classic-addons' ),
-			'description' => __( 'Icon, Title and Content', 'classic-addons' ),
+			'name' => __( 'Info Box', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Icon, Title and Content', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'typo' => array(
 					array(
@@ -349,8 +349,8 @@ function cawpb_get_addons_meta(){
 		),
 		'accordion' => array(
 			'base' => 'caw_accordion_c',
-			'name' => __( 'Accordion / FAQ', 'classic-addons' ),
-			'description' => __( 'Collapsible panels with FAQ support.', 'classic-addons' ),
+			'name' => __( 'Accordion / FAQ', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Collapsible panels with FAQ support.', 'classic-addons-wpbakery-page-builder' ),
 			'content_element' => true,
 			'js_view'         => 'VcColumnView',
 			'as_parent'       => array( 'only' => 'caw_accordion' ),
@@ -360,8 +360,8 @@ function cawpb_get_addons_meta(){
 		),
 		'accordion-item' => array(
 			'base' => 'caw_accordion',
-			'name' => __( 'Accordion Item', 'classic-addons' ),
-			'description' => __( 'Single accordion panel.', 'classic-addons' ),
+			'name' => __( 'Accordion Item', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Single accordion panel.', 'classic-addons-wpbakery-page-builder' ),
 			'content_element' => true,
 			'as_child'        => array( 'only' => 'caw_accordion_c' ),
 			'support' => array(
@@ -370,8 +370,8 @@ function cawpb_get_addons_meta(){
 		),
 		'tabs' => array(
 			'base' => 'caw_tabs_c',
-			'name' => __( 'Tabs', 'classic-addons' ),
-			'description' => __( 'Horizontal or vertical tabbed content.', 'classic-addons' ),
+			'name' => __( 'Tabs', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Horizontal or vertical tabbed content.', 'classic-addons-wpbakery-page-builder' ),
 			'content_element' => true,
 			'js_view'         => 'VcColumnView',
 			'as_parent'       => array( 'only' => 'caw_tabs' ),
@@ -381,8 +381,8 @@ function cawpb_get_addons_meta(){
 		),
 		'tabs-item' => array(
 			'base' => 'caw_tabs',
-			'name' => __( 'Tab', 'classic-addons' ),
-			'description' => __( 'Single tab panel.', 'classic-addons' ),
+			'name' => __( 'Tab', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Single tab panel.', 'classic-addons-wpbakery-page-builder' ),
 			'content_element' => true,
 			'as_child'        => array( 'only' => 'caw_tabs_c' ),
 			'support' => array(
@@ -391,63 +391,76 @@ function cawpb_get_addons_meta(){
 		),
 		'progress-bar' => array(
 			'base' => 'caw_progress_bar',
-			'name' => __( 'Progress Bar', 'classic-addons' ),
-			'description' => __( 'Animated skills or progress bars.', 'classic-addons' ),
+			'name' => __( 'Progress Bar', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Animated skills or progress bars.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'csseditor' => array(),
 			),
 		),
 		'team-member' => array(
 			'base' => 'caw_team_member',
-			'name' => __( 'Team Member', 'classic-addons' ),
-			'description' => __( 'Team profile card with social icons.', 'classic-addons' ),
+			'name' => __( 'Team Member', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Team profile card with social icons.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'csseditor' => array(),
 			),
 		),
 		'countdown-timer' => array(
 			'base' => 'caw_countdown_timer',
-			'name' => __( 'Countdown Timer', 'classic-addons' ),
-			'description' => __( 'Counts down to a target date/time.', 'classic-addons' ),
+			'name' => __( 'Countdown Timer', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Counts down to a target date/time.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'csseditor' => array(),
 			),
 		),
 		'before-after' => array(
 			'base' => 'caw_before_after',
-			'name' => __( 'Before / After Image', 'classic-addons' ),
-			'description' => __( 'Image comparison slider.', 'classic-addons' ),
+			'name' => __( 'Before / After Image', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Image comparison slider.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'csseditor' => array(),
 			),
 		),
 		'post-grid' => array(
 			'base' => 'caw_post_grid',
-			'name' => __( 'Post Grid', 'classic-addons' ),
-			'description' => __( 'Display posts in grid or masonry layout.', 'classic-addons' ),
+			'name' => __( 'Post Grid', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Display posts in grid or masonry layout.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'csseditor' => array(),
 			),
 		),
 		'pricing-table' => array(
 			'base' => 'caw_pricing_table',
-			'name' => __( 'Pricing Table', 'classic-addons' ),
-			'description' => __( 'Plan with price, features and button.', 'classic-addons' ),
+			'name' => __( 'Pricing Table', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Plan with price, features and button.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'csseditor' => array(),
 			),
 		),
 		'image-hotspots' => array(
 			'base' => 'caw_image_hotspots',
-			'name' => __( 'Image Hotspots', 'classic-addons' ),
-			'description' => __( 'Interactive markers on an image with tooltips.', 'classic-addons' ),
+			'name' => __( 'Image Hotspots', 'classic-addons-wpbakery-page-builder' ),
+			'description' => __( 'Interactive markers on an image with tooltips.', 'classic-addons-wpbakery-page-builder' ),
 			'support' => array(
 				'csseditor' => array(),
 			),
 		),
 	);
 
-	return $addons;
+	/**
+	 * Filter the master list of registered addons.
+	 *
+	 * External plugins (e.g. Classic Addons Pro) can use this filter to
+	 * register additional modules without modifying the free plugin. Each
+	 * entry must follow the same shape as the built-in modules: a 'base'
+	 * shortcode, a translatable 'name', a 'description', and optionally a
+	 * 'support' array.
+	 *
+	 * @since 4.2
+	 *
+	 * @param array $addons Map of slug => meta.
+	 */
+	return apply_filters( 'cawpb_modules', $addons );
 }
 
 
@@ -460,6 +473,16 @@ function cawpb_get_addon_info(){
 			$addons[$slug] = $addon;
 		}
 	}
+
+	/**
+	 * Filter the list of addons displayed on the enable/disable settings
+	 * screen. Child item slugs (e.g. accordion-item) are already removed.
+	 *
+	 * @since 4.2
+	 *
+	 * @param array $addons Map of slug => meta.
+	 */
+	$addons = apply_filters( 'cawpb_settings_modules', $addons );
 
 	return $addons;
 }

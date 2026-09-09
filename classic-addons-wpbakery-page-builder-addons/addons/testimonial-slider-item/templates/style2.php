@@ -16,8 +16,8 @@ if( ! defined('ABSPATH' ) ){ exit; }
   </blockquote>
   <div class="author">
 	  <div class="starrating st-rating">
-	  	<?php do_action( 'wcp_testimonial_display_rating', $stars ); ?>
+	  	<?php do_action( 'cawpb_testimonial_display_rating', $stars ); ?>
 	  </div>
-    <h5 class="st-testimonial-title"><?php echo esc_attr($title); ?> <span class="st-testimonial-company"> <?php do_action( 'wcp_testimonial_display_company', $company, $url); ?></span></h5>
+    <h5 class="st-testimonial-title"><?php echo esc_attr($title); ?> <span class="st-testimonial-company"> <?php do_action( 'cawpb_testimonial_display_company', $company, $url); ?></span></h5>
   </div>
 </figure>

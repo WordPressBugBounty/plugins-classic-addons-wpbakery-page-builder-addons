@@ -98,7 +98,7 @@ class WPBakeryShortCode_CAW_Logo_Carousel_C extends WPBakeryShortCodesContainer 
 		$slick_json = wp_json_encode( $slick_config );
 
 		ob_start(); ?>
-		<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>" >
+		<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>" >
 
 			<?php if ( $has_custom_arrows ) : ?>
 				<div class="caw-logo-carousel-arrow">

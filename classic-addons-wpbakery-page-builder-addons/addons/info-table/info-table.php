@@ -96,7 +96,7 @@ class WPBakeryShortCode_CAW_Info_Table extends WPBakeryShortCode {
 		$wrapper_classes[] = $addon_id;
 
 		ob_start(); ?>
-			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 				<div class="caw-it-inner">
 
 					<!-- Header Section -->
@@ -113,7 +113,7 @@ class WPBakeryShortCode_CAW_Info_Table extends WPBakeryShortCode {
 					</div>
 
 					<!-- Icon -->
-					<?php do_action( 'caw_render_icon_component', $attrs, $addon_handle, true ); ?>
+					<?php do_action( 'cawpb_render_icon_component', $attrs, $addon_handle, true ); ?>
 
 					<!-- footer -->
 					<?php if (!empty($content) || !empty($btn_text)): ?>
@@ -126,7 +126,7 @@ class WPBakeryShortCode_CAW_Info_Table extends WPBakeryShortCode {
 						<?php endif ?>
 
 						<!-- Button Component -->
-						<?php do_action( 'caw_render_button_component', $attrs, $addon_handle, true ); ?>						
+						<?php do_action( 'cawpb_render_button_component', $attrs, $addon_handle, true ); ?>						
 					</div>
 					<?php endif ?>
 

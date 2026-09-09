@@ -15,8 +15,8 @@ if( ! defined('ABSPATH' ) ){ exit; }
     	<?php echo wp_kses_post(wpb_js_remove_wpautop($content)); ?>
     </blockquote>
   </figcaption>
-  <h3 class="st-testimonial-title"><?php echo esc_attr($title); ?><span class="st-testimonial-company"><?php do_action( 'wcp_testimonial_display_company', $company, $url); ?></span></h3>
+  <h3 class="st-testimonial-title"><?php echo esc_attr($title); ?><span class="st-testimonial-company"><?php do_action( 'cawpb_testimonial_display_company', $company, $url); ?></span></h3>
     <span class="starrating st-rating" title="Rated <?php echo esc_attr($stars); ?> out of 5.0">
-    	<?php do_action( 'wcp_testimonial_display_rating', $stars ); ?>
+    	<?php do_action( 'cawpb_testimonial_display_rating', $stars ); ?>
     </span>  
 </figure>

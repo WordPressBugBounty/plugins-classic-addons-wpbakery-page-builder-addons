@@ -8,49 +8,49 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$param_name = isset( $settings['param_name'] ) ? $settings['param_name'] : '';
-$param_type = isset( $settings['type'] ) ? $settings['type'] : '';
-$class      = isset( $settings['class'] ) ? ' ' . $settings['class'] : '';
-$heading    = isset( $settings['section_title'] ) ? $settings['section_title'] : '';
+$cawpb_param_name = isset( $settings['param_name'] ) ? $settings['param_name'] : '';
+$cawpb_param_type = isset( $settings['type'] ) ? $settings['type'] : '';
+$cawpb_class      = isset( $settings['class'] ) ? ' ' . $settings['class'] : '';
+$cawpb_heading    = isset( $settings['section_title'] ) ? $settings['section_title'] : '';
 
-$styles = cawpb_border_style();
+$cawpb_styles = cawpb_border_style();
 ?>
 
 <div class="caw-border-style-wrapper">
 	<div class="caw-style-handler" data-border="<?php echo esc_attr($value); ?>">
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Left', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'Left', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<input type="text" name="border_left_width" class="caw-border-input" data-name="border-width-left">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'right', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'right', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<input type="text" name="border_right_width" class="caw-border-input" data-name="border-width-right">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Top', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'Top', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<input type="text" name="border_top_width" class="caw-border-input" data-name="border-width-top">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Bottom', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'Bottom', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<input type="text" name="border_bottom_width" class="caw-border-input" data-name="border-width-bottom">
 		</div>
 		<div class="vc_col-xs-2 vc_column">
-			<label><?php esc_html_e( 'Style', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'Style', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<select class="caw-border-select" name="border_style">
-			<?php foreach ( $styles as $style ) { ?>
-				<option value="<?php echo esc_attr($style); ?>" ><?php echo esc_attr(ucfirst( $style )); ?></option>';
+			<?php foreach ( $cawpb_styles as $cawpb_style ) { ?>
+				<option value="<?php echo esc_attr($cawpb_style); ?>" ><?php echo esc_attr(ucfirst( $cawpb_style )); ?></option>';
 			<?php } ?>
 			</select>
 		</div>
 		<div class="vc_col-xs-6 vc_column">
 			<div class="color-group">
-				<label><?php esc_html_e( 'Color', 'classic-addons' ); ?></label>
+				<label><?php esc_html_e( 'Color', 'classic-addons-wpbakery-page-builder' ); ?></label>
 				<input type="text" data-alpha="true" class="caw-colorpicker" name="border_color">
 				<input type="hidden" name="save_border_color" class="caw-border-color caw-border-input">
 			</div>
 		</div>
 		
-		<input type="hidden" name="<?php echo esc_attr( $param_name ); ?>" class="caw-border-input-js wpb_vc_param_value <?php echo esc_attr( $param_name ) ?> <?php echo esc_attr( $param_type ) ?>_field" value="<?php echo esc_attr( $value ); ?>"/>
+		<input type="hidden" name="<?php echo esc_attr( $cawpb_param_name ); ?>" class="caw-border-input-js wpb_vc_param_value <?php echo esc_attr( $cawpb_param_name ) ?> <?php echo esc_attr( $cawpb_param_type ) ?>_field" value="<?php echo esc_attr( $value ); ?>"/>
 	</div>
 </div>
 

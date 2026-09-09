@@ -5,9 +5,9 @@
 
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$css_params[] = array(
+$cawpb_css_params[] = array(
 	'type' => 'css_editor',
-	'heading' => __( 'CSS Box', 'classic-addons' ),
+	'heading' => __( 'CSS Box', 'classic-addons-wpbakery-page-builder' ),
 	'param_name' => 'cssbox',
-	'group' => __( 'Design Options', 'classic-addons' ),
+	'group' => __( 'Design Options', 'classic-addons-wpbakery-page-builder' ),
 );

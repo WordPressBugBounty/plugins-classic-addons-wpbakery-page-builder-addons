@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="cawMenuIcon" x1="150" y1="70" x2="360" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7A34E8"/>
+      <stop offset="1" stop-color="#2E86F0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- rounded hexagon (flat top/bottom, points left & right) -->
+  <path fill="url(#cawMenuIcon)" d="
+    M178 84
+    L302 84 Q330 84 344.2 108.1
+    L415.8 229.9 Q430 254 415.8 278.1
+    L344.2 399.9 Q330 424 302 424
+    L178 424 Q150 424 134.2 400.9
+    L49.8 277.1 Q34 254 49.8 230.9
+    L134.2 107.1 Q150 84 178 84 Z"/>
+
+  <!-- white C halo -->
+  <path fill="none" stroke="#ffffff" stroke-width="92" stroke-linecap="round"
+        d="M340.6 326.5 A145 145 0 1 1 340.6 181.5"/>
+
+  <!-- inner gradient C -->
+  <path fill="none" stroke="url(#cawMenuIcon)" stroke-width="50" stroke-linecap="round"
+        d="M340.6 326.5 A145 145 0 1 1 340.6 181.5"/>
+
+  <!-- pixel squares -->
+  <rect x="392" y="96"  width="58" height="58" rx="14" fill="url(#cawMenuIcon)"/>
+  <rect x="350" y="172" width="88" height="88" rx="19" fill="url(#cawMenuIcon)"/>
+  <rect x="452" y="198" width="44" height="44" rx="11" fill="url(#cawMenuIcon)"/>
+  <rect x="350" y="276" width="82" height="82" rx="18" fill="url(#cawMenuIcon)"/>
+  <rect x="446" y="282" width="64" height="64" rx="14" fill="url(#cawMenuIcon)"/>
+</svg>

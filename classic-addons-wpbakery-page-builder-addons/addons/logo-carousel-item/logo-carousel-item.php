@@ -46,7 +46,7 @@ class WPBakeryShortCode_CAW_Logo_Carousel extends WPBakeryShortCode {
 
 		ob_start();
 		?>
-		<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
+		<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 
 			<?php if ($link){ ?>				
 				<a href="<?php echo esc_url($link); ?>" >

@@ -1,11 +1,13 @@
 <?php
-
-$params = array(
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+$cawpb_params = array(
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Select Style', 'classic-addons' ),
+		"heading" 		=> __( 'Select Style', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "style",
-		"description" 	=> __( ' ', 'classic-addons' ),
+		"description" 	=> '',
 		"group" 		=> 'General',
 		"value" 		=> array(
 			'Icon at Top'	 =>	'caw_info_box_style_1',
@@ -14,15 +16,15 @@ $params = array(
 	),		
 	array(
 		"type" 			=> "textfield",
-		"heading" 		=> __( 'Heading', 'classic-addons' ),
+		"heading" 		=> __( 'Heading', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "heading",
-		"description" 	=> __( 'Add title for this info box.', 'classic-addons' ),
+		"description" 	=> __( 'Add title for this info box.', 'classic-addons-wpbakery-page-builder' ),
 		"value"			=>	"Custom Heading",
 		"group" 		=> 'General',
 	),
 	array(
 		"type" 			=> 	"textarea_html",
-		"heading" 		=> 	__( 'Content', 'classic-addons' ),
+		"heading" 		=> 	__( 'Content', 'classic-addons-wpbakery-page-builder' ),
 		'holder' 		=> 'div',
 		"param_name" 	=> 	"content",
 		"value"			=>	"<p>Provide some description here.</p>",
@@ -30,7 +32,7 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Box Shadow', 'classic-addons' ),
+		"heading" 		=> __( 'Box Shadow', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "shadow",
 		"group" 		=> 'General',
 		"value"			=>	array(
@@ -40,7 +42,7 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Box Hover Shadow', 'classic-addons' ),
+		"heading" 		=> __( 'Box Hover Shadow', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "hovershadow",
 		"group" 		=> 'General',
 		"value"			=>	array(
@@ -49,7 +51,7 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Link To', 'classic-addons' ),
+		"heading" 		=> __( 'Link To', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "link",
 		"group" 		=> 'General',
 		"value"			=>	array(
@@ -60,7 +62,7 @@ $params = array(
 	),
 	array(
         "type" 			=> 	"vc_link",
-		"heading" 		=> 	__( 'Url Link', 'classic-addons' ),
+		"heading" 		=> 	__( 'Url Link', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"attach_link",
 		"dependency"    => array(
 			'element' => "link", 
@@ -70,47 +72,47 @@ $params = array(
     ),
 	array(
         "type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Read More Text', 'classic-addons' ),
+		"heading" 		=> 	__( 'Read More Text', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"readmore_txt",
-		"description" 	=> 	__( 'Provide read more button text.', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide read more button text.', 'classic-addons-wpbakery-page-builder' ),
 		"dependency"    => array( 'element' => "link", 'value' => 'readmore_btn' ),
 		"group" 		=> 	'General',
     ),
     array(
         "type" 			=> 	"colorpicker",
-		"heading" 		=> 	__( 'Button text color', 'classic-addons' ),
+		"heading" 		=> 	__( 'Button text color', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"readmore_txtclr",
-		"description" 	=> 	__( 'Set read more button text color.', 'classic-addons' ),
+		"description" 	=> 	__( 'Set read more button text color.', 'classic-addons-wpbakery-page-builder' ),
 		"dependency"    => array('element' => "link", 'value' => 'readmore_btn'),
 		"group" 		=> 	'General',
     ),
     array(
         "type" 			=> 	"colorpicker",
-		"heading" 		=> 	__( 'Button background color', 'classic-addons' ),
+		"heading" 		=> 	__( 'Button background color', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"readmore_bgclr",
-		"description" 	=> 	__( 'Set read more text background color.', 'classic-addons' ),
+		"description" 	=> 	__( 'Set read more text background color.', 'classic-addons-wpbakery-page-builder' ),
 		"dependency"    => array('element' => "link", 'value' => 'readmore_btn'),
 		"group" 		=> 	'General',
     ),
     array(
         "type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Button Padding', 'classic-addons' ),
+		"heading" 		=> 	__( 'Button Padding', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"readmore_padding",
-		"description" 	=> 	__( 'Provide padding for the button eg: 10px.', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide padding for the button eg: 10px.', 'classic-addons-wpbakery-page-builder' ),
 		"dependency"    => array('element' => "link", 'value' => 'readmore_btn'),
 		"group" 		=> 	'General',
     ),
     array(
         "type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'CSS Class', 'classic-addons' ),
+		"heading" 		=> 	__( 'CSS Class', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"readmore_class",
-		"description" 	=> 	__( 'Provide css classes to add to the button tag', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide css classes to add to the button tag', 'classic-addons-wpbakery-page-builder' ),
 		"dependency"    => array('element' => "link", 'value' => 'readmore_btn'),
 		"group" 		=> 	'General',
     ),
     array(
         "type"       => "dropdown",
-        "heading"    => __( 'Heading Tag', 'classic-addons' ),
+        "heading"    => __( 'Heading Tag', 'classic-addons-wpbakery-page-builder' ),
         "param_name" => "heading_tag",
         "group"      => 'General',
         "std"        => 'h3',
@@ -128,10 +130,10 @@ $params = array(
     ),
     array(
         "type"        => "dropdown",
-        "heading"     => __( 'Content Alignment', 'classic-addons' ),
+        "heading"     => __( 'Content Alignment', 'classic-addons-wpbakery-page-builder' ),
         "param_name"  => "content_align",
         "group"       => 'Box Design',
-        "description" => __( 'Overrides the style default. Leave on Default to keep existing behavior.', 'classic-addons' ),
+        "description" => __( 'Overrides the style default. Leave on Default to keep existing behavior.', 'classic-addons-wpbakery-page-builder' ),
         "value"       => array(
             'Default' => '',
             'Left'    => 'left',
@@ -141,7 +143,7 @@ $params = array(
     ),
     array(
         "type"       => "dropdown",
-        "heading"    => __( 'Hover Effect', 'classic-addons' ),
+        "heading"    => __( 'Hover Effect', 'classic-addons-wpbakery-page-builder' ),
         "param_name" => "hover_effect",
         "group"      => 'Box Design',
         "value"      => array(
@@ -154,39 +156,39 @@ $params = array(
     ),
     array(
         "type"       => "colorpicker",
-        "heading"    => __( 'Background Color', 'classic-addons' ),
+        "heading"    => __( 'Background Color', 'classic-addons-wpbakery-page-builder' ),
         "param_name" => "box_bg_color",
         "group"      => 'Box Design',
         "edit_field_class" => "vc_col-xs-6 vc_column",
     ),
     array(
         "type"       => "colorpicker",
-        "heading"    => __( 'Border Color', 'classic-addons' ),
+        "heading"    => __( 'Border Color', 'classic-addons-wpbakery-page-builder' ),
         "param_name" => "box_border_color",
         "group"      => 'Box Design',
         "edit_field_class" => "vc_col-xs-6 vc_column",
     ),
     array(
         "type"        => "textfield",
-        "heading"     => __( 'Border Width', 'classic-addons' ),
+        "heading"     => __( 'Border Width', 'classic-addons-wpbakery-page-builder' ),
         "param_name"  => "box_border_width",
-        "description" => __( 'e.g. 1px', 'classic-addons' ),
+        "description" => __( 'e.g. 1px', 'classic-addons-wpbakery-page-builder' ),
         "group"       => 'Box Design',
         "edit_field_class" => "vc_col-xs-6 vc_column",
     ),
     array(
         "type"        => "textfield",
-        "heading"     => __( 'Border Radius', 'classic-addons' ),
+        "heading"     => __( 'Border Radius', 'classic-addons-wpbakery-page-builder' ),
         "param_name"  => "box_border_radius",
-        "description" => __( 'e.g. 6px', 'classic-addons' ),
+        "description" => __( 'e.g. 6px', 'classic-addons-wpbakery-page-builder' ),
         "group"       => 'Box Design',
         "edit_field_class" => "vc_col-xs-6 vc_column",
     ),
     array(
         "type"        => "textfield",
-        "heading"     => __( 'Box Padding', 'classic-addons' ),
+        "heading"     => __( 'Box Padding', 'classic-addons-wpbakery-page-builder' ),
         "param_name"  => "box_padding",
-        "description" => __( 'e.g. 20px or 20px 15px', 'classic-addons' ),
+        "description" => __( 'e.g. 20px or 20px 15px', 'classic-addons-wpbakery-page-builder' ),
         "group"       => 'Box Design',
     ),
 );

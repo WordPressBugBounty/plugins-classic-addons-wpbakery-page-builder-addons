@@ -8,12 +8,12 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$params = array(
+$cawpb_params = array(
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Style', 'classic-addons' ),
+		"heading" 		=> __( 'Style', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "btn_style",
-		"description" 	=> __( 'Choose the button style.', 'classic-addons' ),
+		"description" 	=> __( 'Choose the button style.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"value" 		=> array(
 			'Animated Button' =>  'animated'
@@ -21,9 +21,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Animation Style', 'classic-addons' ),
+		"heading" 		=> __( 'Animation Style', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "animated_style",
-		"description" 	=> __( 'Choose animation style on hover', 'classic-addons' ),
+		"description" 	=> __( 'Choose animation style on hover', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"dependency" => array(
 			'element' => "btn_style", 
@@ -39,9 +39,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( '2D Transition', 'classic-addons' ),
+		"heading" 		=> __( '2D Transition', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "animated_trans",
-		"description" 	=> __( 'Choose 2D Transition style.', 'classic-addons' ),
+		"description" 	=> __( 'Choose 2D Transition style.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"dependency" => array(
 			'element' => "animated_style", 
@@ -79,9 +79,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Background Transition', 'classic-addons' ),
+		"heading" 		=> __( 'Background Transition', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "background_trans",
-		"description" 	=> __( 'Choose background transition style.', 'classic-addons' ),
+		"description" 	=> __( 'Choose background transition style.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"dependency" => array(
 			'element' => "animated_style", 
@@ -106,9 +106,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Border Transition', 'classic-addons' ),
+		"heading" 		=> __( 'Border Transition', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "border_trans",
-		"description" 	=> __( 'Choose border transition style.', 'classic-addons' ),
+		"description" 	=> __( 'Choose border transition style.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"dependency" => array(
 			'element' => "animated_style", 
@@ -128,9 +128,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "colorpicker",
-		"heading" 		=> __( 'Border Animation Color', 'classic-addons' ),
+		"heading" 		=> __( 'Border Animation Color', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "border_trans_clr",
-		"description" 	=> __( 'It will apply on button transitoin.', 'classic-addons' ),
+		"description" 	=> __( 'It will apply on button transitoin.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"dependency" => array(
 			'element' => "animated_style", 
@@ -139,9 +139,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Speech Bubbles', 'classic-addons' ),
+		"heading" 		=> __( 'Speech Bubbles', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "bubble_trans",
-		"description" 	=> __( 'Choose speech bubbles style.', 'classic-addons' ),
+		"description" 	=> __( 'Choose speech bubbles style.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"dependency" => array(
 			'element' => "animated_style", 
@@ -160,9 +160,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> "dropdown",
-		"heading" 		=> __( 'Shadow and Glow', 'classic-addons' ),
+		"heading" 		=> __( 'Shadow and Glow', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> "shadow_trans",
-		"description" 	=> __( 'Choose shadow and glow style.', 'classic-addons' ),
+		"description" 	=> __( 'Choose shadow and glow style.', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 'General',
 		"dependency" => array(
 			'element' => "animated_style", 
@@ -180,9 +180,9 @@ $params = array(
 	),
 	array(
 		"type" 			=> 	"dropdown",
-		"heading" 		=> 	__( 'Alignment', 'classic-addons' ),
+		"heading" 		=> 	__( 'Alignment', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"btn_alignment",
-		"description" 	=> 	__( 'select text align', 'classic-addons' ),
+		"description" 	=> 	__( 'select text align', 'classic-addons-wpbakery-page-builder' ),
 		"group" 		=> 	'General',
 		"value" => array(
 			"Left"	 => "left",

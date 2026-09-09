@@ -43,13 +43,13 @@ class WPBakeryShortCode_CAW_Interacive_Banner extends WPBakeryShortCode {
 		$wrapper_classes[] = $cssbox;
 
 		ob_start(); ?>
-			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">				
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">				
 				<figure class="cawpb-int-banner-<?php echo esc_attr( $style ); ?>">
 				    <?php
 				    	if (isset($img['thumbnail']) && $img['thumbnail'] != '') {
 				    		echo wp_kses_post($img['thumbnail']);	
 				    	} else {
-				    		echo esc_attr__( 'You must also set an image to use interactive banner addon', 'classic-addons' );
+				    		echo esc_attr__( 'You must also set an image to use interactive banner addon', 'classic-addons-wpbakery-page-builder' );
 				    	}
 				    ?>
 				    <figcaption>

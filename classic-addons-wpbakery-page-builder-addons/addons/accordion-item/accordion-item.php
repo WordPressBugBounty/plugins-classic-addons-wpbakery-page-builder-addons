@@ -14,7 +14,7 @@ class WPBakeryShortCode_CAW_Accordion extends WPBakeryShortCode {
 	protected function content( $attrs, $content = null ) {
 
 		$atts = shortcode_atts( array(
-			'title'            => __( 'Accordion Item', 'classic-addons' ),
+			'title'            => __( 'Accordion Item', 'classic-addons-wpbakery-page-builder' ),
 			'is_open'          => '',
 			'expand_icon'      => '',
 			'collapse_icon'    => '',
@@ -76,13 +76,13 @@ class WPBakeryShortCode_CAW_Accordion extends WPBakeryShortCode {
 		$content_html = wp_kses_post( wpb_js_remove_wpautop( $content, true ) );
 
 		ob_start(); ?>
-		<div id="<?php echo esc_attr( $uid ); ?>" class="<?php echo cawpb_sanitize_html_classes( $item_classes ); ?>" <?php echo implode( ' ', $icon_attrs ); ?>>
+		<div id="<?php echo esc_attr( $uid ); ?>" class="<?php echo esc_attr( cawpb_sanitize_html_classes( $item_classes ) ); ?>" <?php echo implode( ' ', $icon_attrs ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- each data-* value is esc_attr()'d where $icon_attrs is built ?>>
 			<button type="button" class="caw-accordion-title" aria-expanded="<?php echo $is_active ? 'true' : 'false'; ?>">
 				<span class="caw-accordion-title-text"><?php echo wp_kses_post( $title ); ?></span>
 				<span class="caw-accordion-icon" aria-hidden="true"><i class=""></i></span>
 			</button>
 			<div class="caw-accordion-content"<?php echo $is_active ? '' : ' style="display:none;"'; ?>>
-				<div class="caw-accordion-content-inner"><?php echo $content_html; ?></div>
+				<div class="caw-accordion-content-inner"><?php echo wp_kses_post( $content_html ); ?></div>
 			</div>
 		</div>
 		<?php

@@ -102,3 +102,17 @@
 .caw-icon-before-after.vc_element-icon {
     background-image: url(../images/before-after.png) !important;
 }
+
+/* ===== Admin menu icon (Classic Addons top-level) ===== */
+/* Full-color brand logo, shown at full opacity instead of the dimmed default. */
+#adminmenu #toplevel_page_caw-settings .wp-menu-image img {
+    width: 22px;
+    height: 22px;
+    padding-top: 7px;
+    opacity: 1;
+}
+/* When WordPress renders the SVG as a background (svg data/URL path). */
+#adminmenu #toplevel_page_caw-settings .wp-menu-image.svg {
+    background-size: 22px auto;
+    opacity: 1;
+}

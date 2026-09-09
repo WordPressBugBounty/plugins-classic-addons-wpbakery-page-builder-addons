@@ -26,7 +26,7 @@ class WPBakeryShortCode_CAW_Filterable_Portfolio extends WPBakeryShortCode {
 		$wrapper_classes[] = sanitize_key($category);
 
 		ob_start(); ?>
-			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>">
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>">
 				<div class="caw-filportfolio-single">
 					<div class="caw-filportfolio-img">
 						<span class="caw-filterable-item">		

@@ -57,7 +57,7 @@ class WPBakeryShortCode_CAW_Image_Hotspots extends WPBakeryShortCode {
 		if ( empty( $image ) ) {
 			ob_start(); ?>
 			<div class="caw-image-hotspots caw-image-hotspots-empty">
-				<p><?php echo esc_html__( 'Please select a base image.', 'classic-addons' ); ?></p>
+				<p><?php echo esc_html__( 'Please select a base image.', 'classic-addons-wpbakery-page-builder' ); ?></p>
 			</div>
 			<?php
 			return ob_get_clean();
@@ -73,7 +73,7 @@ class WPBakeryShortCode_CAW_Image_Hotspots extends WPBakeryShortCode {
 		if ( $img_html === '' ) {
 			ob_start(); ?>
 			<div class="caw-image-hotspots caw-image-hotspots-empty">
-				<p><?php echo esc_html__( 'Selected base image is no longer available.', 'classic-addons' ); ?></p>
+				<p><?php echo esc_html__( 'Selected base image is no longer available.', 'classic-addons-wpbakery-page-builder' ); ?></p>
 			</div>
 			<?php
 			return ob_get_clean();
@@ -154,7 +154,7 @@ class WPBakeryShortCode_CAW_Image_Hotspots extends WPBakeryShortCode {
 
 		ob_start(); ?>
 		<div id="<?php echo esc_attr( $uid ); ?>"
-			class="<?php echo cawpb_sanitize_html_classes( $wrapper_classes ); ?>"
+			class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>"
 			style="<?php echo esc_attr( $wrap_istyle ); ?>">
 			<div class="caw-hs-frame">
 				<div class="caw-hs-image-wrap"><?php echo wp_kses_post( $img_html ); ?></div>
@@ -204,29 +204,27 @@ class WPBakeryShortCode_CAW_Image_Hotspots extends WPBakeryShortCode {
 					if ( $mlink_url !== '' ) { $marker_classes[] = 'caw-hs-has-link'; }
 
 					$has_tooltip = ( $mhead !== '' || $mdesc !== '' );
-					$marker_label = $mhead !== '' ? $mhead : sprintf( __( 'Hotspot %d', 'classic-addons' ), $idx + 1 );
+					/* translators: %d: hotspot number */
+					$marker_label = $mhead !== '' ? $mhead : sprintf( __( 'Hotspot %d', 'classic-addons-wpbakery-page-builder' ), $idx + 1 );
 					?>
-					<div class="<?php echo cawpb_sanitize_html_classes( $marker_classes ); ?>"
+					<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $marker_classes ) ); ?>"
 						style="<?php echo esc_attr( $pos_style ); ?>"
 						data-trigger="<?php echo esc_attr( $mtrigger ); ?>"
 						<?php if ( $mopen ) : ?>data-open-default="1"<?php endif; ?>>
 						<?php
-						$marker_inner_tag        = $mlink_url !== '' ? 'a' : 'button';
-						$marker_inner_attrs = 'class="caw-hs-marker-inner" style="' . esc_attr( $marker_istyle ) . '"';
-						$marker_inner_attrs .= ' aria-label="' . esc_attr( $marker_label ) . '"';
-						if ( $has_tooltip ) {
-							$marker_inner_attrs .= ' aria-haspopup="true" aria-expanded="false"';
-						}
-						if ( $mlink_url !== '' ) {
-							$marker_inner_attrs .= ' href="' . esc_url( $mlink_url ) . '" target="' . esc_attr( $mlink_target ) . '"';
-							if ( $mlink_rel !== '' ) {
-								$marker_inner_attrs .= ' rel="' . esc_attr( $mlink_rel ) . '"';
-							}
-						} else {
-							$marker_inner_attrs .= ' type="button"';
-						}
+						// Allow-listed literal: 'a' when linked, 'button' otherwise.
+						$marker_inner_tag = $mlink_url !== '' ? 'a' : 'button';
 						?>
-						<<?php echo esc_html( $marker_inner_tag ); ?> <?php echo $marker_inner_attrs; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — each piece individually escaped above ?>>
+						<<?php echo esc_html( $marker_inner_tag ); ?> class="caw-hs-marker-inner"
+							style="<?php echo esc_attr( $marker_istyle ); ?>"
+							aria-label="<?php echo esc_attr( $marker_label ); ?>"
+							<?php if ( $has_tooltip ) : ?>aria-haspopup="true" aria-expanded="false"<?php endif; ?>
+							<?php if ( $mlink_url !== '' ) : ?>
+								href="<?php echo esc_url( $mlink_url ); ?>" target="<?php echo esc_attr( $mlink_target ); ?>"
+								<?php if ( $mlink_rel !== '' ) : ?>rel="<?php echo esc_attr( $mlink_rel ); ?>"<?php endif; ?>
+							<?php else : ?>
+								type="button"
+							<?php endif; ?>>
 							<?php if ( $mtype === 'icon' ) : ?>
 								<i class="<?php echo esc_attr( $micon ); ?>" style="<?php echo esc_attr( $marker_icon_istyle ); ?>" aria-hidden="true"></i>
 							<?php elseif ( $mtype === 'text' ) : ?>

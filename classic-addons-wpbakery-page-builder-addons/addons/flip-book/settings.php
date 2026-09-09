@@ -8,59 +8,59 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$params = array(
+$cawpb_params = array(
 	array(
 	    "type" => "dropdown",
-	    "heading" => __("Book Style", "classic-addons"),
+	    "heading" => __("Book Style", "classic-addons-wpbakery-page-builder"),
 	    "param_name" => "style",
-	    "description" => __("Choose the particular mode of book", "classic-addons"),
+	    "description" => __("Choose the particular mode of book", "classic-addons-wpbakery-page-builder"),
 	    'value' => array(
-	        __('Dual Pages', 'classic-addons') => 'caw_fb_dual_pages',
-	        __('Single Pages', 'classic-addons') => 'caw_fb_single_pages',
+	        __('Dual Pages', 'classic-addons-wpbakery-page-builder') => 'caw_fb_dual_pages',
+	        __('Single Pages', 'classic-addons-wpbakery-page-builder') => 'caw_fb_single_pages',
 	    ),
     	'std' => 'dual_pages',
 	),
 	array(
 		'type' => 'checkbox',
-		'heading' => __( 'Arrows', 'classic-addons' ),
+		'heading' => __( 'Arrows', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'arrows',
-		'description' => __( 'Check to display arrows with book', 'classic-addons' ),
+		'description' => __( 'Check to display arrows with book', 'classic-addons-wpbakery-page-builder' ),
 	),
 	array(
 		'type' => 'checkbox',
-		'heading' => __( 'Tabs', 'classic-addons' ),
+		'heading' => __( 'Tabs', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'tabs',
-		'description' => __( 'Check to display navigation tabs under book', 'classic-addons' ),
+		'description' => __( 'Check to display navigation tabs under book', 'classic-addons-wpbakery-page-builder' ),
 	),
 	array(
 		'type' => 'textfield',
-		'heading' => __( 'Width', 'classic-addons' ),
+		'heading' => __( 'Width', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'width',
-		'description' => __( 'Provide width for book in pixels, eg 700', 'classic-addons' ),
+		'description' => __( 'Provide width for book in pixels, eg 700', 'classic-addons-wpbakery-page-builder' ),
 	),
 	array(
 		'type' => 'textfield',
-		'heading' => __( 'Height for Desktop', 'classic-addons' ),
+		'heading' => __( 'Height for Desktop', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'height_desktop',
-		'description' => __( 'Provide height for desktop, eg 350px ', 'classic-addons' ),
+		'description' => __( 'Provide height for desktop, eg 350px ', 'classic-addons-wpbakery-page-builder' ),
 	),
 	array(
 		'type' => 'textfield',
-		'heading' => __( 'Height for Mobile', 'classic-addons' ),
+		'heading' => __( 'Height for Mobile', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'height_mobile',
-		'description' => __( 'Provide height for mobile devices, eg 250px', 'classic-addons' ),
+		'description' => __( 'Provide height for mobile devices, eg 250px', 'classic-addons-wpbakery-page-builder' ),
 	),
 	array(
 		'type' => 'textfield',
-		'heading' => __( 'Mobile Screen Size', 'classic-addons' ),
+		'heading' => __( 'Mobile Screen Size', 'classic-addons-wpbakery-page-builder' ),
 		'param_name' => 'mobile_size',
 		'value' => '450px',
-		'description' => __( 'Provide width from where mobile size starts', 'classic-addons' ),
+		'description' => __( 'Provide width from where mobile size starts', 'classic-addons-wpbakery-page-builder' ),
 	),
 	array(
 		"type" 			=> 	"textfield",
-		"heading" 		=> 	__( 'Extra Classes', 'classic-addons' ),
+		"heading" 		=> 	__( 'Extra Classes', 'classic-addons-wpbakery-page-builder' ),
 		"param_name" 	=> 	"ex_classes",
-		"description" 	=> 	__( 'Provide the extra classes name for custom styling.', 'classic-addons' ),
+		"description" 	=> 	__( 'Provide the extra classes name for custom styling.', 'classic-addons-wpbakery-page-builder' ),
 	),
 );

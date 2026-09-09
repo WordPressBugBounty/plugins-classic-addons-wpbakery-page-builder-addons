@@ -91,13 +91,13 @@ class WPBakeryShortCode_CAW_Tabs_C extends WPBakeryShortCodesContainer {
 
 		$inner = do_shortcode( $content );
 		if ( trim( $inner ) === '' ) {
-			$inner = '<div class="caw-tab-panel is-active" data-title="' . esc_attr__( 'Tab 1', 'classic-addons' ) . '">' . esc_html__( 'Add tab items inside this element.', 'classic-addons' ) . '</div>';
+			$inner = '<div class="caw-tab-panel is-active" data-title="' . esc_attr__( 'Tab 1', 'classic-addons-wpbakery-page-builder' ) . '">' . esc_html__( 'Add tab items inside this element.', 'classic-addons-wpbakery-page-builder' ) . '</div>';
 		}
 
 		ob_start(); ?>
-		<div id="<?php echo esc_attr( $uid ); ?>" class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>" <?php echo implode( ' ', $data_attrs ); ?>>
+		<div id="<?php echo esc_attr( $uid ); ?>" class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>" <?php echo implode( ' ', $data_attrs ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- each data-* value is esc_attr()'d / cast to int where $data_attrs is built ?>>
 			<div class="caw-tab-nav" role="tablist"></div>
-			<div class="caw-tab-content"><?php echo $inner; ?></div>
+			<div class="caw-tab-content"><?php echo $inner; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- rendered shortcode output (do_shortcode); escaping here would strip valid embeds ?></div>
 		</div>
 		<?php
 		return ob_get_clean();

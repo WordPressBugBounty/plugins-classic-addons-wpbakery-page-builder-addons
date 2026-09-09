@@ -8,33 +8,33 @@
 */
 if( ! defined('ABSPATH' ) ){ exit; }
 
-$param_name = isset( $settings['param_name'] ) ? $settings['param_name'] : '';
-$param_type = isset( $settings['type'] ) ? $settings['type'] : '';
-$class      = isset( $settings['class'] ) ? ' ' . $settings['class'] : '';
-$heading    = isset( $settings['section_title'] ) ? $settings['section_title'] : '';
+$cawpb_param_name = isset( $settings['param_name'] ) ? $settings['param_name'] : '';
+$cawpb_param_type = isset( $settings['type'] ) ? $settings['type'] : '';
+$cawpb_class      = isset( $settings['class'] ) ? ' ' . $settings['class'] : '';
+$cawpb_heading    = isset( $settings['section_title'] ) ? $settings['section_title'] : '';
 
 ?>
 
 <div class="caw-border-style-wrapper">
 	<div class="caw-style-handler" data-border="<?php echo esc_attr($value); ?>">
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Left', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'Left', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<input type="text" name="margin_left" class="caw-margin-input" data-name="margin-left">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'right', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'right', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<input type="text" name="margin_right" class="caw-margin-input" data-name="margin-right">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Top', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'Top', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<input type="text" name="margin_top" class="caw-margin-input" data-name="margin-top">
 		</div>
 		<div class="vc_col-xs-1 vc_column">
-			<label><?php esc_html_e( 'Bottom', 'classic-addons' ); ?></label>
+			<label><?php esc_html_e( 'Bottom', 'classic-addons-wpbakery-page-builder' ); ?></label>
 			<input type="text" name="margin_bottom" class="caw-margin-input" data-name="margin-bottom">
 		</div>
 		
-		<input type="hidden" name="<?php echo esc_attr( $param_name ); ?>" class="caw-margin-input-js wpb_vc_param_value <?php echo esc_attr( $param_name ) ?> <?php echo esc_attr( $param_type ) ?>_field" value="<?php echo esc_attr( $value ); ?>"/>
+		<input type="hidden" name="<?php echo esc_attr( $cawpb_param_name ); ?>" class="caw-margin-input-js wpb_vc_param_value <?php echo esc_attr( $cawpb_param_name ) ?> <?php echo esc_attr( $cawpb_param_type ) ?>_field" value="<?php echo esc_attr( $value ); ?>"/>
 	</div>
 </div>
 

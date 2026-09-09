@@ -62,7 +62,7 @@ class WPBakeryShortCode_CAW_Animated_Heading extends WPBakeryShortCode {
 		$heading_tag = in_array($heading_tag, $allowed_heading_tags) ? $heading_tag : 'h1';
 
 		ob_start(); ?>
-			<div class="<?php echo cawpb_sanitize_html_classes($wrapper_classes); ?>" data-time="<?php echo intval($spin_timer); ?>">
+			<div class="<?php echo esc_attr( cawpb_sanitize_html_classes( $wrapper_classes ) ); ?>" data-time="<?php echo intval($spin_timer); ?>">
 				<<?php echo esc_attr($heading_tag) ?> style="margin-bottom: <?php echo esc_attr($after_margin); ?>;">
 				  <span class="<?php echo esc_attr($spacing_classes['beforetxt']); ?>" style="<?php echo esc_attr($beforetxt_istyle); ?>"><?php echo esc_attr( $before_heading ); ?></span>
 				  
